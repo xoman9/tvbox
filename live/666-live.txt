@@ -1,0 +1,877 @@
+台灣频道,#genre#
+台湾|TVBS News 新闻台,http://mytv6688.xyz/斯玛特的斯玛特.php?id=tvbs_n
+台湾|TVBS 欢乐台 （备份）,http://mytv6688.xyz/斯玛特的斯玛特.php?id=tvbshuanle_twn
+台湾|TVBS HD,http://mytv6688.xyz/斯玛特的斯玛特.php?id=tvbs
+台湾|中天新闻 HD,http://mytv6688.xyz/斯玛特的斯玛特.php?id=ctinews
+台湾|中天娱乐 CTI Entertaiment,http://mytv6688.xyz/斯玛特的斯玛特.php?id=ctient
+台湾|中天综合 CTI Metro,http://mytv6688.xyz/斯玛特的斯玛特.php?id=ctizhonghe
+台湾|中天亚洲台,http://mytv6688.xyz/斯玛特的斯玛特.php?id=ctiasia_twn
+台湾|台视 TTV HD,http://mytv6688.xyz/斯玛特的斯玛特.php?id=ttv_taiwan
+台湾|台视新闻台,http://mytv6688.xyz/斯玛特的斯玛特.php?id=ttvnews_twn
+台湾|台视综合台,http://mytv6688.xyz/斯玛特的斯玛特.php?id=ttvzhonghe
+台湾|中视 HD,http://mytv6688.xyz/斯玛特的斯玛特.php?id=zhongshihd_twn
+台湾|中视新闻台,http://mytv6688.xyz/斯玛特的斯玛特.php?id=zhongshinews_twn
+台湾|民视 HD,http://mytv6688.xyz/斯玛特的斯玛特.php?id=ftvhd_taiwan
+台湾|民视新闻台 FTV News,http://mytv6688.xyz/斯玛特的斯玛特.php?id=ftvnew_taiwan
+台湾|民视台湾台,http://mytv6688.xyz/斯玛特的斯玛特.php?id=ftvtaiwan_twn
+台湾|华视 CTS HD,http://mytv6688.xyz/斯玛特的斯玛特.php?id=ctshd_twn
+台湾|公视 CTV,http://mytv6688.xyz/斯玛特的斯玛特.php?id=ctv18_twn
+台湾|八大第一 GTV First,http://mytv6688.xyz/斯玛特的斯玛特.php?id=badafirst
+台湾|八大综合 GTV Metro,http://mytv6688.xyz/斯玛特的斯玛特.php?id=badazhonghe
+台湾|八大戏剧 GTV Drama,http://mytv6688.xyz/斯玛特的斯玛特.php?id=badadrama
+台湾|八大娱乐 GTV Entertainment,http://mytv6688.xyz/斯玛特的斯玛特.php?id=badaentertain
+台湾|HBO_HD,http://mytv6688.xyz/斯玛特的斯玛特.php?id=hbohd_twn
+台湾|HBO_HITS,http://mytv6688.xyz/斯玛特的斯玛特.php?id=hbohit_twn
+台湾|Hollywood Movies,http://mytv6688.xyz/斯玛特的斯玛特.php?id=hollywoodmovies_twn
+台湾|三立台湾 Sanli Taiwan,http://mytv6688.xyz/斯玛特的斯玛特.php?id=sanlitaiwan
+台湾|三立戏剧台,http://mytv6688.xyz/斯玛特的斯玛特.php?id=sanlixiju_twn
+台湾|三立综合 Sanli Metro,http://mytv6688.xyz/斯玛特的斯玛特.php?id=sanlizhonghe
+台湾|三立都会台,http://mytv6688.xyz/斯玛特的斯玛特.php?id=sanlidouhui
+台湾|东森新闻 ETTV News,http://mytv6688.xyz/斯玛特的斯玛特.php?id=ettvnews
+台湾|CINEMAX,http://mytv6688.xyz/斯玛特的斯玛特.php?id=cinemax_twn
+台湾|东森综合 ETTV Metro,http://mytv6688.xyz/斯玛特的斯玛特.php?id=ettvzhonghe
+台湾|东森戏剧 ETTV Drama,http://mytv6688.xyz/斯玛特的斯玛特.php?id=ettvdrama
+台湾|东森超视,http://mytv6688.xyz/斯玛特的斯玛特.php?id=ettvsuper
+台湾|东森财经新闻 ETTV Business,http://mytv6688.xyz/斯玛特的斯玛特.php?id=ettvcaijing_twn
+台湾|寰宇财经,http://mytv6688.xyz/斯玛特的斯玛特.php?id=huanyutaiwan_twn
+台湾|寰宇新闻台,http://mytv6688.xyz/斯玛特的斯玛特.php?id=huanyuxinwen_twn
+台湾|公视2,http://mytv6688.xyz/斯玛特的斯玛特.php?id=ctv2_twn
+台湾|大爱1台,http://mytv6688.xyz/斯玛特的斯玛特.php?id=daai_twn
+台湾|非凡新闻台,http://mytv6688.xyz/斯玛特的斯玛特.php?id=feifannews_twn
+台湾|龙华戏剧 Lunghua Drama,http://mytv6688.xyz/斯玛特的斯玛特.php?id=lunghuaxiju_twn
+台湾|龙华经典台,http://mytv6688.xyz/斯玛特的斯玛特.php?id=lunghuajingdian_twn
+台湾|龙华偶像,http://mytv6688.xyz/斯玛特的斯玛特.php?id=lunghuaidol_twn
+台湾|AXN Taiwan,http://mytv6688.xyz/斯玛特的斯玛特.php?id=axn_twn
+台湾|靖天国际台,http://mytv6688.xyz/斯玛特的斯玛特.php?id=jingtianintl_twn
+台湾|年代新闻,http://mytv6688.xyz/斯玛特的斯玛特.php?id=niandainews_twn
+台湾|纬来日本台,http://mytv6688.xyz/斯玛特的斯玛特.php?id=videolandjapan
+台湾|纬来电影台,http://mytv6688.xyz/斯玛特的斯玛特.php?id=videolandmovie
+台湾|纬来体育台,http://mytv6688.xyz/斯玛特的斯玛特.php?id=videolandsport
+台湾|纬来综合台,http://mytv6688.xyz/斯玛特的斯玛特.php?id=videolandzonghe
+台湾|纬来育乐,http://mytv6688.xyz/斯玛特的斯玛特.php?id=videolandyule
+台湾|纬来精彩,http://mytv6688.xyz/斯玛特的斯玛特.php?id=videolandspecial_twn
+台湾|好消息 2,http://mytv6688.xyz/斯玛特的斯玛特.php?id=good2_twn
+台湾|大爱2台,http://mytv6688.xyz/斯玛特的斯玛特.php?id=daai2_twn
+台湾|亚洲美食,http://mytv6688.xyz/斯玛特的斯玛特.php?id=afc_twn
+台湾|美食星球,http://mytv6688.xyz/斯玛特的斯玛特.php?id=foodplanet_twn
+台湾|亚洲旅游 TLC Asia,http://mytv6688.xyz/斯玛特的斯玛特.php?id=tlc_twn
+台湾|东森电影 ETTV Movie,http://mytv6688.xyz/斯玛特的斯玛特.php?id=ettvmovie
+台湾|阿里郎 Arirang,http://mytv6688.xyz/斯玛特的斯玛特.php?id=arirang_twn
+台湾|博斯运动 1,http://mytv6688.xyz/斯玛特的斯玛特.php?id=bosisport1_twn
+台湾|博斯运动 2,http://mytv6688.xyz/斯玛特的斯玛特.php?id=bosisport2_twn
+台湾|博斯高球2 HD,http://mytv6688.xyz/斯玛特的斯玛特.php?id=bosigolf2_twn
+台湾|博斯网球 HD,http://mytv6688.xyz/斯玛特的斯玛特.php?id=bositennis_twn
+台湾|东森洋片 ETTV Western,http://mytv6688.xyz/斯玛特的斯玛特.php?id=ettvwestern
+台湾|龙华洋片 Lunghua Western,http://mytv6688.xyz/斯玛特的斯玛特.php?id=lunghuawestern_twn
+台湾|博斯无限,http://mytv6688.xyz/斯玛特的斯玛特.php?id=bosiunlimited_twn
+台湾|MTV Live,http://mytv6688.xyz/斯玛特的斯玛特.php?id=mtvhd_twn
+台湾|龙详时代,http://mytv6688.xyz/斯玛特的斯玛特.php?id=lungxiangtime_twn
+台湾|EYETV 旅游,http://mytv6688.xyz/斯玛特的斯玛特.php?id=eyetvtravel_twn
+台湾|靖天卡通台,http://mytv6688.xyz/斯玛特的斯玛特.php?id=jingtiancartoon_twn
+台湾|EYETV 戏剧,http://mytv6688.xyz/斯玛特的斯玛特.php?id=eyetvxiju_twn
+台湾|卫视中文台 Star Movies Chinese,http://mytv6688.xyz/斯玛特的斯玛特.php?id=weishichinese_twn
+台湾|东森幼幼 Yoyo TV,http://mytv6688.xyz/斯玛特的斯玛特.php?id=yoyo_twn
+台湾|卫视电影台,http://mytv6688.xyz/斯玛特的斯玛特.php?id=weishimovie_twn
+台湾|美亚电影,http://mytv6688.xyz/斯玛特的斯玛特.php?id=meiyamovie_twn
+台湾|爱尔达影剧台,http://mytv6688.xyz/斯玛特的斯玛特.php?id=eltayingju_twn
+台湾|爱尔达综合台,http://mytv6688.xyz/斯玛特的斯玛特.php?id=eltazonghe_twn
+台湾|星卫电影,http://mytv6688.xyz/斯玛特的斯玛特.php?id=xingwei_movie
+台湾|爱尔达影剧,http://mytv6688.xyz/斯玛特的斯玛特.php?id=eltayingju_twn
+台湾|AFC 亚洲旅游台,http://mytv6688.xyz/斯玛特的斯玛特.php?id=asiatravel_twn
+台湾|爱尔达体育2台,http://mytv6688.xyz/斯玛特的斯玛特.php?id=eltasport2_twn
+台湾|爱尔达体育3台,http://mytv6688.xyz/斯玛特的斯玛特.php?id=eltasport3_twn
+
+電影,#genre#
+电影频道|HBO_HD,http://mytv6688.xyz/斯玛特的斯玛特.php?id=hbohd_twn
+电影频道|HBO_HITS,http://mytv6688.xyz/斯玛特的斯玛特.php?id=hbohit_twn
+电影频道|Hollywood Movies,http://mytv6688.xyz/斯玛特的斯玛特.php?id=hollywoodmovies_twn
+电影频道|CCTV-6,http://mytv6688.xyz/斯玛特的斯玛特.php?id=cctv6
+电影频道|CINEMAX,http://mytv6688.xyz/斯玛特的斯玛特.php?id=cinemax_twn
+电影频道|Cinemax,http://mytv6688.xyz/斯玛特的斯玛特.php?id=Cinemax
+电影频道|AXN Taiwan,http://mytv6688.xyz/斯玛特的斯玛特.php?id=axn_twn
+电影频道|大爱2台,http://mytv6688.xyz/斯玛特的斯玛特.php?id=daai2_twn
+电影频道|东森电影 ETTV Movie,http://mytv6688.xyz/斯玛特的斯玛特.php?id=ettvmovie
+电影频道|东森洋片 ETTV Western,http://mytv6688.xyz/斯玛特的斯玛特.php?id=ettvwestern
+电影频道|龙华洋片 Lunghua Western,http://mytv6688.xyz/斯玛特的斯玛特.php?id=lunghuawestern_twn
+电影频道|Animax,http://mytv6688.xyz/斯玛特的斯玛特.php?id=Animax
+电影频道|龙详时代,http://mytv6688.xyz/斯玛特的斯玛特.php?id=lungxiangtime_twn
+电影频道|Movies Now HD,http://mytv6688.xyz/斯玛特的斯玛特.php?id=moviesnow_raj
+电影频道|Star Movies HD,http://mytv6688.xyz/斯玛特的斯玛特.php?id=starmovies_raj
+电影频道|卫视中文台 Star Movies Chinese,http://mytv6688.xyz/斯玛特的斯玛特.php?id=weishichinese_twn
+电影频道|HBO Family,http://mytv6688.xyz/斯玛特的斯玛特.php?id=Hbofamily
+电影频道|Hits,http://mytv6688.xyz/斯玛特的斯玛特.php?id=Hits
+电影频道|Warner TV,http://mytv6688.xyz/斯玛特的斯玛特.php?id=WarnerTV
+电影频道|卫视电影台,http://mytv6688.xyz/斯玛特的斯玛特.php?id=weishimovie_twn
+电影频道|HBO HD,http://mytv6688.xyz/斯玛特的斯玛特.php?id=Hbo
+电影频道|美亚电影,http://mytv6688.xyz/斯玛特的斯玛特.php?id=meiyamovie_twn
+电影频道|HBO Signature,http://mytv6688.xyz/斯玛特的斯玛特.php?id=Hbosignature
+电影频道|HBO Hits,http://mytv6688.xyz/斯玛特的斯玛特.php?id=Hbohitshd
+电影频道|星卫电影,http://mytv6688.xyz/斯玛特的斯玛特.php?id=xingwei_movie
+电影频道|SCM,http://mytv6688.xyz/斯玛特的斯玛特.php?id=Weishimovie
+电影频道|Dreamworks,http://mytv6688.xyz/斯玛特的斯玛特.php?id=Dreamworks
+电影频道|Thrill,http://mytv6688.xyz/斯玛特的斯玛特.php?id=Thrill
+电影频道|Hits Movie,http://mytv6688.xyz/斯玛特的斯玛特.php?id=Hitsmovie
+电影频道|One,http://mytv6688.xyz/斯玛特的斯玛特.php?id=One
+电影频道|tvN Movie,http://mytv6688.xyz/斯玛特的斯玛特.php?id=Tvnmovie
+电影频道|Celestial Classic,http://mytv6688.xyz/斯玛特的斯玛特.php?id=Celestial2
+电影频道|Celestial Movies HD,http://mytv6688.xyz/斯玛特的斯玛特.php?id=Celestialindo
+电影频道|Axn HD,http://mytv6688.xyz/斯玛特的斯玛特.php?id=Axn
+电影频道|Paramount Network,http://mytv6688.xyz/斯玛特的斯玛特.php?id=Paramountnetwork
+电影频道|Astrol Kplus,http://mytv6688.xyz/斯玛特的斯玛特.php?id=Kplus
+电影频道|Rock Actions,http://mytv6688.xyz/斯玛特的斯玛特.php?id=Rockaction
+电影频道|Rock Entertainment,http://mytv6688.xyz/斯玛特的斯玛特.php?id=Rockentertain
+
+體育,#genre#
+体育频道|Astro Premier League 1,http://mytv6688.xyz/斯玛特的斯玛特.php?id=go_assp1
+体育频道|Astro EPL 1 backup,http://mytv6688.xyz/斯玛特的斯玛特.php?id=go_assp1x
+体育频道|Astro Premier League 2,http://mytv6688.xyz/斯玛特的斯玛特.php?id=go_assp2
+体育频道|Astro Grandstand,http://mytv6688.xyz/斯玛特的斯玛特.php?id=go_assp3
+体育频道|Astro Football,http://mytv6688.xyz/斯玛特的斯玛特.php?id=go_assp4
+体育频道|Astro Sports Plus,http://mytv6688.xyz/斯玛特的斯玛特.php?id=go_sportsplus
+体育频道|Astro Badminton 1,http://mytv6688.xyz/斯玛特的斯玛特.php?id=go_badminton1
+体育频道|Astro Badminton 2,http://mytv6688.xyz/斯玛特的斯玛特.php?id=go_badminton2
+体育频道|Astro W-Sports,http://mytv6688.xyz/斯玛特的斯玛特.php?id=go_assp5
+体育频道|Supersports 1,http://mytv6688.xyz/斯玛特的斯玛特.php?id=Assp1
+体育频道|Supersports 2,http://mytv6688.xyz/斯玛特的斯玛特.php?id=Assp2
+体育频道|Supersports 3,http://mytv6688.xyz/斯玛特的斯玛特.php?id=Assp3
+体育频道|Supersports 4,http://mytv6688.xyz/斯玛特的斯玛特.php?id=Assp4
+体育频道|WWE,http://mytv6688.xyz/斯玛特的斯玛特.php?id=Wwe
+体育频道|Fight Sports,http://mytv6688.xyz/斯玛特的斯玛特.php?id=Fs
+体育频道|NBA TV,http://mytv6688.xyz/斯玛特的斯玛特.php?id=Nba
+体育频道|Astro Cricket,http://mytv6688.xyz/斯玛特的斯玛特.php?id=Acricket
+体育频道|Astro Golf,http://mytv6688.xyz/斯玛特的斯玛特.php?id=Agolf
+体育频道|Tnt Sports 1,http://mytv6688.xyz/斯玛特的斯玛特.php?id=6fac0aaead
+体育频道|TNT Sports 2,http://mytv6688.xyz/斯玛特的斯玛特.php?id=d9a76a79cc
+体育频道|TNT Sports 3,http://mytv6688.xyz/斯玛特的斯玛特.php?id=5fea4d73db
+体育频道|TNT Sports 4,http://mytv6688.xyz/斯玛特的斯玛特.php?id=tntsport4
+体育频道|Sony Ten 1,http://mytv6688.xyz/斯玛特的斯玛特.php?id=ten1_raj
+体育频道|Sony Ten 2,http://mytv6688.xyz/斯玛特的斯玛特.php?id=ten2_raj
+体育频道|Sony Ten 3,http://mytv6688.xyz/斯玛特的斯玛特.php?id=ten3_raj
+体育频道|SPOTV 1 HD,http://mytv6688.xyz/斯玛特的斯玛特.php?id=go_spotv
+体育频道|SPO TV 2,http://mytv6688.xyz/斯玛特的斯玛特.php?id=go_spotv2
+体育频道|Skysports F1,http://mytv6688.xyz/斯玛特的斯玛特.php?id=tiankongf1
+体育频道|Skysports Cricket,http://mytv6688.xyz/斯玛特的斯玛特.php?id=tiankongcricket
+体育频道|Skysports EPL,http://mytv6688.xyz/斯玛特的斯玛特.php?id=tiankongepl
+体育频道|Skysports Main Event,http://mytv6688.xyz/斯玛特的斯玛特.php?id=tiankongmain
+体育频道|Skysports News,http://mytv6688.xyz/斯玛特的斯玛特.php?id=tiankongnews
+体育频道|Skysports Mix,http://mytv6688.xyz/斯玛特的斯玛特.php?id=tiankongmix
+体育频道|CCTV-5 体育频道,http://mytv6688.xyz/斯玛特的斯玛特.php?id=cctv5
+体育频道|CCTV-5+ 体育赛事 HD,http://mytv6688.xyz/斯玛特的斯玛特.php?id=cctv5plus
+体育频道|爱尔达体育2台,http://mytv6688.xyz/斯玛特的斯玛特.php?id=eltasport2_twn
+体育频道|爱尔达体育3台,http://mytv6688.xyz/斯玛特的斯玛特.php?id=eltasport3_twn
+体育频道|Rugby Pass TV,http://mytv6688.xyz/斯玛特的斯玛特.php?id=Rugbypasstv
+体育频道|RTM Sports HD,http://mytv6688.xyz/斯玛特的斯玛特.php?id=Rtmsport
+体育频道|Arena,http://mytv6688.xyz/斯玛特的斯玛特.php?id=Arena
+体育频道|Arena 2,http://mytv6688.xyz/斯玛特的斯玛特.php?id=Arena2
+体育频道|BolaArena 1,http://mytv6688.xyz/斯玛特的斯玛特.php?id=Bolaarena1
+体育频道|BolaArena 2,http://mytv6688.xyz/斯玛特的斯玛特.php?id=Bolaarena2
+体育频道|Astro Beinsports 1,http://mytv6688.xyz/斯玛特的斯玛特.php?id=Astrobein1
+体育频道|Astro Beinsports 2,http://mytv6688.xyz/斯玛特的斯玛特.php?id=Astrobein2
+体育频道|Astro Beinsports 3,http://mytv6688.xyz/斯玛特的斯玛特.php?id=Astrobein3
+
+記錄,#genre#
+纪录频道|Natgeo_HD,http://mytv6688.xyz/斯玛特的斯玛特.php?id=natgeohd_twn
+纪录频道|NatGeo_Wild HD,http://mytv6688.xyz/斯玛特的斯玛特.php?id=natgeowild_twn
+纪录频道|Animal_Planet,http://mytv6688.xyz/斯玛特的斯玛特.php?id=animalplanet_twn
+纪录频道|Discovery Asia,http://mytv6688.xyz/斯玛特的斯玛特.php?id=discoverytwn_twn
+纪录频道|CI,http://mytv6688.xyz/斯玛特的斯玛特.php?id=ci_twn
+纪录频道|Asia Travel,http://mytv6688.xyz/斯玛特的斯玛特.php?id=asiatravel_twn
+纪录频道|Discovery HD,http://mytv6688.xyz/斯玛特的斯玛特.php?id=discoveryhd_twn
+纪录频道|亚洲美食,http://mytv6688.xyz/斯玛特的斯玛特.php?id=afc_twn
+纪录频道|美食星球,http://mytv6688.xyz/斯玛特的斯玛特.php?id=foodplanet_twn
+纪录频道|亚洲旅游 TLC Asia,http://mytv6688.xyz/斯玛特的斯玛特.php?id=tlc_twn
+纪录频道|NatGeo HD,http://mytv6688.xyz/斯玛特的斯玛特.php?id=Natgeo
+纪录频道|Fashion TV,http://mytv6688.xyz/斯玛特的斯玛特.php?id=fashiontv_twn
+纪录频道|History,http://mytv6688.xyz/斯玛特的斯玛特.php?id=History
+纪录频道|BBC Earth HD,http://mytv6688.xyz/斯玛特的斯玛特.php?id=bbcearth_twn
+纪录频道|BBC Earth Lifestyle,http://mytv6688.xyz/斯玛特的斯玛特.php?id=bbclifestyle_twn
+纪录频道|MTV Live,http://mytv6688.xyz/斯玛特的斯玛特.php?id=mtvhd_twn
+纪录频道|NatGeo Wild HD,http://mytv6688.xyz/斯玛特的斯玛特.php?id=Natgeowild
+纪录频道|Animal Planet (Eng),http://mytv6688.xyz/斯玛特的斯玛特.php?id=AnimalPlanet
+纪录频道|TLC,http://mytv6688.xyz/斯玛特的斯玛特.php?id=Tlc
+纪录频道|Foodnetwork Hd,http://mytv6688.xyz/斯玛特的斯玛特.php?id=Foodnetwork
+纪录频道|HGTV,http://mytv6688.xyz/斯玛特的斯玛特.php?id=HGTV
+纪录频道|AFC 亚洲旅游台,http://mytv6688.xyz/斯玛特的斯玛特.php?id=asiatravel_twn
+
+新聞,#genre#
+新闻频道|Skynews,http://mytv6688.xyz/斯玛特的斯玛特.php?id=skynews_twn
+新闻频道|ABC News,http://mytv6688.xyz/斯玛特的斯玛特.php?id=abcnews_glo
+新闻频道|东森财经新闻 ETTV Business,http://mytv6688.xyz/斯玛特的斯玛特.php?id=ettvcaijing_twn
+新闻频道|CBS HD,http://mytv6688.xyz/斯玛特的斯玛特.php?id=cbshd_glo
+新闻频道|CBSN HD,http://mytv6688.xyz/斯玛特的斯玛特.php?id=cbsn_glo
+新闻频道|France 24,http://mytv6688.xyz/斯玛特的斯玛特.php?id=france24_twn
+新闻频道|DW (Deutsch),http://mytv6688.xyz/斯玛特的斯玛特.php?id=dw_twn
+新闻频道|NHK World,http://mytv6688.xyz/斯玛特的斯玛特.php?id=nhkworld_japan
+新闻频道|Fox News,http://mytv6688.xyz/斯玛特的斯玛特.php?id=foxnews_twn
+新闻频道|CGTN,http://mytv6688.xyz/斯玛特的斯玛特.php?id=CGTN
+新闻频道|CNN International,http://mytv6688.xyz/斯玛特的斯玛特.php?id=Cnn
+新闻频道|CNN backup,http://mytv6688.xyz/斯玛特的斯玛特.php?id=cnn_twn
+新闻频道|CNBC,http://mytv6688.xyz/斯玛特的斯玛特.php?id=cnbc_twn
+新闻频道|CNA,http://mytv6688.xyz/斯玛特的斯玛特.php?id=cna
+新闻频道|BBC World News,http://mytv6688.xyz/斯玛特的斯玛特.php?id=bbcnews_twn
+新闻频道|BBC World News,http://mytv6688.xyz/斯玛特的斯玛特.php?id=Bbcnews
+新闻频道|Bloomberg News,http://mytv6688.xyz/斯玛特的斯玛特.php?id=bloomberg_twn
+新闻频道|Al-Jazeera,http://mytv6688.xyz/斯玛特的斯玛特.php?id=aljazeera_twn
+
+兒童,#genre#
+儿童频道|Baby TV Eng,http://mytv6688.xyz/斯玛特的斯玛特.php?id=Babytv
+儿童频道|CBeebies,http://mytv6688.xyz/斯玛特的斯玛特.php?id=Cbeebies
+儿童频道|Kids TV,http://mytv6688.xyz/斯玛特的斯玛特.php?id=KidsTV
+儿童频道|Momo TV,http://mytv6688.xyz/斯玛特的斯玛特.php?id=momo1_twn
+儿童频道|Animax,http://mytv6688.xyz/斯玛特的斯玛特.php?id=Animax
+儿童频道|Baby TV,http://mytv6688.xyz/斯玛特的斯玛特.php?id=babytv_twn
+儿童频道|MiaoMi,http://mytv6688.xyz/斯玛特的斯玛特.php?id=MiaoMi
+儿童频道|靖天卡通台,http://mytv6688.xyz/斯玛特的斯玛特.php?id=jingtiancartoon_twn
+儿童频道|东森幼幼 Yoyo TV,http://mytv6688.xyz/斯玛特的斯玛特.php?id=yoyo_twn
+儿童频道|Cartoon Network,http://mytv6688.xyz/斯玛特的斯玛特.php?id=Cn
+儿童频道|Nickelodeon,http://mytv6688.xyz/斯玛特的斯玛特.php?id=Nickelodeon
+儿童频道|Nick Jr,http://mytv6688.xyz/斯玛特的斯玛特.php?id=Nickjr
+
+
+央视频道,#genre#
+CCTV1,http://tv.星河.xyz/太白李长寿/师妹.php?id=1
+CCTV2,http://tv.星河.xyz/太白李长寿/师妹.php?id=2
+CCTV3,http://tv.星河.xyz/太白李长寿/师妹.php?id=3
+CCTV4,http://tv.星河.xyz/太白李长寿/师妹.php?id=4
+CCTV5,http://tv.星河.xyz/太白李长寿/师妹.php?id=5
+CCTV5+,http://tv.星河.xyz/太白李长寿/师妹.php?id=6
+CCTV6,http://tv.星河.xyz/太白李长寿/师妹.php?id=7
+CCTV7,http://tv.星河.xyz/太白李长寿/师妹.php?id=8
+CCTV8,http://tv.星河.xyz/太白李长寿/师妹.php?id=9
+CCTV9,http://tv.星河.xyz/太白李长寿/师妹.php?id=10
+CCTV10,http://tv.星河.xyz/太白李长寿/师妹.php?id=11
+CCTV11,http://tv.星河.xyz/太白李长寿/师妹.php?id=12
+CCTV12,http://tv.星河.xyz/太白李长寿/师妹.php?id=13
+CCTV13,http://tv.星河.xyz/太白李长寿/师妹.php?id=14
+CCTV14,http://tv.星河.xyz/太白李长寿/师妹.php?id=15
+CCTV15,http://tv.星河.xyz/太白李长寿/师妹.php?id=16
+CCTV17,http://tv.星河.xyz/太白李长寿/师妹.php?id=17
+CCTV4欧洲,http://tv.星河.xyz/太白李长寿/师妹.php?id=18
+CCTV4美洲,http://tv.星河.xyz/太白李长寿/师妹.php?id=19
+老故事,http://tv.星河.xyz/太白李长寿/师妹.php?id=25
+发现之旅,http://tv.星河.xyz/太白李长寿/师妹.php?id=26
+中学生,http://tv.星河.xyz/太白李长寿/师妹.php?id=27
+CGTN,http://tv.星河.xyz/太白李长寿/师妹.php?id=28
+CETV1,http://tv.星河.xyz/太白李长寿/师妹.php?id=29
+CETV2,http://tv.星河.xyz/太白李长寿/师妹.php?id=30
+CETV4,http://tv.星河.xyz/太白李长寿/师妹.php?id=31
+
+咪咕影视,#genre#
+中国航天 “逆袭” 之路,http://tv.星河.xyz/太白李长寿/师妹.php?id=32
+新片放映厅,http://tv.星河.xyz/太白李长寿/师妹.php?id=33
+CHC影迷电影,http://tv.星河.xyz/太白李长寿/师妹.php?id=34
+CHC动作电影,http://tv.星河.xyz/太白李长寿/师妹.php?id=35
+CHC家庭影院,http://tv.星河.xyz/太白李长寿/师妹.php?id=36
+和美乡途轮播台,http://tv.星河.xyz/太白李长寿/师妹.php?id=37
+高清大片,http://tv.星河.xyz/太白李长寿/师妹.php?id=38
+南方影视,http://tv.星河.xyz/太白李长寿/师妹.php?id=39
+红色轮播台,http://tv.星河.xyz/太白李长寿/师妹.php?id=40
+
+卫视频道,#genre#
+now星影,http://tv.星河.xyz/太白李长寿/师兄.php?id=98
+now爆谷,http://tv.星河.xyz/太白李长寿/师兄.php?id=99
+凤凰资讯,http://tv.星河.xyz/云霄仙子/fengshows.php?id=7c96b084-60e1-40a9-89c5-682b994fb680
+凤凰中文,http://tv.星河.xyz/云霄仙子/fengshows.php?id=f7f48462-9b13-485b-8101-7b54716411ec
+凤凰香港,http://tv.星河.xyz/云霄仙子/fengshows.php?id=15e02d92-1698-416c-af2f-3e9a872b4d78
+重温经典,http://tv.星河.xyz/太白李长寿/直播中国.php?id=30167
+东方卫视,http://tv.星河.xyz/太白李长寿/师妹.php?id=41
+江苏卫视,http://tv.星河.xyz/太白李长寿/师妹.php?id=42
+广东卫视,http://tv.星河.xyz/太白李长寿/师妹.php?id=43
+江西卫视,http://tv.星河.xyz/太白李长寿/师妹.php?id=44
+河南卫视,http://tv.星河.xyz/太白李长寿/师妹.php?id=45
+陕西卫视,http://tv.星河.xyz/太白李长寿/师妹.php?id=46
+大湾区卫视,http://tv.星河.xyz/太白李长寿/师妹.php?id=47
+湖北卫视,http://tv.星河.xyz/太白李长寿/师妹.php?id=48
+吉林卫视,http://tv.星河.xyz/太白李长寿/师妹.php?id=49
+青海卫视,http://tv.星河.xyz/太白李长寿/师妹.php?id=50
+东南卫视,http://tv.星河.xyz/太白李长寿/师妹.php?id=51
+海南卫视,http://tv.星河.xyz/太白李长寿/师妹.php?id=52
+海峡卫视,http://tv.星河.xyz/太白李长寿/师妹.php?id=53
+
+北京卫视,http://tv.星河.xyz/太白李长寿/直播中国.php?id=30024
+天津卫视,http://tv.星河.xyz/太白李长寿/直播中国.php?id=30027
+河北卫视,http://tv.星河.xyz/太白李长寿/直播中国.php?id=30035
+山西卫视,http://tv.星河.xyz/太白李长寿/直播中国.php?id=30044
+内蒙古卫视,http://tv.星河.xyz/太白李长寿/直播中国.php?id=30045
+辽宁卫视,http://tv.星河.xyz/太白李长寿/直播中国.php?id=30033
+吉林卫视,http://tv.星河.xyz/太白李长寿/直播中国.php?id=30037
+黑龙江卫视,http://tv.星河.xyz/太白李长寿/直播中国.php?id=30032
+东方卫视,http://tv.星河.xyz/太白李长寿/直播中国.php?id=30023
+江苏卫视,http://tv.星河.xyz/太白李长寿/直播中国.php?id=30021
+浙江卫视,http://tv.星河.xyz/太白李长寿/直播中国.php?id=30022
+安徽卫视,http://tv.星河.xyz/太白李长寿/直播中国.php?id=30030
+东南卫视,http://tv.星河.xyz/太白李长寿/直播中国.php?id=30038
+江西卫视,http://tv.星河.xyz/太白李长寿/直播中国.php?id=30036
+山东卫视,http://tv.星河.xyz/太白李长寿/直播中国.php?id=30028
+河南卫视,http://tv.星河.xyz/太白李长寿/直播中国.php?id=30041
+湖北卫视,http://tv.星河.xyz/太白李长寿/直播中国.php?id=30029
+湖南卫视,http://tv.星河.xyz/太白李长寿/直播中国.php?id=30000
+广东卫视,http://tv.星河.xyz/太白李长寿/直播中国.php?id=30025
+广西卫视,http://tv.星河.xyz/太白李长寿/直播中国.php?id=30040
+海南卫视,http://tv.星河.xyz/太白李长寿/直播中国.php?id=30048
+重庆卫视,http://tv.星河.xyz/太白李长寿/直播中国.php?id=30031
+四川卫视,http://tv.星河.xyz/太白李长寿/直播中国.php?id=30034
+贵州卫视,http://tv.星河.xyz/太白李长寿/直播中国.php?id=30039
+云南卫视,http://tv.星河.xyz/太白李长寿/直播中国.php?id=30047
+西藏卫视,http://tv.星河.xyz/太白李长寿/直播中国.php?id=30049
+陕西卫视,http://tv.星河.xyz/太白李长寿/直播中国.php?id=30050
+甘肃卫视,http://tv.星河.xyz/太白李长寿/直播中国.php?id=30042
+青海卫视,http://tv.星河.xyz/太白李长寿/直播中国.php?id=30043
+宁夏卫视,http://tv.星河.xyz/太白李长寿/直播中国.php?id=30046
+新疆卫视,http://tv.星河.xyz/太白李长寿/直播中国.php?id=30051
+兵团卫视,http://tv.星河.xyz/太白李长寿/直播中国.php?id=30121
+深圳卫视,http://tv.星河.xyz/太白李长寿/直播中国.php?id=30026
+厦门卫视,http://tv.星河.xyz/太白李长寿/直播中国.php?id=30123
+
+北京卫视,http://39.137.75.230/000000001000/1000000001000017156/index.m3u8?channel-id=ystenlive
+卡酷少儿,http://39.137.75.230/000000001000/1000000002000002413/index.m3u8?channel-id=ystenlive&Contentid=1000000002000002413&livemode=1&stbId=no
+湖南卫视,http://39.137.75.234/000000001000/1000000001000009115/index.m3u8?channel-id=ystenlive&Contentid=1000000001000009115&livemode=1&stbId=no
+江苏卫视,http://39.137.75.232/000000001000/1000000001000004684/index.m3u8?channel-id=ystenlive&Contentid=1000000001000004684&livemode=1&stbId=no
+东方卫视,http://39.137.75.229/000000001000/1000000001000030202/index.m3u8?channel-id=ystenlive
+浙江卫视,http://39.137.75.230/000000001000/1000000005000265031/index.m3u8?channel-id=ystenlive&Contentid=1000000005000265031&livemode=1&stbId=no
+湖北卫视,http://39.137.75.230/000000001000/1000000001000010355/index.m3u8?channel-id=ystenlive&Contentid=1000000001000010355&livemode=1&stbId=no
+天津卫视,http://39.137.75.230/000000001000/1000000001000003475/index.m3u8?channel-id=ystenlive&Contentid=1000000001000003475&livemode=1&stbId=no
+辽宁卫视,http://39.137.75.230/000000001000/1000000002000024033/index.m3u8?channel-id=ystenlive&Contentid=1000000002000024033&livemode=1&stbId=no
+安徽卫视,http://39.137.75.234/000000001000/1000000001000020780/index.m3u8?channel-id=ystenlive&Contentid=1000000001000020780&livemode=1&stbId=no
+黑龙江卫视,http://39.137.75.233/000000001000/1000000001000009082/index.m3u8?channel-id=ystenlive&Contentid=1000000001000009082&livemode=1&stbId=no
+贵州卫视,http://39.137.75.234/000000001000/1000000002000003169/index.m3u8?channel-id=ystenlive&Contentid=1000000002000003169&livemode=1&stbId=no
+东南卫视,http://39.137.75.230/000000001000/1000000002000009263/index.m3u8?channel-id=ystenlive&Contentid=1000000002000009263&livemode=1&stbId=no
+延边卫视,http://39.137.75.230/000000001000/1000000005000266008/index.m3u8?channel-id=ystenlive&Contentid=1000000005000266008&livemode=1&stbId=no
+重庆卫视,http://39.137.75.234/000000001000/1000000002000018937/index.m3u8?channel-id=ystenlive&Contentid=1000000002000018937&livemode=1&stbId=no
+江西卫视,http://39.137.75.229/000000001000/1000000005000265032/index.m3u8?channel-id=ystenlive&Contentid=1000000005000265032&livemode=1&stbId=no
+广东卫视,http://39.137.75.230/000000001000/1000000001000028357/index.m3u8?channel-id=ystenlive&Contentid=1000000001000028357&livemode=1&stbId=no
+河北卫视,http://39.137.75.234/000000001000/1000000002000017118/index.m3u8?channel-id=ystenlive&Contentid=1000000002000017118&livemode=1&stbId=no
+深圳卫视,http://39.137.75.234/000000001000/1000000005000265028/index.m3u8?channel-id=ystenlive&Contentid=1000000005000265028&livemode=1&stbId=no
+河南卫视,http://39.137.75.230/000000001000/1000000002000027731/index.m3u8?channel-id=ystenlive&Contentid=1000000002000027731&livemode=1&stbId=no
+四川卫视,http://39.137.75.234/000000001000/1000000002000016825/index.m3u8?channel-id=ystenlive&Contentid=1000000002000016825&livemode=1&stbId=no
+河北卫视,http://39.137.75.234/000000001000/1000000002000017118/index.m3u8?channel-id=ystenlive&Contentid=1000000002000017118&livemode=1&stbId=no
+广西卫视,http://39.137.75.230/000000001000/1000000002000019837/index.m3u8?channel-id=ystenlive&Contentid=1000000002000019837&livemode=1&stbId=no
+陕西卫视,http://39.137.75.230/000000001000/1000000002000007495/index.m3u8?channel-id=ystenlive&Contentid=1000000002000007495&livemode=1&stbId=no
+宁夏卫视,http://39.137.75.234/000000001000/1000000002000031451/index.m3u8?channel-id=ystenlive&Contentid=1000000002000031451&livemode=1&stbId=no
+山西卫视,http://39.137.75.234/000000001000/1000000002000021220/index.m3u8?channel-id=ystenlive&Contentid=1000000002000021220&livemode=1&stbId=no
+内蒙古卫视,http://39.137.75.234/000000001000/1000000002000014080/index.m3u8?channel-id=ystenlive&Contentid=1000000002000014080&livemode=1&stbId=no
+海南卫视,http://39.137.75.229/000000001000/1000000002000023773/index.m3u8?channel-id=ystenlive&Contentid=1000000002000023773&livemode=1&stbId=no
+西藏卫视,http://39.137.75.232/000000001000/1000000002000015894/index.m3u8?channel-id=ystenlive&Contentid=1000000002000015894&livemode=1&stbId=no
+新疆卫视,http://39.137.75.230/000000001000/1000000002000029441/index.m3u8?channel-id=ystenlive&Contentid=1000000002000029441&livemode=1&stbId=no
+厦门卫视,http://39.137.75.234/000000001000/1000000005000266006/index.m3u8?channel-id=ystenlive&Contentid=1000000005000266006&livemode=1&stbId=no
+兵团卫视,http://39.137.75.229/000000001000/1000000005000266005/index.m3u8?channel-id=ystenlive&Contentid=1000000005000266005&livemode=1&stbId=no
+金鹰卡通,http://39.137.75.234/000000001000/1000000002000016601/index.m3u8?channel-id=ystenlive&Contentid=1000000002000016601&livemode=1&stbId=no
+
+酒店专区,#genre#
+CCTV1,http://tv.星河.xyz/太白李长寿/mq.php?id=cctv1
+CCTV2,http://tv.星河.xyz/太白李长寿/mq.php?id=cctv2
+CCTV3,http://tv.星河.xyz/太白李长寿/mq.php?id=cctv3
+CCTV4,http://tv.星河.xyz/太白李长寿/mq.php?id=cctv4
+CCTV4欧洲,http://tv.星河.xyz/太白李长寿/mq.php?id=cctv4o
+CCTV4美洲,http://tv.星河.xyz/太白李长寿/mq.php?id=cctv4a
+CCTV5,http://tv.星河.xyz/太白李长寿/mq.php?id=cctv5
+CCTV5+,http://tv.星河.xyz/太白李长寿/mq.php?id=cctv5p
+CCTV6,http://tv.星河.xyz/太白李长寿/mq.php?id=cctv6
+CCTV7,http://tv.星河.xyz/太白李长寿/mq.php?id=cctv7
+CCTV8,http://tv.星河.xyz/太白李长寿/mq.php?id=cctv8
+CCTV9,http://tv.星河.xyz/太白李长寿/mq.php?id=cctv9
+CCTV10,http://tv.星河.xyz/太白李长寿/mq.php?id=cctv10
+CCTV11,http://tv.星河.xyz/太白李长寿/mq.php?id=cctv11
+CCTV12,http://tv.星河.xyz/太白李长寿/mq.php?id=cctv12
+CCTV13,http://tv.星河.xyz/太白李长寿/mq.php?id=cctv13
+CCTV14,http://tv.星河.xyz/太白李长寿/mq.php?id=cctv14
+CCTV15,http://tv.星河.xyz/太白李长寿/mq.php?id=cctv15
+CCTV17,http://tv.星河.xyz/太白李长寿/mq.php?id=cctv17
+CGTN,http://tv.星河.xyz/太白李长寿/mq.php?id=cgtn
+CGTN2,http://tv.星河.xyz/太白李长寿/mq.php?id=cgtn2
+CETV1,http://tv.星河.xyz/太白李长寿/mq.php?id=cetv1
+CETV2,http://tv.星河.xyz/太白李长寿/mq.php?id=cetv2
+CETV4,http://tv.星河.xyz/太白李长寿/mq.php?id=cetv4
+CHC影迷电影,http://tv.星河.xyz/太白李长寿/mq.php?id=chcym
+CHC动作电影,http://tv.星河.xyz/太白李长寿/mq.php?id=chcdz
+CHC家庭影院,http://tv.星河.xyz/太白李长寿/mq.php?id=chcjt
+北京卫视,http://tv.星河.xyz/太白李长寿/mq.php?id=bjws
+东方卫视,http://tv.星河.xyz/太白李长寿/mq.php?id=dfws
+天津卫视,http://tv.星河.xyz/太白李长寿/mq.php?id=tjws
+重庆卫视,http://tv.星河.xyz/太白李长寿/mq.php?id=cqws
+黑龙江卫视,http://tv.星河.xyz/太白李长寿/mq.php?id=hljws
+吉林卫视,http://tv.星河.xyz/太白李长寿/mq.php?id=jlws
+辽宁卫视,http://tv.星河.xyz/太白李长寿/mq.php?id=lnws
+内蒙古卫视,http://tv.星河.xyz/太白李长寿/mq?id=nmws
+宁夏卫视,http://tv.星河.xyz/太白李长寿/mq.php?id=nxws
+甘肃卫视,http://tv.星河.xyz/太白李长寿/mq.php?id=gsws
+青海卫视,http://tv.星河.xyz/太白李长寿/mq.php?id=qhws
+陕西卫视,http://tv.星河.xyz/太白李长寿/mq.php?id=sxws
+河北卫视,http://tv.星河.xyz/太白李长寿/mq.php?id=hbws
+山西卫视,http://tv.星河.xyz/太白李长寿/mq.php?id=sxiws
+山东卫视,http://tv.星河.xyz/太白李长寿/mq.php?id=sdws
+安徽卫视,http://tv.星河.xyz/太白李长寿/mq.php?id=ahws
+河南卫视,http://tv.星河.xyz/太白李长寿/mq.php?id=hnws
+河南卫视4K,http://tv.星河.xyz/太白李长寿/mq.php?id=hnws4k
+湖北卫视,http://tv.星河.xyz/太白李长寿/mq.php?id=hubws
+湖南卫视,http://tv.星河.xyz/太白李长寿/mq.php?id=hunws
+江西卫视,http://tv.星河.xyz/太白李长寿/mq.php?id=jxws
+浙江卫视,http://tv.星河.xyz/太白李长寿/mq.php?id=zjws
+东南卫视,http://tv.星河.xyz/太白李长寿/mq.php?id=dnws
+厦门卫视,http://tv.星河.xyz/太白李长寿/mq.php?id=xmws
+广东卫视,http://tv.星河.xyz/太白李长寿/mq.php?id=gdws
+深圳卫视,http://tv.星河.xyz/太白李长寿/mq.php?id=szws
+广西卫视,http://tv.星河.xyz/太白李长寿/mq.php?id=gxws
+云南卫视,http://tv.星河.xyz/太白李长寿/mq.php?id=ynws
+贵州卫视,http://tv.星河.xyz/太白李长寿/mq.php?id=gzws
+四川卫视,http://tv.星河.xyz/太白李长寿/mq.php?id=scws
+新疆卫视,http://tv.星河.xyz/太白李长寿/mq.php?id=xjws
+兵团卫视,http://tv.星河.xyz/太白李长寿/mq.php?id=btws
+西藏卫视,http://tv.星河.xyz/太白李长寿/mq.php?id=xzws
+海南卫视,http://tv.星河.xyz/太白李长寿/mq.php?id=hinws
+三沙卫视,http://tv.星河.xyz/太白李长寿/mq.php?id=ssws
+河南都市,http://tv.星河.xyz/太白李长寿/mq.php?id=hnds
+河南电视剧,http://tv.星河.xyz/太白李长寿/mq.php?id=hndsj
+河南新闻,http://tv.星河.xyz/太白李长寿/mq.php?id=hnxw
+河南新乡村,http://tv.星河.xyz/太白李长寿/mq.php?id=hnxc
+河南法制,http://tv.星河.xyz/太白李长寿/mq.php?id=hnfz
+国学频道,http://tv.星河.xyz/太白李长寿/mq.php?id=gxpd
+河南移动,http://tv.星河.xyz/太白李长寿/mq.php?id=hnyd
+河南戏曲,http://tv.星河.xyz/太白李长寿/mq.php?id=hnxq
+河南收藏,http://tv.星河.xyz/太白李长寿/mq.php?id=hnsc
+河南功夫,http://tv.星河.xyz/太白李长寿/mq.php?id=hngf
+商丘新闻综合,http://tv.星河.xyz/太白李长寿/mq.php?id=sq1
+商丘公共,http://tv.星河.xyz/太白李长寿/mq.php?id=sq2
+商丘文体科技,http://tv.星河.xyz/太白李长寿/mq.php?id=sq3
+卡酷少儿,http://tv.星河.xyz/太白李长寿/mq.php?id=kkse
+中华特产,http://tv.星河.xyz/太白李长寿/mq.php?id=zhtc
+魅力时尚,http://tv.星河.xyz/太白李长寿/mq.php?id=mlss
+新动漫,http://tv.星河.xyz/太白李长寿/mq.php?id=xdm
+山东教育卫视,http://tv.星河.xyz/太白李长寿/mq.php?id=sdjy
+金鹰纪实,http://tv.星河.xyz/太白李长寿/mq.php?id=jyjs
+金鹰卡通,http://tv.星河.xyz/太白李长寿/mq.php?id=jykt
+先锋乒羽,http://tv.星河.xyz/太白李长寿/mq.php?id=xfpy
+嘉佳卡通,http://tv.星河.xyz/太白李长寿/mq.php?id=jjkt
+
+陕西地区,#genre#
+陕西卫视,http://tv.星河.xyz/太白李长寿/sx.php?id=sxws
+陕西新闻资讯,http://tv.星河.xyz/太白李长寿/sx.php?id=sxxwzx
+陕西都市青春,http://tv.星河.xyz/太白李长寿/sx.php?id=sxdsqc
+陕西银龄,http://tv.星河.xyz/太白李长寿/sx.php?id=sxyl
+陕西秦腔,http://tv.星河.xyz/太白李长寿/sx.php?id=sxqq
+陕西体育休闲,http://tv.星河.xyz/太白李长寿/sx.php?id=sxtyxx
+农林卫视,http://tv.星河.xyz/太白李长寿/sx.php?id=nlws
+西安新闻综合,http://tv.星河.xyz/太白李长寿/ssx.php?id=xazh
+西安都市,http://tv.星河.xyz/太白李长寿/ssx.php?id=xads
+西安商务资讯,http://tv.星河.xyz/太白李长寿/ssx.php?id=xasw
+西安影视,http://tv.星河.xyz/太白李长寿/ssx.php?id=xays
+西安丝路,http://tv.星河.xyz/太白李长寿/ssx.php?id=xasl
+西安乐购购物,http://tv.星河.xyz/太白李长寿/ssx.php?id=xagw
+西安移动电视,http://tv.星河.xyz/太白李长寿/ssx.php?id=xayd
+
+浙江地区,#genre#
+浙江卫视,http://tv.星河.xyz/太白李长寿/浙江.php?id=zjws
+浙江钱江,http://tv.星河.xyz/太白李长寿/浙江.php?id=zjqj
+浙江经济生活,http://tv.星河.xyz/太白李长寿/浙江.php?id=zjjjsh
+浙江教科影视,http://tv.星河.xyz/太白李长寿/浙江.php?id=zjjkys
+浙江民生休闲,http://tv.星河.xyz/太白李长寿/浙江.php?id=zjmsxx
+浙江新闻,http://tv.星河.xyz/太白李长寿/浙江.php?id=zjxw
+浙江少儿,http://tv.星河.xyz/太白李长寿/浙江.php?id=zjse
+浙江国际,http://tv.星河.xyz/太白李长寿/浙江.php?id=zjgj
+浙江好易购,http://tv.星河.xyz/太白李长寿/浙江.php?id=zjhyg
+浙江之江纪录,http://tv.星河.xyz/太白李长寿/浙江.php?id=zjzjjl
+
+江苏地区,#genre#
+江苏卫视,http://tv.星河.xyz/太白李长寿/js.php?id=jsws
+江苏城市,http://tv.星河.xyz/太白李长寿/js.php?id=jscs
+江苏综艺,http://tv.星河.xyz/太白李长寿/js.php?id=jszy
+江苏影视,http://tv.星河.xyz/太白李长寿/js.php?id=jsys
+江苏新闻,http://tv.星河.xyz/太白李长寿/js.php?id=jsxw
+江苏教育,http://tv.星河.xyz/太白李长寿/js.php?id=jsjy
+江苏体育休闲,http://tv.星河.xyz/太白李长寿/js.php?id=jsty
+江苏国际,http://tv.星河.xyz/太白李长寿/js.php?id=jsgj
+优漫卡通,http://tv.星河.xyz/太白李长寿/js.php?id=ymk
+
+北京地区,#genre#
+科教纪实 8K,http://tv.星河.xyz/太白李长寿/bj8k.php
+北京卫视 4k,http://tv.星河.xyz/太白李长寿/bj.php?id=bjws4k
+北京卫视,http://tv.星河.xyz/太白李长寿/bj.php?id=bjws
+北京文艺,http://tv.星河.xyz/太白李长寿/bj.php?id=bjwy
+北京纪实,http://tv.星河.xyz/太白李长寿/bj.php?id=bjjs
+北京新闻,http://tv.星河.xyz/太白李长寿/bj.php?id=bjxw
+北京财经,http://tv.星河.xyz/太白李长寿/bj.php?id=bjcj
+北京生活,http://tv.星河.xyz/太白李长寿/bj.php?id=bjsh
+北京影视,http://tv.星河.xyz/太白李长寿/bj.php?id=bjys
+卡酷少儿,http://tv.星河.xyz/太白李长寿/bj.php?id=bjkk
+北京体育,http://tv.星河.xyz/太白李长寿/bj.php?id=bjty
+
+江西地区,#genre#
+江西卫视,http://tv.星河.xyz/太白李长寿/jx.php?id=jxws
+江西新闻,http://tv.星河.xyz/太白李长寿/jx.php?id=jxxw
+江西都市,http://tv.星河.xyz/太白李长寿/jx.php?id=jxds
+江西经视,http://tv.星河.xyz/太白李长寿/jx.php?id=jxjs
+江西影视,http://tv.星河.xyz/太白李长寿/jx.php?id=jxys
+江西公共,http://tv.星河.xyz/太白李长寿/jx.php?id=jxgg
+江西少儿,http://tv.星河.xyz/太白李长寿/jx.php?id=jxse
+江西陶瓷,http://tv.星河.xyz/太白李长寿/jx.php?id=jxtc
+
+福建地区,#genre#
+东南卫视,http://tv.星河.xyz/太白李长寿/fj.php?id=dnws
+海峡卫视,http://tv.星河.xyz/太白李长寿/fj.php?id=hxws
+福建综合,http://tv.星河.xyz/太白李长寿/fj.php?id=fjzh
+福建乡村,http://tv.星河.xyz/太白李长寿/fj.php?id=fjgg
+福建新闻,http://tv.星河.xyz/太白李长寿/fj.php?id=fjxw
+福建电视剧,http://tv.星河.xyz/太白李长寿/fj.php?id=fjdsj
+福建旅游,http://tv.星河.xyz/太白李长寿/fj.php?id=fjly
+福建经济,http://tv.星河.xyz/太白李长寿/fj.php?id=fjjj
+福建文体,http://tv.星河.xyz/太白李长寿/fj.php?id=fjwt
+福建少儿,http://tv.星河.xyz/太白李长寿/fj.php?id=fjse
+
+海南地区,#genre#
+海南卫视,http://tv.星河.xyz/太白李长寿/海南.php?id=hnws
+三沙卫视,http://tv.星河.xyz/太白李长寿/海南.php?id=ssws
+海南新闻,http://tv.星河.xyz/太白李长寿/海南.php?id=hnxw
+海南自贸,http://tv.星河.xyz/太白李长寿/海南.php?id=hnzm
+海南公共,http://tv.星河.xyz/太白李长寿/海南.php?id=hngg
+海南少儿,http://tv.星河.xyz/太白李长寿/海南.php?id=hnse
+
+山西地区,#genre#
+山西卫视,http://tv.星河.xyz/太白李长寿/山西.php?id=sxws
+山西经济,http://tv.星河.xyz/太白李长寿/山西.php?id=sxjj
+山西影视,http://tv.星河.xyz/太白李长寿/山西.php?id=sxys
+山西社会法治,http://tv.星河.xyz/太白李长寿/山西.php?id=sxshfz
+山西文体生活,http://tv.星河.xyz/太白李长寿/山西.php?id=sxwtsh
+山西黄河,http://tv.星河.xyz/太白李长寿/山西.php?id=sxhh
+
+河北地区,#genre#
+河北卫视,http://tv.星河.xyz/太白李长寿/河北.php?id=hbws
+河北经济,http://tv.星河.xyz/太白李长寿/河北.php?id=hbjjsh
+河北农民,http://tv.星河.xyz/太白李长寿/河北.php?id=hbnm
+河北都市,http://tv.星河.xyz/太白李长寿/河北.php?id=hbds
+河北影视,http://tv.星河.xyz/太白李长寿/河北.php?id=hbys
+河北少儿,http://tv.星河.xyz/太白李长寿/河北.php?id=hbsekj
+河北公共,http://tv.星河.xyz/太白李长寿/河北.php?id=hbgg
+
+上海地区,#genre#
+东方卫视,http://tv.星河.xyz/太白李长寿/上海.php?id=dfws
+上海新闻综合,http://tv.星河.xyz/太白李长寿/上海.php?id=xwzh
+新纪实,http://tv.星河.xyz/太白李长寿/上海.php?id=xjs
+乐游,http://tv.星河.xyz/太白李长寿/上海.php?id=ly
+上海第一财经,http://tv.星河.xyz/太白李长寿/上海.php?id=dycj
+上海都市,http://tv.星河.xyz/太白李长寿/上海.php?id=ds
+五星体育,http://tv.星河.xyz/太白李长寿/上海.php?id=wxty
+
+吉林地区,#genre#
+吉林卫视,http://tv.星河.xyz/太白李长寿/吉林.php?id=jlws
+吉林都市,http://tv.星河.xyz/太白李长寿/吉林.php?id=jlds
+吉林生活,http://tv.星河.xyz/太白李长寿/吉林.php?id=jlsh
+吉林影视,http://tv.星河.xyz/太白李长寿/吉林.php?id=jlys
+吉林乡村,http://tv.星河.xyz/太白李长寿/吉林.php?id=jlxc
+吉林公共・新闻,http://tv.星河.xyz/太白李长寿/吉林.php?id=jlggxw
+吉林综艺・文化,http://tv.星河.xyz/太白李长寿/吉林.php?id=jlzywh
+延边卫视,http://tv.星河.xyz/太白李长寿/吉林.php?id=ybws
+吉林新闻综合,http://tv.星河.xyz/太白李长寿/吉林.php?id=jlszh
+辽源新闻综合,http://tv.星河.xyz/太白李长寿/吉林.php?id=lyzh
+通化新闻综合,http://tv.星河.xyz/太白李长寿/吉林.php?id=thzh
+白山新闻综合,http://tv.星河.xyz/太白李长寿/吉林.php?id=bszh
+白城新闻综合,http://tv.星河.xyz/太白李长寿/吉林.php?id=bczh
+松原新闻综合,http://tv.星河.xyz/太白李长寿/吉林.php?id=syzh
+
+电视轮播,#genre#
+刘德华经典,http://tv.星河.xyz/太白李长寿/师妹.php?id=149
+周星星经典,http://tv.星河.xyz/太白李长寿/师妹.php?id=150
+王宝强经典,http://tv.星河.xyz/太白李长寿/师妹.php?id=151
+漫威经典,http://tv.星河.xyz/太白李长寿/师妹.php?id=152
+国漫经典,http://tv.星河.xyz/太白李长寿/师妹.php?id=153
+搞笑经典,http://tv.星河.xyz/太白李长寿/师妹.php?id=154
+爱情公寓,http://tv.星河.xyz/太白李长寿/师妹.php?id=155
+我是特种兵之火凤凰,http://tv.星河.xyz/太白李长寿/师妹.php?id=156
+亮剑,http://tv.星河.xyz/太白李长寿/师妹.php?id=157
+铁齿铜牙纪晓岚,http://tv.星河.xyz/太白李长寿/师妹.php?id=158
+神探狄仁杰,http://tv.星河.xyz/太白李长寿/师妹.php?id=159
+天龙八部,http://tv.星河.xyz/太白李长寿/师妹.php?id=160
+庆余年,http://tv.星河.xyz/太白李长寿/师妹.php?id=161
+庆余年 2,http://tv.星河.xyz/太白李长寿/师妹.php?id=162
+鬼吹灯,http://tv.星河.xyz/太白李长寿/师妹.php?id=163
+新水浒传,http://tv.星河.xyz/太白李长寿/师妹.php?id=164
+鹊刀门传奇,http://tv.星河.xyz/太白李长寿/师妹.php?id=165
+龙门镖局,http://tv.星河.xyz/太白李长寿/师妹.php?id=166
+水浒传,http://tv.星河.xyz/太白李长寿/师妹.php?id=167
+猎罪图鉴,http://tv.星河.xyz/太白李长寿/师妹.php?id=168
+情满四合院,http://tv.星河.xyz/太白李长寿/师妹.php?id=169
+僵尸先生,http://tv.星河.xyz/太白李长寿/师妹.php?id=170
+如懿传,http://tv.星河.xyz/太白李长寿/师妹.php?id=171
+花千骨,http://tv.星河.xyz/太白李长寿/师妹.php?id=172
+梦华录,http://tv.星河.xyz/太白李长寿/师妹.php?id=173
+永夜星河,http://tv.星河.xyz/太白李长寿/师妹.php?id=174
+轩辕剑之天之痕,http://tv.星河.xyz/太白李长寿/师妹.php?id=175
+天龙八部,http://tv.星河.xyz/太白李长寿/师妹.php?id=176
+鱿鱼游戏,http://tv.星河.xyz/太白李长寿/师妹.php?id=177
+地下交通站,http://tv.星河.xyz/太白李长寿/师妹.php?id=178
+三国演义,http://tv.星河.xyz/太白李长寿/师妹.php?id=179
+寻秦记,http://tv.星河.xyz/太白李长寿/师妹.php?id=180
+雍正王朝,http://tv.星河.xyz/太白李长寿/师妹.php?id=181
+鹿鼎记,http://tv.星河.xyz/太白李长寿/师妹.php?id=182
+医馆笑传,http://tv.星河.xyz/太白李长寿/师妹.php?id=183
+传闻中的陈芊芊,http://tv.星河.xyz/太白李长寿/师妹.php?id=184
+都挺好,http://tv.星河.xyz/太白李长寿/师妹.php?id=185
+漫长的季节,http://tv.星河.xyz/太白李长寿/师妹.php?id=186
+扫黑风暴,http://tv.星河.xyz/太白李长寿/师妹.php?id=187
+繁花,http://tv.星河.xyz/太白李长寿/师妹.php?id=188
+白鹿原,http://tv.星河.xyz/太白李长寿/师妹.php?id=189
+湄公河行动,http://tv.星河.xyz/太白李长寿/师妹.php?id=190
+全职高手,http://tv.星河.xyz/太白李长寿/师妹.php?id=191
+好先生,http://tv.星河.xyz/太白李长寿/师妹.php?id=192
+雪中悍刀行,http://tv.星河.xyz/太白李长寿/师妹.php?id=193
+与凤行,http://tv.星河.xyz/太白李长寿/师妹.php?id=194
+开端,http://tv.星河.xyz/太白李长寿/师妹.php?id=195
+一起同过窗,http://tv.星河.xyz/太白李长寿/师妹.php?id=196
+神雕侠侣,http://tv.星河.xyz/太白李长寿/师妹.php?id=197
+特战荣耀,http://tv.星河.xyz/太白李长寿/师妹.php?id=198
+星汉灿烂,http://tv.星河.xyz/太白李长寿/师妹.php?id=199
+有翡,http://tv.星河.xyz/太白李长寿/师妹.php?id=200
+斗罗大陆 (剧版),http://tv.星河.xyz/太白李长寿/师妹.php?id=201
+陆贞传奇,http://tv.星河.xyz/太白李长寿/师妹.php?id=202
+外科风云,http://tv.星河.xyz/太白李长寿/师妹.php?id=203
+乡村爱情,http://tv.星河.xyz/太白李长寿/师妹.php?id=204
+鬼吹灯之怒晴湘西,http://tv.星河.xyz/太白李长寿/师妹.php?id=205
+新三国,http://tv.星河.xyz/太白李长寿/师妹.php?id=206
+唐朝诡事录,http://tv.星河.xyz/太白李长寿/师妹.php?id=207
+黑镜,http://tv.星河.xyz/太白李长寿/师妹.php?id=208
+
+堆堆轮播,#genre#
+封神榜,http://tv.星河.xyz/太白李长寿/师妹.php?id=209
+创世纪,http://tv.星河.xyz/太白李长寿/师妹.php?id=210
+西游记,http://tv.星河.xyz/太白李长寿/师妹.php?id=211
+笑看风云,http://tv.星河.xyz/太白李长寿/师妹.php?id=212
+洗冤录,http://tv.星河.xyz/太白李长寿/师妹.php?id=213
+法证先锋,http://tv.星河.xyz/太白李长寿/师妹.php?id=214
+金枝欲孽,http://tv.星河.xyz/太白李长寿/师妹.php?id=215
+警花档案,http://tv.星河.xyz/太白李长寿/师妹.php?id=216
+刑侦日记,http://tv.星河.xyz/太白李长寿/师妹.php?id=217
+
+抖音直播,#genre#
+抖音 (木森),http://tv.星河.xyz/太白李长寿/师妹.php?id=218
+抖音 (陈伯),http://tv.星河.xyz/太白李长寿/师妹.php?id=219
+CCTV4,http://tv.星河.xyz/太白李长寿/师妹.php?id=220
+CCTV6,http://tv.星河.xyz/太白李长寿/师妹.php?id=221
+
+综艺动漫,#genre#
+英雄联盟比赛,http://tv.星河.xyz/太白李长寿/师妹.php?id=222
+欢乐集结号,http://tv.星河.xyz/太白李长寿/师妹.php?id=223
+德爷的挨饿日记,http://tv.星河.xyz/太白李长寿/师妹.php?id=224
+哈哈哈哈哈,http://tv.星河.xyz/太白李长寿/师妹.php?id=225
+现在就出发,http://tv.星河.xyz/太白李长寿/师妹.php?id=226
+奔跑吧,http://tv.星河.xyz/太白李长寿/师妹.php?id=227
+青春环游记,http://tv.星河.xyz/太白李长寿/师妹.php?id=228
+一人之下,http://tv.星河.xyz/太白李长寿/师妹.php?id=229
+诛仙,http://tv.星河.xyz/太白李长寿/师妹.php?id=230
+画江湖之不良人,http://tv.星河.xyz/太白李长寿/师妹.php?id=231
+全职高手,http://tv.星河.xyz/太白李长寿/师妹.php?id=232
+魔道祖师,http://tv.星河.xyz/太白李长寿/师妹.php?id=233
+少年歌行,http://tv.星河.xyz/太白李长寿/师妹.php?id=234
+斗破苍穹,http://tv.星河.xyz/太白李长寿/师妹.php?id=235
+仙逆,http://tv.星河.xyz/太白李长寿/师妹.php?id=236
+成龙历险记,http://tv.星河.xyz/太白李长寿/师妹.php?id=237
+名侦探柯南剧场版,http://tv.星河.xyz/太白李长寿/师妹.php?id=238
+喜羊羊与灰太狼,http://tv.星河.xyz/太白李长寿/师妹.php?id=239
+完美世界,http://tv.星河.xyz/太白李长寿/师妹.php?id=240
+熊出没,http://tv.星河.xyz/太白李长寿/师妹.php?id=241
+猫和老鼠,http://tv.星河.xyz/太白李长寿/师妹.php?id=242
+海绵宝宝,http://tv.星河.xyz/太白李长寿/师妹.php?id=243
+茶啊二中,http://tv.星河.xyz/太白李长寿/师妹.php?id=244
+开心锤锤,http://tv.星河.xyz/太白李长寿/师妹.php?id=245
+
+港台斯玛特,#genre#
+香港|翡翠台,http://mytv6688.xyz/斯玛特的斯玛特.php?id=jade_twn
+香港|翡翠台 backup,http://mytv6688.xyz/斯玛特的斯玛特.php?id=Jade_xue
+香港|iNews 新闻台,http://mytv6688.xyz/斯玛特的斯玛特.php?id=inews_twn
+香港|J 2,http://mytv6688.xyz/斯玛特的斯玛特.php?id=j2_twn
+香港|珍珠台,http://mytv6688.xyz/斯玛特的斯玛特.php?id=pearl_twn
+香港|凤凰香港,http://mytv6688.xyz/斯玛特的斯玛特.php?id=hkphoenix_twn
+香港|HOY资讯台,http://mytv6688.xyz/斯玛特的斯玛特.php?id=hoycaijing_twn
+香港|RHK 31,http://mytv6688.xyz/斯玛特的斯玛特.php?id=rhk31_twn
+香港|VIUTV1,http://mytv6688.xyz/斯玛特的斯玛特.php?id=viu1_twn
+香港|RHK 32,http://mytv6688.xyz/斯玛特的斯玛特.php?id=rhk32_twn
+香港|凤凰卫视,http://mytv6688.xyz/斯玛特的斯玛特.php?id=phoenixtv_hd
+香港|凤凰资讯,http://mytv6688.xyz/斯玛特的斯玛特.php?id=phoenixinfo_hd
+香港|Viu6,http://mytv6688.xyz/斯玛特的斯玛特.php?id=viusix_twn
+
+中国|CCTV-1 综合 HD,http://mytv6688.xyz/斯玛特的斯玛特.php?id=cctv1
+中国|CCTV-2 财经,http://mytv6688.xyz/斯玛特的斯玛特.php?id=cctv2
+中国|CCTV-3 综艺 HD,http://mytv6688.xyz/斯玛特的斯玛特.php?id=cctv3
+中国|CCTV-4 中文国际,http://mytv6688.xyz/斯玛特的斯玛特.php?id=cctv4
+中国|CCTV4 新闻台,http://mytv6688.xyz/斯玛特的斯玛特.php?id=Cctv4
+中国|CCTV-7 军事农业,http://mytv6688.xyz/斯玛特的斯玛特.php?id=cctv7
+中国|CCTV-8 电视剧 HD,http://mytv6688.xyz/斯玛特的斯玛特.php?id=cctv8hd
+中国|CCTV-9 记录 HD,http://mytv6688.xyz/斯玛特的斯玛特.php?id=cctv9hd
+中国|CCTV-10 科教 HD,http://mytv6688.xyz/斯玛特的斯玛特.php?id=cctv10hd
+中国|CCTV-11 戏曲,http://mytv6688.xyz/斯玛特的斯玛特.php?id=cctv11
+中国|CCTV-12 社会与法,http://mytv6688.xyz/斯玛特的斯玛特.php?id=cctv12
+中国|CCTV-13 新闻频道,http://mytv6688.xyz/斯玛特的斯玛特.php?id=cctv13
+中国|CCTV-14 少儿,http://mytv6688.xyz/斯玛特的斯玛特.php?id=cctv14
+中国|CCTV-6,http://mytv6688.xyz/斯玛特的斯玛特.php?id=cctv6
+中国|CCTV-15 音乐,http://mytv6688.xyz/斯玛特的斯玛特.php?id=cctv15
+
+中国|湖南卫视,http://mytv6688.xyz/斯玛特的斯玛特.php?id=hunan_twn
+中国|浙江卫视,http://mytv6688.xyz/斯玛特的斯玛特.php?id=zhejiang_twn
+中国|江苏卫视,http://mytv6688.xyz/斯玛特的斯玛特.php?id=jiangsu_twn
+中国|深圳卫视,http://mytv6688.xyz/斯玛特的斯玛特.php?id=shenzhen
+中国|福建东南卫视,http://mytv6688.xyz/斯玛特的斯玛特.php?id=fujian
+中国|广东南方卫视,http://mytv6688.xyz/斯玛特的斯玛特.php?id=nanfang_twn
+中国|广东卫视,http://mytv6688.xyz/斯玛特的斯玛特.php?id=guangdongweishi_twn
+中国|北京卫视,http://mytv6688.xyz/斯玛特的斯玛特.php?id=beijing
+中国|珠江台,http://mytv6688.xyz/斯玛特的斯玛特.php?id=zhujiang
+中国|广西卫视,http://mytv6688.xyz/斯玛特的斯玛特.php?id=guangxi
+中国|湖北卫视,http://mytv6688.xyz/斯玛特的斯玛特.php?id=hubei
+中国|四川卫视,http://mytv6688.xyz/斯玛特的斯玛特.php?id=sichuan_twn
+中国|东方卫视,http://mytv6688.xyz/斯玛特的斯玛特.php?id=dongfangweishi_twn
+中国|CGTN,http://mytv6688.xyz/斯玛特的斯玛特.php?id=CGTN
+中国|凤凰卫视,http://mytv6688.xyz/斯玛特的斯玛特.php?id=phoenixtv_hd
+中国|凤凰资讯,http://mytv6688.xyz/斯玛特的斯玛特.php?id=phoenixinfo_hd
+中国|CCTV-5 体育频道,http://mytv6688.xyz/斯玛特的斯玛特.php?id=cctv5
+中国|CCTV-5+ 体育赛事 HD,http://mytv6688.xyz/斯玛特的斯玛特.php?id=cctv5plus
+
+
+
+新加坡|Channel 5,http://mytv6688.xyz/斯玛特的斯玛特.php?id=Channel5HD
+新加坡|Channel 8,http://mytv6688.xyz/斯玛特的斯玛特.php?id=Channel8HD
+新加坡|Suria,http://mytv6688.xyz/斯玛特的斯玛特.php?id=Suria
+新加坡|Channel U,http://mytv6688.xyz/斯玛特的斯玛特.php?id=ChannelU
+新加坡|Vasantham,http://mytv6688.xyz/斯玛特的斯玛特.php?id=Vasantham
+新加坡|CNA,http://mytv6688.xyz/斯玛特的斯玛特.php?id=cna
+新加坡|CNA backup,http://mytv6688.xyz/斯玛特的斯玛特.php?id=cna_twn
+新加坡|MeWatch Ch 5,http://mytv6688.xyz/斯玛特的斯玛特.php?id=Mewatch_ch5
+新加坡|MeWatch Ch 8,http://mytv6688.xyz/斯玛特的斯玛特.php?id=Mewatch_ch8
+新加坡|MeWatch Ch U,http://mytv6688.xyz/斯玛特的斯玛特.php?id=Mewatch_chU
+新加坡|MeWatch Suria,http://mytv6688.xyz/斯玛特的斯玛特.php?id=Mewatch_Suria
+新加坡|MeWatch Vasantham,http://mytv6688.xyz/斯玛特的斯玛特.php?id=Mewatch_Vasantham
+新加坡|MeWatch CNA,http://mytv6688.xyz/斯玛特的斯玛特.php?id=Mewatch_cna
+
+马来西亚|TV1,http://mytv6688.xyz/斯玛特的斯玛特.php?id=TV1
+马来西亚|TV1 backup,http://mytv6688.xyz/斯玛特的斯玛特.php?id=TV1_backup
+马来西亚|TV2,http://mytv6688.xyz/斯玛特的斯玛特.php?id=TV2
+马来西亚|TV3,http://mytv6688.xyz/斯玛特的斯玛特.php?id=TV3
+马来西亚|TV3 SD,http://mytv6688.xyz/斯玛特的斯玛特.php?id=TV3_mega
+马来西亚|NTV7,http://mytv6688.xyz/斯玛特的斯玛特.php?id=NTV7
+马来西亚|TV8,http://mytv6688.xyz/斯玛特的斯玛特.php?id=TV8
+马来西亚|TV9,http://mytv6688.xyz/斯玛特的斯玛特.php?id=TV9
+马来西亚|Ria,http://mytv6688.xyz/斯玛特的斯玛特.php?id=Ria-0
+马来西亚|Ria-3,http://mytv6688.xyz/斯玛特的斯玛特.php?id=Ria_backup
+马来西亚|Al-Hijrah,http://mytv6688.xyz/斯玛特的斯玛特.php?id=Alhijrah
+马来西亚|Al-Hijrah backup,http://mytv6688.xyz/斯玛特的斯玛特.php?id=Alhijrah_backup
+马来西亚|Awani,http://mytv6688.xyz/斯玛特的斯玛特.php?id=Awani
+马来西亚|Bernama,http://mytv6688.xyz/斯玛特的斯玛特.php?id=Bernama
+马来西亚|Prima,http://mytv6688.xyz/斯玛特的斯玛特.php?id=Prima-0
+马来西亚|Prima backup,http://mytv6688.xyz/斯玛特的斯玛特.php?id=AAprima1
+马来西亚|Prima backup 2,http://mytv6688.xyz/斯玛特的斯玛特.php?id=AAprima
+马来西亚|Ceria,http://mytv6688.xyz/斯玛特的斯玛特.php?id=Ceria
+马来西亚|Astro MTV,http://mytv6688.xyz/斯玛特的斯玛特.php?id=AstroMTV
+马来西亚|Mecca Live HD,http://mytv6688.xyz/斯玛特的斯玛特.php?id=quran_mido
+马来西亚|Madinah HD,http://mytv6688.xyz/斯玛特的斯玛特.php?id=sunnah_mido
+马来西亚|Oasis,http://mytv6688.xyz/斯玛特的斯玛特.php?id=Oasis
+马来西亚|HBO HD,http://mytv6688.xyz/斯玛特的斯玛特.php?id=Hbo
+马来西亚|HBO Signature,http://mytv6688.xyz/斯玛特的斯玛特.php?id=Hbosignature
+马来西亚|HBO Hits,http://mytv6688.xyz/斯玛特的斯玛特.php?id=Hbohitshd
+马来西亚|NatGeo Wild HD,http://mytv6688.xyz/斯玛特的斯玛特.php?id=Natgeowild
+马来西亚|Cartoon Network,http://mytv6688.xyz/斯玛特的斯玛特.php?id=Cn
+马来西亚|Nickelodeon,http://mytv6688.xyz/斯玛特的斯玛特.php?id=Nickelodeon
+马来西亚|Nick Jr,http://mytv6688.xyz/斯玛特的斯玛特.php?id=Nickjr
+马来西亚|Dreamworks,http://mytv6688.xyz/斯玛特的斯玛特.php?id=Dreamworks
+马来西亚|Siar,http://mytv6688.xyz/斯玛特的斯玛特.php?id=Siar
+马来西亚|Citra,http://mytv6688.xyz/斯玛特的斯玛特.php?id=AAcitra
+马来西亚|Citra backup,http://mytv6688.xyz/斯玛特的斯玛特.php?id=AAcitra1
+马来西亚|Sensasi,http://mytv6688.xyz/斯玛特的斯玛特.php?id=Sensasi
+马来西亚|Aura,http://mytv6688.xyz/斯玛特的斯玛特.php?id=Aura
+马来西亚|Rania,http://mytv6688.xyz/斯玛特的斯玛特.php?id=Rania
+马来西亚|KBS World,http://mytv6688.xyz/斯玛特的斯玛特.php?id=KBS
+马来西亚|Boo,http://mytv6688.xyz/斯玛特的斯玛特.php?id=Boo
+马来西亚|Awesome TV,http://mytv6688.xyz/斯玛特的斯玛特.php?id=Dsangat
+马来西亚|Astro Sonypix,http://mytv6688.xyz/斯玛特的斯玛特.php?id=Asonypix
+马来西亚|Sony HD,http://mytv6688.xyz/斯玛特的斯玛特.php?id=SetOne
+马来西亚|TvN,http://mytv6688.xyz/斯玛特的斯玛特.php?id=TVN
+马来西亚|AEC,http://mytv6688.xyz/斯玛特的斯玛特.php?id=AEC
+马来西亚|华丽台 HD （Wah Lai Toi）,http://mytv6688.xyz/斯玛特的斯玛特.php?id=Wlt
+马来西亚|欢喜台 HD （Hua Hee Tai）,http://mytv6688.xyz/斯玛特的斯玛特.php?id=Huahee
+马来西亚|Astro QJ,http://mytv6688.xyz/斯玛特的斯玛特.php?id=Quanjia
+马来西亚|TVB Jade,http://mytv6688.xyz/斯玛特的斯玛特.php?id=Tvbjade
+马来西亚|TVB Asia,http://mytv6688.xyz/斯玛特的斯玛特.php?id=Tvbasia
+马来西亚|TVB Entertainment,http://mytv6688.xyz/斯玛特的斯玛特.php?id=Tvbentertainment
+马来西亚|TVB Classic,http://mytv6688.xyz/斯玛特的斯玛特.php?id=Tvbclassic
+马来西亚|AOD,http://mytv6688.xyz/斯玛特的斯玛特.php?id=Aodhd
+马来西亚|One,http://mytv6688.xyz/斯玛特的斯玛特.php?id=One
+马来西亚|TVB 星河台 Xing He,http://mytv6688.xyz/斯玛特的斯玛特.php?id=Xinhe
+马来西亚|爱奇艺 iQiyi,http://mytv6688.xyz/斯玛特的斯玛特.php?id=Qiyi
+马来西亚|Animal Planet (Eng),http://mytv6688.xyz/斯玛特的斯玛特.php?id=AnimalPlanet
+马来西亚|tvN Movie,http://mytv6688.xyz/斯玛特的斯玛特.php?id=Tvnmovie
+马来西亚|CNN backup,http://mytv6688.xyz/斯玛特的斯玛特.php?id=cnn_twn
+马来西亚|Celestial Classic,http://mytv6688.xyz/斯玛特的斯玛特.php?id=Celestial2
+马来西亚|CNBC,http://mytv6688.xyz/斯玛特的斯玛特.php?id=cnbc_twn
+马来西亚|TLC,http://mytv6688.xyz/斯玛特的斯玛特.php?id=Tlc
+马来西亚|CNA,http://mytv6688.xyz/斯玛特的斯玛特.php?id=cna
+马来西亚|BBC World News,http://mytv6688.xyz/斯玛特的斯玛特.php?id=bbcnews_twn
+马来西亚|Foodnetwork Hd,http://mytv6688.xyz/斯玛特的斯玛特.php?id=Foodnetwork
+马来西亚|HGTV,http://mytv6688.xyz/斯玛特的斯玛特.php?id=HGTV
+马来西亚|Goshop,http://mytv6688.xyz/斯玛特的斯玛特.php?id=Goshop
+马来西亚|Celestial Movies HD,http://mytv6688.xyz/斯玛特的斯玛特.php?id=Celestial
+马来西亚|Axn HD,http://mytv6688.xyz/斯玛特的斯玛特.php?id=Axn
+马来西亚|Paramount Network,http://mytv6688.xyz/斯玛特的斯玛特.php?id=Paramountnetwork
+马来西亚|Astrol Kplus,http://mytv6688.xyz/斯玛特的斯玛特.php?id=Kplus
+马来西亚|AFC 亚洲旅游台,http://mytv6688.xyz/斯玛特的斯玛特.php?id=asiatravel_twn
+马来西亚|Rock Actions,http://mytv6688.xyz/斯玛特的斯玛特.php?id=Rockaction
+马来西亚|Bloomberg News,http://mytv6688.xyz/斯玛特的斯玛特.php?id=bloomberg_twn
+马来西亚|Al-Jazeera,http://mytv6688.xyz/斯玛特的斯玛特.php?id=aljazeera_twn
+马来西亚|Rock Entertainment,http://mytv6688.xyz/斯玛特的斯玛特.php?id=Rockentertain
+马来西亚|RTM Sports HD,http://mytv6688.xyz/斯玛特的斯玛特.php?id=Rtmsport
+马来西亚|Arena,http://mytv6688.xyz/斯玛特的斯玛特.php?id=Arena
+马来西亚|Arena 2,http://mytv6688.xyz/斯玛特的斯玛特.php?id=Arena2
+马来西亚|BolaArena 1,http://mytv6688.xyz/斯玛特的斯玛特.php?id=Bolaarena1
+马来西亚|BolaArena 2,http://mytv6688.xyz/斯玛特的斯玛特.php?id=Bolaarena2
+马来西亚|Astro LOL,http://mytv6688.xyz/斯玛特的斯玛特.php?id=Astro_lol
+马来西亚|Astro Rusi,http://mytv6688.xyz/斯玛特的斯玛特.php?id=Rusi
+马来西亚|WION,http://mytv6688.xyz/斯玛特的斯玛特.php?id=Wion
+马来西亚|RTM Asean,http://mytv6688.xyz/斯玛特的斯玛特.php?id=Rtmasean
+
+
+
+CNR广播,#genre# 
+中国之声,https://ngcdn001.cnr.cn/live/zgzs/index.m3u8
+经济之声，,https://ngcdn001.cnr.cn/live/jjzs/index.m3u8
+音乐之声,https://ngcdn001.cnr.cn/live/yyzs/index.m3u8
+乡村之声,https://ngcdn001.cnr.cn/live/xczs/index.m3u8
+大湾区之声,https://ngcdn001.cnr.cn/live/dwqzs/index.m3u8
+中华之声,https://ngcdn001.cnr.cn/live/zhzs/index.m3u8
+神州之声,https://ngcdn001.cnr.cn/live/szzs/index.m3u8
+民族之声,https://ngcdn001.cnr.cn/live/mzzs/index.m3u8
+文艺之声,https://ngcdn001.cnr.cn/live/wyzs/index.m3u8
+阅读之声,https://ngcdn001.cnr.cn/live/ydzs/index.m3u8
+铁路之声,https://stream-176.zeno.fm/gzsk9r47sc9uv
+
+
+全球广播,#genre# 
+AsiaFM HD音乐,http://asiafm.hk:8000/asiahd
+AsiaFM 亚洲热歌,http://asiafm.hk:8000/asiafm
+Asia音乐台,https://lhttp.qtfm.cn/live/4581/64k.mp3
+Asia亚洲粤语,https://lhttp.qtfm.cn/live/15318569/64k.mp3#http://asiafm.hk:8000/asiafm#http://asiafm.hk:8000/myradio#http://asiafm.vip:8000/live965
+Asia亚洲经典，http://goldfm.cn:8000/goldfm#https://lhttp.qtfm.cn/live/5021912/64k.mp3
+Asia亚洲天空，http://funradio.cn:8000/funradio
+加拿大中文电台（普通话）,https://5b2959fe11444.streamlock.net/radio/fm961.stream/playlist.m3u8
+加拿大中文电台（粤语）,https://5b2959fe11444.streamlock.net/radio/am1470.stream/playlist.m3u8
+相声电台,https://stream-174.zeno.fm/yqawwmweq8mtv
+
+陕西广播,#genre# 
+陕西音乐广播,https://lhttp.qtfm.cn/live/4873/64k.mp3
+西安新闻广播,http://stream3.xiancity.cn/1/sd/live.m3u8
+西安交通广播,http://stream3.xiancity.cn/5/sd/live.m3u8
+西安交通广播,http://ls.qingting.fm/live/1611.m3u8
+西安音乐广播,http://live.xmcdn.com/live/1442/64.m3u8
+
+北京广播,#genre# 
+北京城市广播,https://lhttp.qtfm.cn/live/345/64k.mp3#https://brtv-radiolive.rbc.cn/alive/fm1073.m3u8
+北京文艺广播,https://lhttp.qtfm.cn/live/333/64k.mp3#https://brtv-radiolive.rbc.cn/alive/fm876.m3u8
+北京音乐广播,https://lhttp.qtfm.cn/live/332/64k.mp3#https://brtv-radiolive.rbc.cn/alive/fm974.m3u8
+北京体育广播,https://lhttp.qtfm.cn/live/335/64k.mp3
+大兴阳光广播,https://lhttp.qtfm.cn/live/5021739/64k.mp3
+北京交通广播,https://lhttp.qtfm.cn/live/336/64k.mp3
+北京古典音乐广播,https://stream.zeno.fm/qa9punk6ynhvv
+北京新闻广播,https://brtv-radiolive.rbc.cn/alive/fm945.m3u8
+
+济南广播,#genre#
+济南新闻综合广播,https://lhttp.qtfm.cn/live/1667/64k.mp3
+济南私家车音乐广播,https://lhttp.qtfm.cn/live/1670/64k.mp3
+济南经济广播,https://lhttp.qtfm.cn/live/1668/64k.mp3
+济南音乐广播,https://lhttp.qtfm.cn/live/1671/64k.mp3
+济南故事广播,https://lhttp.qtfm.cn/live/1672/64k.mp3
+济南交通广播,https://lhttp.qtfm.cn/live/1669/64k.mp3
+济南都市广播（莱芜地区）,https://lhttp.qtfm.cn/live/5022333/64k.mp3
+济南生活广播(莱芜地区),https://lhttp.qtfm.cn/live/20500122/64k.mp3
