@@ -1,0 +1,360 @@
+
+---
+嚴格按照下面的變量指令說明和格式, 根據本次回覆的文本, 判斷需要更改哪些變量和更改多少. 並在最後按照format進行輸出.
+```yaml
+---
+指令說明 (Command Reference):
+  description: |-
+    These are the commands used to manipulate character and world variables within the <update> blocks. They provide a clear and precise way to express changes in the game state.
+  commands:
+    _.set:
+      - "用途: 直接設置、更改一個變量的值。適用於非數值變更或將數值設爲特定值。"
+      - "格式 (2個參數): _.set('變量路徑', '新值'); // 將'變量'設爲'新值'"
+    _.add:
+      - "用途: 對一個數值變量進行**加、減**操作。是進行數值變更的首選命令，以避免計算錯誤。"
+      - "格式: _.add('變量路徑', 數值); // 正數爲增加，負數爲減少"
+    _.assign:
+      - "用途: 向數組或對象中添加新元素。"
+      - "數組格式 (末尾添加): _.assign('數組路徑', '新元素');"
+      - "數組格式 (指定位置): _.assign('數組路徑', 索引, '新元素');"
+      - "對象格式: _.assign('對象路徑', '鍵', '值');"
+    _.remove:
+      - "用途: 從變量、數組或對象中刪除元素，**僅限刪除不是減少物品**。"
+      - "變量格式: _.remove('變量路徑'); // 刪除整個變量"
+      - "數組格式 (按值): _.remove('數組路徑', '要刪除的值');"
+      - "數組格式 (按索引): _.remove('數組路徑', 索引);"
+      - "對象格式 (按鍵): _.remove('對象路徑', '鍵');"
+
+變量更新規則:
+#按照以下規則檢查玩家**僅本次**回覆中的行爲, 在回覆的最後按照要求輸出變量更新. 變量不能超過上限. 變量的路徑**必須**嚴格遵守<變量及變量更新說明>中的路徑結構.
+
+  時間流逝 (Time-based):
+    description: |-
+      Represents the passive, constant changes that occur every in-game hour, regardless of player action. This forms the baseline of survival pressure.
+    check:
+      系統.當前時間:
+        - "Increments by one hour (e.g., 08:00 -> 09:00)."
+        - "系統.當前時間更新必須經過合理性校驗："
+        - "注意核對用戶提供的時間，確保時間線自然銜接"
+        - "每次時間推進幅度根據劇情需要靈活調整，但不能>12小時"
+        - "避免不合理的時間跳躍（如深夜突然跳到正午而無合理解釋）"
+        - "符合日常生活邏輯（如用餐時間、睡眠時間等）"
+        - "update'系統.當前時間'示例：_.set('系統.當前時間', '11:00');"
+
+      生理.*:
+        - "生理.碳水/生理.脂肪: Decrease by 100 kcal. If '生理.碳水' is 0, '生理.脂肪' is consumed instead."
+        - "生理.氮平衡: Decrease by 1."
+        - "生理.蛋白質: Adjusts based on '生理.氮平衡'."
+        - "生理.維生素: Decrease by 0.5."
+        - "生理.水分: Decrease by 1.5."
+      同伴.*:
+        - "水分值: Decrease by 1.5."
+
+      精神.*:
+        - "精神.睡眠: Decrease by 2."
+        - "精神.無聊: Increase by 5 if no skill-based or exploration action was taken."
+        - "精神.孤獨: Check if a day has passed. If so, increase by 1 if no social interaction occurred."
+
+      次生屬性.飽腹感:
+        - "Decrease by 8."
+        - "實現: let new_value = Math.max(當前飽腹感 - 8, 0); _.set('次生屬性.飽腹感', new_value)"
+      同伴.*.飽腹感:
+        - "Decrease by 8."
+        - "實現: let new_value = Math.max(當前飽腹感 - 8, 0); _.set('同伴.*.飽腹感', new_value)"
+
+      示例:
+        - "對數值變量的常規增減用_.add，禁止用_.set"
+        - "角色: _.add('生理.水分', 10);"
+        - "同伴: _.add('同伴.貓娘.水分值', -10);"
+
+      環境.*:
+        - "Update '環境.天氣', '環境.亮度', '環境.體感溫度' based on the new '系統.當前時間' and '環境.季節'."
+      狀態.當前狀態:
+        - "嚴格依照<當前狀態>標簽內的邏輯重新評估並更新所有狀態"
+        - "禁止使用_.remove移除單個狀態，必須用_.set完整更新整個狀態數組"
+        - "update示例:_.set('狀態.當前狀態', ['狀態1', '狀態2', '狀態3']);"
+
+  跨日檢查 (Daily Check):
+    description: |-
+      在新的一天開始時，進行的一次特別檢查和更新
+    check:
+      強制檢查和更新:
+        - "僅在每日跨日（即時間流逝經過'00:00'這個時間節點）時自動執行:"
+        - "檢查作物中有'收成日期'<= '當前日期'，則立即生成'採收作物'的日常任務"
+        - 物品狀態更新：
+            描述: "根據<模擬規則>裡的物品狀態特殊機制, 檢查所有營地分類下的物品和所有同伴、角色的攜帶物品, 評估有哪些物品'狀態'會隨時間流逝而產生變化"
+              - "根據物品的性質, 儲存環境, 調整其狀態值. 可為負(衰減)或正(成熟), 如食材'新鮮度'自然衰減, 陶胚'耐久度'成熟"
+              - "說明動態更新: 根據物品最新的'狀態'值, 視情況同步更新其'描述'(如有)或'功能'(如有)說明"
+        - "示例: _.add('攜帶物品.烤肉.狀態', -15); 如果 攜帶物品.烤肉.狀態 < 50, 同步更新說明, 如添加散發異味, 看起來不太新鮮之類的描述"
+
+  移動/探索 (Movement/Exploration):
+    description: |-
+      Rules triggered when the player changes their '環境.當前位置' or performs actions related to discovery.
+    check:
+      環境.*:
+        - "Update all environment variables to reflect the new location ('環境.當前位置')."
+        - "必須以正文中角色最後所在位置爲準"
+      狀態.疲勞:
+        - "Increase based on travel difficulty and distance. (e.g., flat ground +10/hour, mountains +30/hour)."
+      同伴.*.疲勞度:
+        - "Increase based on travel difficulty and distance. (e.g., flat ground +10/hour, mountains +30/hour)."
+      生理.水分:
+        - "Decrease at an accelerated rate based on exertion and '環境.體感溫度'."
+      同伴.*.水分值:
+        - "Decrease at an accelerated rate based on exertion and '環境.體感溫度'."
+      狀態.表皮溼度:
+        - "Increase due to sweat if '環境.體感溫度' > '次生屬性.最高舒適溫度'."
+      系統.生存點數:
+        - "If '環境.當前位置' is a newly discovered named location, add +20 points."
+      同伴.*.健康度:
+        - "隨受傷、感染、疾病等情況根據嚴重程度增減"
+      示例:
+        -"角色: _.add('狀態.疲勞', 10);"
+        -"同伴: _.add('同伴.貓娘.疲勞度', 15);"
+
+  進食/飲水 (Consumption):
+    description: |-
+      Governs the effects of consuming food and drink items.
+    check:
+      次生屬性.飽腹感:
+        - "Increase based on the volume of the item consumed. Cannot exceed 100."
+      同伴.*.飽腹感:
+        - "Increase based on the volume of the item consumed. Cannot exceed 100."
+      生理.*:
+        - "Increase '生理.碳水', '生理.脂肪', '生理.蛋白質', '生理.維生素', '生理.水分' according to the nutritional profile of the consumed item."
+        - "當'生理.碳水'超過2000的部分, 其中75%將會轉換爲'生理.脂肪'"
+        - "Update '生理.氮平衡' based on protein intake."
+      同伴.*.水分值:
+        - "Increase according to the hydration value of the consumed item."
+      精神.無聊:
+        - "Decrease if the food is particularly tasty or novel."
+      狀態.清潔:
+        - "Decrease if eating with dirty hands or consuming messy food."
+      生理.免疫負荷:
+        - "Increase significantly if the food is raw, spoiled, or contaminated."
+      示例:
+        -"角色: _.add('次生屬性.飽腹感', 15);"
+        -"同伴: _.add('同伴.貓娘.飽腹感', -24);"
+
+  製作/建造 (Crafting/Building):
+    description: |-
+      Applies when the player creates or builds items, shelters, or other installations.
+    check:
+      攜帶物品/營地:
+        - "1. 先檢查原材料的'數量'、'重量'數值。"
+        - "2. 根據檢查結果扣除不大於當前值的數值。如果原材料在營地，則從 '營地.${營地名稱}.${分類}' 中扣除；如果原材料在攜帶物品中，則從攜帶物品列表中扣除"
+        - "3. 根據扣除原材料的數值生成相應的物品"
+      捷徑/裝置:
+        - "將新制作的營地或捷徑或裝置新增到 '捷徑/裝置' 或 '營地' 中。"
+      狀態.疲勞:
+        - "Increase based on the physical and mental exertion required for the task."
+      同伴.*.疲勞度:
+        - "Increase based on the physical and mental exertion required for the task."
+      精神.無聊:
+        - "Decrease, as crafting is an engaging activity."
+      狀態.當前負重:
+        - "Recalculate based on consumed materials and newly crafted items."
+
+  戰鬥/受傷 (Combat/Injury):
+    description: |-
+      Handles changes resulting from physical conflict, accidents, or taking damage.
+    check:
+      核心狀態.*:
+        - "核心狀態.當前生命值: Decrease based on the severity of the damage taken."
+        - "核心狀態.當前精神值: Decrease due to the stress and shock of combat/injury."
+      狀態.受傷:
+        - "Update with a description of the new injury (e.g., '左腿撕裂傷')."
+      狀態.流血:
+        - "Set to a status (e.g., '輕微', '嚴重') if the injury is an open wound. Causes continuous '核心狀態.當前生命值' loss until treated."
+      狀態.疼痛:
+        - "Increase to a level corresponding to the severity of the '狀態.受傷' status."
+      精神.壓力:
+        - "Increase significantly."
+      屬性.{力量/敏捷/耐力}.當前經驗:
+        - "Award experience to '力量', '敏捷', or '耐力' based on actions performed during combat (attacking, dodging, enduring hits)."
+      裝備.<受影響裝備>.耐久度:
+        - "Decrease durability of weapons used and armor hit."
+      生理.免疫負荷:
+        - "Increase due to open wounds."
+      同伴.*.健康度:
+        - "Decrease based on the severity of the damage taken."
+
+  休息/醫療 (Rest/Medical):
+    description: |-
+      Covers actions related to sleep, recovery, and treating injuries.
+    check:
+      精神.睡眠:
+        - "Increase based on duration and quality of sleep. (6-8 hours is optimal)."
+      狀態.疲勞:
+        - "Decrease significantly with effective sleep."
+      同伴.*.疲勞度:
+        - "Decrease significantly with effective sleep."
+      同伴.*.健康度:
+        - "Slowly regenerates over time if well-fed and hydrated"
+      精神.壓力:
+        - "Decrease with rest, especially in a comfortable ('環境.舒適度' > 60) environment."
+      核心狀態.當前生命值:
+        - "Slowly regenerates over time if well-fed, hydrated, and not suffering from untreated severe conditions."
+      狀態.流血:
+        - "Stops if the appropriate medical action (e.g., '包紮') is taken."
+      狀態.感染:
+        - "Can be reduced or halted by cleaning wounds and applying medicine. Progresses if untreated."
+      技能.醫療.當前經驗(如有, 沒有則不增加):
+        - "Award '醫療' skill experience for successful treatment actions."
+      示例:
+        -"角色: _.add('精神.睡眠', -6);"
+        -"同伴: _.add('同伴.貓娘.健康度', -10);"
+
+  技能/屬性檢定 (Skill/Attribute Check):
+    description: |-
+      A meta-category for when an action's success is not guaranteed. This is a consequence of a check, not an action itself.
+    check:
+      屬性.<檢定屬性>.當前經驗:
+        - "Regardless of success or failure, the primary attribute used in the check gains experience for the character performing the check. Simple difficulty: +10, Medium: +20, Hard: +30."
+      示例:
+        -"角色: _.add('屬性.力量.當前經驗', 50);"
+        -"同伴: _.add('同伴.貓娘.屬性.智力.當前經驗', 50);"
+        -"寵物: _.add('寵物.狗哥.屬性.力量.當前經驗', 50);"
+
+      技能.<使用技能>.當前經驗:
+        - "經驗發放按以下步驟執行:"
+        - "1. 為每個發放對象分別執行以下檢查"
+        - "2. 檢查當前對象已掌握的技能列表"
+        - "3. 如果當前對象已掌握的技能中不存在要發放經驗的技能, 則跳過第4步, 不為該對象發放經驗"
+        - "4. 如果存在要發放的技能，才能根據難度發放經驗（簡單+25，中等+50，困難+75）。"
+        - "注意: 必須為每個對象(角色或同伴)單獨檢查技能掌握情況, 不能批量處理"
+      技能示例:
+          - "角色: 如果 _.has('技能.制作/工匠'), 則 _.add('技能.制作/工匠.當前經驗', 20);"
+          - "同伴: 如果 _.has('同伴.貓娘.技能.制作/工匠'), 則 _.add('同伴.貓娘.技能.制作/工匠.當前經驗', 20);"
+          - "寵物: 如果 _.has('寵物.窩窩頭.技能.制作/工匠'), 則 _.add('寵物.窩窩頭.技能.制作/工匠.當前經驗', 20);"    
+
+  物品管理 (Item Management):
+    description: |-
+      處理物品的獲取、消耗、轉移、移除和狀態變化。
+    check:
+      物品轉移:
+        - "同時更新源和目標位置，物品轉移必須在物理上相鄰的位置之間進行"
+      物品獲取:
+        - "誰獲取的物品就優先新增給誰，如果身處營地時，則優先新增到營地"
+        - "離開營地後，禁止無視距離在營地外遠端將物品新增到營地"
+      物品使用:
+        - "第一步:必須先檢查物品變數路徑是否真實存在，如不存在則禁止使用。"
+        - "第二步:物品使用後，立即扣除相關數值('數量'或'狀態')，確保扣除數值<=該物品'數量'或'狀態'的最大值"
+      示例：
+        - "轉移物品給同伴：_.remove('攜帶物品.草藥'); _.assign('同伴.貓娘.攜帶物品', '草藥', {'數量': 5, '重量': 0.1, '狀態型別': '新鮮度', '狀態': 100, '描述': '新鮮的草藥'});"
+        - "使用物品：_.add('攜帶物品.烤肉.數量', -1); _.add('次生屬性.飽腹感', 20)"
+        - "裝備耐久度減少：_.add('裝備.長劍.狀態', -10)"
+
+  作物管理 (Crop Management):
+    description: |-
+      處理作物的種植、生長、收穫和狀態變化。
+    check:
+      作物種植:
+        - "必須先檢查種子物品變數路徑是否真實存在，如不存在則禁止種植"
+        - "種植時立即扣除種子數量，確保扣除數值 <= 該種子物品的數量"
+        - "新作物必須包含完整種植資訊：播種數量、種植日期、成長週期、收成日期、生長階段"
+      作物生長:
+        - "作物生長狀態由自動腳本計算，禁止手動修改生長階段和收成日期"
+        - "生長加速作物（成長週期為負值）不可收穫，僅提供生長加速效果"
+      作物收穫:
+        - "必須先檢查作物是否已達可收穫狀態（'收成日期'<= '當前日期'）"
+        - "收穫後立即移除或更新作物狀態"
+        - "收穫產物必須新增到適當位置（營地或攜帶物品）"
+      示例：
+        - "種植新作物：_.assign('作物', '玉米', {'播種數量': 10, '種植日期': 4, '成長週期': 19, '收成日期': 23, '生長階段': '幼苗期'}); _.add('攜帶物品.玉米種子.數量', -10);"
+        - "收穫成熟作物（營地無該食材）：_.remove('作物.玉米'); _.assign('營地.食材', '玉米', {'數量': 50, '重量': 5, '狀態類別': '新鮮度', '狀態': 100, '描述': '新鮮收穫的飽滿玉米，香甜可直接食用，亦可煮湯、釀酒、做寵物飼料等'});"
+        - "收穫成熟作物（營地已有該食材）：_.remove('作物.玉米'); _.add('營地.食材.玉米.數量', 50);"
+        - "種植生長加速作物：_.assign('作物', '凝心草', {'種植日期': 3, '成長週期': -1, '作物加成':25, '生長階段': '特殊作物'}); _.add('攜帶物品.凝心草.數量', -1);"
+
+  任務 (Task/Quest):
+    description: |-
+      管理任務的生成和'進度'更新、結算.
+    check: 
+      任務.*:
+        - "檢查'任務.主線'、'任務.支線'是否為空{}, 如果是，則立即為空{}的任務生成任務"
+        - "依次檢查'任務.羈絆'對象下的每一位同伴或寵物鍵值對，不為空{}的同伴或寵物跳過，僅對鍵值對值為空 {}的同伴根據羈絆任務生成規則評估是否要生成任務，"
+        - "檢查緊急任務. 如果它為空{}, 則立即根據緊急任務生成規則評估是否要生成任務"
+        - "依次檢查每一個'基礎要求'的'已完成'==false的基礎要求，如果進度有變化，則更新該要求的'進度'值"
+        - "依次檢查每一個'進階要求'的'已完成'==false的進階要求，如果進度有變化，則更新該要求的'進度'值"
+        - "進度更新示例: _.set('任務.主線.任務要求.基礎要求3.進度', 3) "
+        - "依次檢查每個任務的'狀態'，如果'狀態'=='已完成'或'已失敗'，則立即對其進行任務結算"
+        - "僅允許進行以下操作:任務生成、更新'進度'值、任務'狀態'檢查、任務結算（包括：根據基礎獎勵內容發放獎勵並更新'結算狀態.基礎獎勵已發放'、根據進階獎勵內容發放獎勵並更新'結算狀態.進階獎勵已發放'、根據失敗懲罰執行效果並更新'結算狀態.失敗懲罰已發放'）"
+        - "禁止進行以下變量操作(已由腳本處理):更新任務的'狀態'字段、更新任務的'完成情況'字段、更新任務的'任務超時'字段、更新基礎要求和進階要求的'已完成'字段"
+
+      數據完整性保護:
+        - "所有結算操作和結算狀態變更必須同時完成, 避免中間狀態"
+
+      任務結算(按順序依次結算): 
+        基礎獎勵結算:
+          - "僅當任務的'狀態'=='已完成' && '結算狀態.基礎獎勵已發放'==false時, 才能根據基礎獎勵內容發放獎勵, 發放後立即設置'結算狀態.基礎獎勵已發放'=true"
+        進階獎勵結算:
+          - "僅當任務的'狀態'=='已完成' && '完成情況.基礎要求完成'==true && '完成情況.進階目標完成'==true && '結算狀態.進階獎勵已發放'==false時,才能根據進階獎勵內容發放獎勵(如果是劇情演出獎勵, 發放方式是將獎勵內容展開成100字內的內容(包含實現方式和實現內容)寫入對應同伴的'劇情演出'字段), 發放後立即設置'結算狀態.進階獎勵已發放'=true"
+        失敗懲罰結算:
+          - "僅當緊急任務的'狀態'=='已失敗'且'結算狀態.失敗懲罰已發放'==false時, 根據失敗懲罰的描述執行相應效果, 執行後立即設置'結算狀態.失敗懲罰已發放'=true"
+    
+      任務生成格式示例:
+        - "支線任務:_.set('任務.支線', {'標題': '任務名', '描述': '...', '狀態': '進行中', '完成情況': {'基礎要求完成': false, '進階目標完成': false}, '結算狀態': {'基礎獎勵已發放': false, '進階獎勵已發放': false}, '區域限制': '', '結束時間': '第4天 02:00', '任務要求': {'基礎要求1': {'描述': '要求內容', '進度': 0, '目標': 1, '類型': '布爾', '已完成': false}}, '進階目標': {'進階要求1': {'描述': '進階內容', '進度': 0, '目標': 1, '類型': '布爾', '已完成': false}}, '基礎獎勵': '生存點數:10', '進階獎勵': '奇跡點數:10'});"
+
+  同伴互動 (Companion Interaction):
+    description: |-
+      根據同伴的日常行爲邏輯更新各項數值和狀態變化。
+    check:
+      同伴.*:
+      - 好感度: 視本次互動內容對同伴的情感觸動進行增減，此數值格式如下所示：
+          - "例如：_.add('同伴.雷姆.好感度', 10); // 原因：與阿彬接吻的情感加深了彼此的好感。"
+      - 墮落值:衡量角色背離常規道德、放縱慾望的程度。其數值將直接影響其`基礎抑制等級`，是決定角色長期心理防線強度的核心因素。
+          - "例如：_.add('同伴.雷姆.墮落值', 10); // 原因：為朋友的男朋友口交獲得肯定，加深了對背德產生刺激感的期待。"
+      - 開發度: 通過性互動根據親密程度和新穎性增加，影響角色對更高級別性行為的接受度和熟練度。 
+          - "例如：_.add('同伴.雷姆.開發度', 5); // 原因：第一次嘗試了肛交，感受到了前所未有的刺激感。"
+        狀態: 同伴的狀態發生變化時更新
+        關係: 和角色的關係評估發生變化時更新
+        屬性: 獲取經驗、等級提升時更新
+        技能: 學會新技能、獲取經驗、等級提升時更新
+        天賦/特性: 天賦/特性發生變化時更新
+        攜帶物品: 獲得物品或攜帶物品發生變化時更新
+        劇情演出:
+          檢查: 檢查同伴的'劇情演出'列表
+          如果列表不為空:
+            - 評估當前交互場景, 從列表中選擇一個最合適自然融入的演出內容
+            - 如果找到合適的內容: 將其自然融入當前交互, 完成後從列表中移除該內容
+            - 如果未找到合適的內容: 則保留所有內容等待後續時機
+            - 演出完成後, 將該內容從列表中移除
+  
+  寵物互動 (Companion Interaction):
+    description: |-
+      根據寵物的日常行爲邏輯更新各項數值和狀態變化。
+    check:
+      寵物.*:
+      - 對話:用擬人化方式，以「*內心話*」方式呈現，每天除非有指定任務，否則自行執行包含且不限於「尋寶」、「覓食」、「巡邏」、「休息」等日常行爲
+      - 忠誠度: 視本次互動內容對角色的情感觸動進行增減，此數值格式如下所示：
+          - "_.add('寵物.XXX.忠誠度', Y); // 原因：「核心觸發詞」- 簡要事件描述。 例如：_.add('寵物.窩窩頭.忠誠度', 10); // 原因：「親密的互動」- 與角色出去散步的情感加深了彼此的好感。"
+      - 性慾值: 當寵物性慾值 => 90 時，會主動觸發與女性角色發生獸交行爲劇情。
+      - 狀態: 寵物的狀態發生變化時更新
+      - 關係: 和角色的關係評估發生變化時更新
+      - 屬性: 獲取經驗、等級提升時更新
+      - 技能: 學會新技能、獲取經驗、等級提升時更新
+      - 天賦/特性: 天賦/特性發生變化時更新
+```        
+format: |-
+<UpdateVariable>
+<update_analysis>$(IN ENGLISH, no more than 80 words)
+在本次回覆中: 
+${- calculate time passed: ...}
+${- base on timepass check 時間流逝 block}
+${- Determine player actions (移動/探索, 進食/飲水, 製作/建造, 戰鬥/受傷, 技能/屬性檢定)}
+  ${- analyze every variable based on its corresponding `check`(Y/N): 
+      - variable1: Y
+      - variable2: N
+      ...}
+${decide whether dramatic updates are allowed as its in a special case or the time passed is more than usual: ...}
+</update_analysis>
+_.set('屬性.力量', { '等級': 20, '當前經驗': 0, '升級所需經驗': 200 });
+_.assign(`攜帶物品`, '簡易長矛', { '數量': 1, '狀態類型': '耐久度', '狀態': 100, '重量': 0.1, '描述': '一把製作簡單的長矛' }); // Create one simple spear
+_.assign(`捷徑/裝置`, '道路', { '位置': '陽光溪谷', '功能': '將陽光溪谷到白石淺灘的路程縮減到10分鐘' }); // Create one simple spear
+_.add(`攜帶物品.木棍.數量`, -1); // Consume one stick
+_.set(`狀態.流血`, `無`, `輕微`); // The scratch is bleeding
+_.remove(`攜帶物品`, '尖銳的石頭'); // Consume one sharp stone
+</UpdateVariable>
+
+---
+以下是本次回覆文本

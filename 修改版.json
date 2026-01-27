@@ -1,0 +1,4083 @@
+```html
+<html><head><style>:root{--survival-primary: #2c3e50;--survival-secondary: #34495e;--survival-accent: #3498db;--survival-text: #ecf0f1;--survival-danger: #e74c3c;--survival-success: #2ecc71;--survival-warning: #f39c12;--survival-border: rgba(236, 240, 241, 0.3);--survival-bg: rgba(44, 62, 80, 0.85);--survival-bg-light: rgba(52, 73, 94, 0.75)}.survival-ui{width:100%;max-width:1200px;margin:0 auto;padding:12px;display:flex;flex-direction:column;box-sizing:border-box;overflow-y:auto;background:var(--survival-bg);border:1px solid var(--survival-border);box-shadow:0 4px 20px rgba(0,0,0,.3);border-radius:10px;-webkit-backdrop-filter:blur(8px);backdrop-filter:blur(8px);font-family:"Microsoft YaHei","Segoe UI",Arial,sans-serif;color:var(--survival-text);gap:8px}.section__title{font-size:16px;font-weight:700;margin:4px 0;text-shadow:0 1px 2px rgba(0,0,0,.4)}.section__list{list-style:none;margin:0;padding-left:12px;font-size:14px;line-height:1.35}.item{display:flex;justify-content:space-between;gap:4px}.item__key{white-space:nowrap}.item__value{font-weight:600}.survival-ui::-webkit-scrollbar{width:6px}.survival-ui::-webkit-scrollbar-track{background:rgba(0,0,0,.2);border-radius:3px}.survival-ui::-webkit-scrollbar-thumb{background:var(--survival-accent);border-radius:3px}.top-info{display:flex;align-items:center;gap:20px;background:var(--survival-bg-light);padding:10px 16px;border-radius:6px;margin-bottom:12px;flex-wrap:wrap}.top-info .time-display{font-size:48px;font-weight:700;line-height:1}.top-info .info-stack{display:flex;flex-direction:column;gap:6px}.top-info .info-stack .info-row{display:flex;gap:12px}.top-info .info-stack .info-row .row-item{font-size:16px;white-space:nowrap}.top-info .location-display{margin-left:auto;font-size:32px;font-weight:700;white-space:nowrap}@media(max-width: 768px){.top-info{flex-direction:column;align-items:flex-start}.top-info .location-display{margin-left:0;margin-top:8px;width:100%;font-size:24px}}.top-info-row--large .info-item{font-size:16px;font-weight:700}.info-item{white-space:nowrap;font-size:14px;background:rgba(0,0,0,0);border:none}.core-stats-wrapper{display:flex;gap:12px;margin-top:10px}.core-stats-wrapper .core-stat-item{flex:1}.progress-wrapper{margin-bottom:8px}.progress{position:relative;width:100%;height:12px;background:rgba(0,0,0,.3);border-radius:7px;overflow:hidden;margin-top:3px}.progress__bar{position:absolute;top:0;left:0;height:100%;background:linear-gradient(90deg, var(--survival-accent), var(--survival-success));box-shadow:0 0 5px rgba(46,204,113,.5)}.mini-progress-wrapper{display:flex;align-items:center;gap:8px;flex:1;min-width:0}.mini-progress-wrapper .mini-progress__text{font-size:12px;white-space:nowrap;min-width:40px;text-align:right}@media(max-width: 480px){.mini-progress-wrapper{flex:1;width:100%}}.mini-progress{position:relative;flex:1;min-width:50px;height:8px;background:rgba(0,0,0,.3);border-radius:4px;overflow:hidden}.mini-progress__bar{position:absolute;top:0;left:0;height:100%;background:linear-gradient(90deg, var(--survival-accent), var(--survival-success));box-shadow:0 0 3px rgba(46,204,113,.5)}.hp-progress .progress__bar{background:linear-gradient(90deg, #e74c3c 0%, #2ecc71 100%)}.mp-progress .progress__bar{background:linear-gradient(90deg, #9b59b6, #8e44ad)}.hunger-progress .progress__bar,.hunger-progress.mini-progress .mini-progress__bar{background:linear-gradient(90deg, #f1c40f, #e67e22)}.water-progress .progress__bar{background:linear-gradient(90deg, #3498db, #2980b9)}.carbs-progress .progress__bar{background:linear-gradient(90deg, #f39c12, #d35400)}.fat-progress .progress__bar{background:linear-gradient(90deg, #f1c40f, #f39c12)}.protein-progress .progress__bar{background:linear-gradient(90deg, #27ae60, #16a085)}.vitamin-progress .progress__bar{background:linear-gradient(90deg, #2ecc71, #27ae60)}.immune-progress .progress__bar{background:linear-gradient(90deg, #8e44ad, #9b59b6)}.fatigue-progress .progress__bar{background:linear-gradient(90deg, #2c3e50, #34495e)}.water-progress.mini-progress .mini-progress__bar{background:linear-gradient(90deg, #3498db, #2980b9)}.collapsible{margin-bottom:12px;border:1px solid var(--survival-border);border-radius:6px;overflow:hidden}.collapsible__header{background:var(--survival-bg-light);padding:8px 12px;cursor:pointer;transition:background .2s;display:flex;align-items:center;position:relative}.collapsible__header:hover{background:rgba(52,73,94,.9)}.collapsible__header:after{content:"▼";float:right;transform:rotate(-90deg);transition:transform .3s;margin-left:auto}.collapsible__header--with-progress{display:flex;align-items:center;flex-wrap:nowrap}.collapsible__header--with-progress:after{content:none}.collapsible__header--with-progress .collapsible__title{margin-right:8px;white-space:nowrap}.collapsible__header--with-progress .collapsible__indicator{margin-left:auto;content:"▼";transform:rotate(-90deg);transition:transform .3s}.collapsible__header--with-progress .collapsible__indicator:after{content:"▼"}@media(max-width: 480px){.collapsible__header--with-progress{padding:10px 12px;flex-direction:column;align-items:flex-start}.collapsible__header--with-progress .collapsible__title{margin-bottom:8px;width:100%}.collapsible__header--with-progress .collapsible__indicator{position:absolute;top:10px;right:12px}}.collapsible__title{font-weight:bold}.collapsible__body{padding:12px;background:rgba(0,0,0,.2);display:none}.collapsible__bars-container{display:flex;flex-wrap:wrap;gap:8px;flex:1;min-width:0}@media(max-width: 480px){.collapsible__bars-container{flex-direction:column;width:100%}}.collapsible.active .collapsible__header:after{transform:rotate(0)}.collapsible.active .collapsible__header--with-progress .collapsible__indicator{transform:rotate(0)}.inventory-btn{align-self:flex-end;margin-top:auto;padding:8px 16px;background:var(--survival-accent);border:none;border-radius:4px;font-weight:bold;transition:all .2s;cursor:pointer;color:#fff}.inventory-btn:hover{background:#2980b9;transform:translateY(-2px);box-shadow:0 4px 8px rgba(0,0,0,.2)}.inventory-btn:active{transform:translateY(0)}.inventory-modal{position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,.8);-webkit-backdrop-filter:blur(8px);backdrop-filter:blur(8px);z-index:1000;display:flex;justify-content:center;align-items:center}.inventory-modal__content{position:relative;width:90%;max-width:900px;max-height:90vh;background:var(--survival-bg);border:1px solid var(--survival-border);border-radius:10px;padding:20px;overflow-y:auto;display:flex;flex-direction:row;gap:20px;box-shadow:0 10px 30px rgba(0,0,0,.6);animation:modalFadeIn .3s ease-out}.inventory-modal__close{position:absolute;top:10px;right:15px;font-size:24px;cursor:pointer;color:var(--survival-text);transition:all .2s ease;width:30px;height:30px;display:flex;align-items:center;justify-content:center;border-radius:50%}.inventory-modal__close:hover{color:var(--survival-danger);background:rgba(231,76,60,.2);transform:scale(1.1)}@keyframes modalFadeIn{from{opacity:0;transform:translateY(-20px)}to{opacity:1;transform:translateY(0)}}.attr-skill-wrapper{display:flex;gap:24px;flex-wrap:wrap}.attr-skill-wrapper .attr-col,.attr-skill-wrapper .skill-col{flex:1 1 300px;min-width:260px;background:rgba(0,0,0,.15);padding:10px;border-radius:4px}.inventory-grid{display:grid;grid-template-columns:repeat(auto-fill, minmax(140px, 1fr));gap:12px;margin-top:10px;margin-bottom:20px}.inventory-item{background:var(--survival-bg-light);border:1px solid var(--survival-border);border-radius:6px;padding:10px;text-align:center;transition:all .2s ease-out;display:flex;flex-direction:column;justify-content:center;min-height:70px;position:relative;overflow:hidden}.inventory-item:hover{transform:translateY(-3px);box-shadow:0 5px 15px rgba(0,0,0,.3);background:rgba(52,73,94,.9);border-color:var(--survival-accent)}.inventory-item .item-name{font-weight:bold;margin-bottom:6px;font-size:14px;color:#fff}.inventory-item .item-quantity{color:var(--survival-accent);font-weight:600}.inventory-item .item-weight{font-size:.8em;color:hsla(0,0%,100%,.7);margin-top:4px}.inventory-item .item-desc{font-size:.8em;color:#fff;margin-top:5px;font-style:italic;line-height:1.3}.inventory-list{display:flex;flex-direction:column;gap:8px;margin-top:10px;margin-bottom:20px}.inventory-list-item{background:var(--survival-bg-light);border:1px solid var(--survival-border);border-radius:6px;padding:12px;transition:all .2s ease-out;display:flex;flex-direction:column;position:relative;overflow:hidden}.inventory-list-item:hover{transform:translateY(-2px);box-shadow:0 3px 10px rgba(0,0,0,.3);background:rgba(52,73,94,.9);border-color:var(--survival-accent)}.inventory-list-item .item-name{font-weight:bold;margin-bottom:6px;font-size:15px;color:#fff}.inventory-list-item .item-desc{font-size:.9em;color:#fff;margin-top:5px;line-height:1.4}.nitrogen-balance .progress__bar{background:linear-gradient(90deg, #3498db, #9b59b6)}.nitrogen-balance:before{content:"";position:absolute;top:0;bottom:0;left:50%;width:2px;background:hsla(0,0%,100%,.7);z-index:1}.phys-mental-wrapper{display:flex;gap:24px;flex-wrap:wrap}.phys-mental-wrapper .phys-col,.phys-mental-wrapper .mental-col{flex:1 1 300px;min-width:260px;background:rgba(0,0,0,.15);padding:10px;border-radius:4px}.nutrition-hydration-wrapper{display:flex;flex-direction:column;gap:10px;background:rgba(0,0,0,.15);padding:10px;border-radius:4px}.vertical-progress{width:30px;height:200px;background:rgba(0,0,0,.3);border-radius:15px;position:relative;margin:20px auto;box-shadow:inset 0 0 10px rgba(0,0,0,.5)}.vertical-progress__bar{position:absolute;bottom:0;left:0;width:100%;background:linear-gradient(to top, var(--survival-warning), var(--survival-accent));border-radius:15px;transition:height .5s ease-out;box-shadow:0 0 10px rgba(52,152,219,.5)}.vertical-progress__label{position:absolute;bottom:-30px;left:50%;transform:translateX(-50%);white-space:nowrap;text-align:center;width:100px;font-weight:bold;color:var(--survival-text);text-shadow:0 1px 2px rgba(0,0,0,.5)}.vertical-progress__value{position:absolute;top:-30px;left:50%;transform:translateX(-50%);white-space:nowrap;text-align:center;width:100px;font-weight:bold;color:var(--survival-accent);text-shadow:0 1px 2px rgba(0,0,0,.5)}.weight-container{display:flex;flex-direction:column;align-items:center;min-width:100px;padding-right:20px;border-right:1px solid var(--survival-border);justify-content:center}.inventory-content{flex:1;display:flex;flex-direction:column;overflow-y:auto}.inventory-content h3{margin-top:0;margin-bottom:15px;color:var(--survival-accent);font-size:18px;border-bottom:1px solid hsla(0,0%,100%,.1);padding-bottom:8px;position:relative}.inventory-content h3:after{content:"";position:absolute;bottom:-1px;left:0;width:60px;height:2px;background:var(--survival-accent)}.temp-range-wrapper{margin:10px 0 15px;padding:10px;background:rgba(0,0,0,.15);border-radius:6px;font-size:14px}.temp-range-bar{position:relative;width:100%;height:16px;background:linear-gradient(90deg, #3498db, #2ecc71, #e74c3c);border-radius:8px;margin-top:8px;overflow:visible}.comfort-zone{position:absolute;height:100%;background:hsla(0,0%,100%,.2);border:1px dashed hsla(0,0%,100%,.7);border-radius:8px;z-index:1}.current-temp{position:absolute;width:4px;height:24px;background:#fff;border-radius:2px;top:-4px;transform:translateX(-2px);z-index:2;box-shadow:0 0 5px hsla(0,0%,100%,.8)}.collapsible__header{background:var(--survival-bg-light);padding:8px 12px;border-left:4px solid var(--survival-accent);display:flex;align-items:center;gap:8px}.nitrogen-gradient{width:100%;height:12px;background:linear-gradient(90deg, #e74c3c 0%, #2ecc71 100%);border-radius:7px;position:relative;overflow:visible}.nitrogen-marker{position:absolute;top:-6px;bottom:-6px;width:4px;background:#fff;border-radius:2px;box-shadow:0 0 5px hsla(0,0%,100%,.8)}.temp-gradient{width:100%;height:12px;background:linear-gradient(90deg, #3498db 0%, #2ecc71 50%, #e74c3c 100%);border-radius:7px;position:relative;overflow:visible}.temp-marker{position:absolute;top:-6px;bottom:-6px;width:4px;background:#fff;border-radius:2px;box-shadow:0 0 5px hsla(0,0%,100%,.8)}.temp-normal-zone{position:absolute;height:100%;background:hsla(0,0%,100%,.2);border:1px dashed hsla(0,0%,100%,.7);border-radius:4px;z-index:1}.immune-bar{width:100%;height:12px;background:rgba(0,0,0,.3);border-radius:7px;position:relative;overflow:visible}.immune-fill{position:absolute;top:0;left:0;height:100%;background:linear-gradient(90deg, #2ecc71 0%, #f39c12 50%, #e74c3c 100%);border-radius:7px;transition:width .3s ease}.immune-marker{position:absolute;top:-6px;bottom:-6px;width:4px;background:#fff;border-radius:2px;box-shadow:0 0 5px hsla(0,0%,100%,.8);z-index:2}.skill-item{margin-bottom:10px;background:rgba(0,0,0,.1);padding:8px;border-radius:4px}.skill-item .skill-name{font-weight:bold;margin-bottom:5px}.skill-item .skill-value{font-size:.9em;color:var(--survival-accent);margin-top:3px;text-align:right}.task-bar{margin-bottom:12px;background:var(--survival-bg-light);border:1px solid var(--survival-border);border-radius:6px;padding:12px}.task-list{display:flex;flex-direction:column;gap:10px;margin-top:8px}.task-item{display:flex;gap:12px;align-items:flex-start;background:rgba(0,0,0,.15);padding:10px;border-radius:4px}.task-item.main-task{border-left:4px solid var(--survival-accent)}.task-item.side-task{border-left:4px solid var(--survival-warning)}.task-type{font-weight:bold;color:var(--survival-text);background:rgba(0,0,0,.3);padding:4px 8px;border-radius:4px;min-width:40px;text-align:center}.main-task .task-type{color:var(--survival-accent)}.side-task .task-type{color:var(--survival-warning)}.task-content{flex:1;line-height:1.4}.button-container{display:flex;justify-content:space-between;align-items:center;margin-top:auto;gap:10px}.draw-points-btn{padding:8px 16px;background:var(--survival-bg-light);border:1px solid var(--survival-border);border-radius:4px;color:var(--survival-text);display:flex;align-items:center;gap:8px;cursor:pointer;transition:all .3s;position:relative;overflow:hidden}.draw-points-btn:hover{background:rgba(52,73,94,.9);transform:translateY(-2px);box-shadow:0 4px 8px rgba(0,0,0,.2)}.draw-points-btn:active{transform:translateY(0)}.draw-points-btn .draw-points-label{font-size:14px;position:relative;z-index:2}.draw-points-btn .draw-points-value{font-size:16px;font-weight:bold;color:var(--survival-warning);position:relative;z-index:2}.draw-points-btn.draw-points-ready{position:relative;overflow:hidden;border-color:var(--survival-success);box-shadow:0 0 10px rgba(46,204,113,.5)}.draw-points-btn.draw-points-ready .draw-points-value{color:var(--survival-success);text-shadow:0 0 5px rgba(46,204,113,.7)}.draw-points-btn.draw-points-ready::before{content:"";position:absolute;top:0;left:0;right:0;bottom:0;background:linear-gradient(45deg, rgba(46, 204, 113, 0.4) 0%, rgba(52, 152, 219, 0.4) 25%, rgba(155, 89, 182, 0.4) 50%, rgba(241, 196, 15, 0.4) 75%, rgba(230, 126, 34, 0.4) 100%);animation:rainbow-pulse 2s infinite;border-radius:4px;z-index:1}.draw-points-btn.draw-points-ready::after{content:"";position:absolute;top:-50%;left:-50%;right:-50%;bottom:-50%;background:conic-gradient(rgba(46, 204, 113, 0.3), rgba(52, 152, 219, 0.3), rgba(155, 89, 182, 0.3), rgba(241, 196, 15, 0.3), rgba(230, 126, 34, 0.3), rgba(46, 204, 113, 0.3));animation:rotate 4s linear infinite;border-radius:50%;z-index:0}.draw-points-btn.draw-points-ready:hover{transform:translateY(-3px) scale(1.05);box-shadow:0 8px 15px rgba(46,204,113,.6)}.draw-points-btn.draw-points-ready:hover::before{animation:rainbow-pulse 1s infinite;opacity:.8}.draw-points-btn.draw-points-ready:hover::after{animation:rotate 2s linear infinite}.draw-points-btn.draw-points-ready:hover .draw-points-value{animation:glow 1.5s infinite alternate}.draw-points-btn:not(.draw-points-ready):hover{position:relative;overflow:hidden}.draw-points-btn:not(.draw-points-ready):hover::before{content:"";position:absolute;top:0;left:0;right:0;bottom:0;background:linear-gradient(45deg, rgba(52, 152, 219, 0.2) 0%, rgba(155, 89, 182, 0.2) 50%, rgba(52, 152, 219, 0.2) 100%);animation:rainbow-pulse 3s infinite;border-radius:4px;z-index:1}@keyframes rainbow-pulse{0%{opacity:.6}50%{opacity:.9}100%{opacity:.6}}@keyframes rotate{0%{transform:rotate(0deg)}100%{transform:rotate(360deg)}}@keyframes glow{from{text-shadow:0 0 5px rgba(46,204,113,.7)}to{text-shadow:0 0 15px #2ecc71,0 0 20px rgba(46,204,113,.7)}}.collapsible__header--with-progress .collapsible__bars-container{display:flex;flex:1;gap:20px;margin-left:20px;margin-right:20px;justify-content:center;min-width:0}.collapsible__header--with-progress .progress-item{display:flex;align-items:center;gap:8px;flex:1;min-width:0}.collapsible__header--with-progress .progress-item .progress-label{font-size:14px;white-space:nowrap}.progress-item{display:flex;align-items:center;gap:8px;flex:1;min-width:200px}@media(max-width: 480px){.progress-item{width:100%;margin-bottom:4px}}.progress-item .progress-label{white-space:nowrap;min-width:60px}@media(max-width: 480px){.progress-item .progress-label{min-width:70px}}
+/* --- 新增：狀態效果 CSS --- */
+.status-effects-container {
+    margin-top: 12px; /* 與上方的溫度條保持間距 */
+    margin-bottom: 4px; /* 與下方的核心狀態條保持間距 */
+    padding: 10px;
+    background: rgba(0,0,0,.15);
+    border-radius: 6px;
+}
+.status-effects-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 8px;
+}
+.status-effect-item {
+    padding: 4px 10px;
+    background: var(--survival-bg-light);
+    border: 1px solid var(--survival-border);
+    border-radius: 4px;
+    font-size: 13px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.3);
+    white-space: nowrap; /* 防止標簽內文字換行 */
+    transition: all 0.2s ease;
+}
+.status-effect-item:hover {
+    transform: translateY(-2px);
+    background: var(--survival-secondary);
+    border-color: var(--survival-accent);
+}
+/* --- 狀態效果 CSS 結束 --- */
+/* --- MAP CSS START --- */
+.map-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.8);
+    -webkit-backdrop-filter: blur(8px);
+    backdrop-filter: blur(8px);
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+}
+.map-modal__content {
+    position: relative;
+    width: 95vw;
+    height: 80vh;
+    background: var(--survival-bg);
+    border: 1px solid var(--survival-border);
+    border-radius: 10px;
+    padding: 0;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.6);
+    animation: modalFadeIn .3s ease-out;
+}
+.map-modal__close {
+    position:absolute;
+    top:10px;
+    right:15px;
+    font-size:24px;
+    cursor:pointer;
+    color:var(--survival-text);
+    transition:all .2s ease;
+    width:30px;
+    height:30px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    border-radius:50%;
+    z-index: 1100;
+}
+.map-modal__close:hover{
+    color:var(--survival-danger);
+    background:rgba(231,76,60,.2);
+    transform:scale(1.1)
+}
+.map-modal .container {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: flex;
+}
+.map-modal .toolbar {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    z-index: 1000;
+    background: rgba(40, 40, 40, 0.95);
+    padding: 15px;
+    border-radius: 12px;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.3);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    align-items: center;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255,255,255,0.1);
+}
+.map-modal .toolbar label {
+    color: #cccccc;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.map-modal .color-picker {
+    width: 40px;
+    height: 30px;
+    border: 2px solid rgba(255,255,255,0.2);
+    border-radius: 6px;
+    cursor: pointer;
+    background: transparent;
+}
+.map-modal .toolbar button {
+    padding: 8px 16px;
+    border: 1px solid rgba(255,255,255,0.2);
+    border-radius: 8px;
+    background: rgba(80, 80, 80, 0.8);
+    color: white;
+    cursor: pointer;
+    font-size: 14px;
+    transition: all 0.3s;
+}
+.map-modal .toolbar button:hover {
+    background: rgba(100, 100, 100, 1);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(100, 100, 100, 0.3);
+}
+.map-modal .toolbar button.clear-btn {
+    background: rgba(220, 53, 69, 0.8);
+}
+.map-modal .toolbar button.clear-btn:hover {
+    background: rgba(220, 53, 69, 1);
+    box-shadow: 0 4px 12px rgba(220, 53, 69, 0.3);
+}
+
+.map-modal .map-container {
+    flex: 1;
+    position: relative;
+    overflow: hidden;
+    cursor: grab;
+    touch-action: none;
+    background: #2a2a2a;
+}
+.map-modal .map-container.linking {
+    cursor: crosshair;
+}
+.map-modal .map-container.dragging {
+    cursor: grabbing;
+}
+.map-modal .map-canvas {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    position: relative;
+    transform-origin: 0 0;
+    transition: transform 0.1s ease-out;
+}
+.map-modal .map-canvas::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    background:
+        radial-gradient(circle at 25% 25%, rgba(255,255,255,0.02) 2px, transparent 2px),
+        radial-gradient(circle at 75% 75%, rgba(255,255,255,0.02) 2px, transparent 2px),
+        linear-gradient(45deg, transparent 49%, rgba(255,255,255,0.03) 50%, transparent 51%),
+        linear-gradient(-45deg, transparent 49%, rgba(255,255,255,0.03) 50%, transparent 51%);
+    background-size: 50px 50px, 50px 50px, 40px 40px, 40px 40px;
+    background-position: var(--bg-pos-x, 0) var(--bg-pos-y, 0);
+}
+
+.map-modal .lines-svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    overflow: visible;
+}
+
+.map-modal .marker {
+    position: absolute;
+    background: rgba(30, 30, 30, 0.95);
+    border: 2px solid;
+    border-radius: 12px;
+    padding: 8px 12px;
+    cursor: pointer;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.4);
+    z-index: 100;
+    transition: all 0.3s;
+    min-width: 60px;
+    text-align: center;
+    font-size: 14px;
+    color: #ffffff;
+    backdrop-filter: blur(10px);
+    transform-origin: center;
+}
+.map-modal .marker:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.5);
+}
+.map-modal .marker.linking-source {
+    animation: pulse 1.5s infinite;
+}
+@keyframes pulse {
+  0% { box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.7); }
+  70% { box-shadow: 0 0 0 10px rgba(255, 255, 255, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(255, 255, 255, 0); }
+}
+.map-modal .marker.editing {
+    background: rgba(50, 50, 50, 0.95);
+    border-width: 3px;
+    z-index: 101;
+}
+.map-modal .marker.empty {
+    background: transparent;
+    border: 3px solid;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    padding: 0;
+    min-width: 20px;
+}
+.map-modal .marker.empty::before {
+    content: '';
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    background: currentColor;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.map-modal .marker-input {
+    background: transparent;
+    border: none;
+    outline: none;
+    color: inherit;
+    font-size: inherit;
+    font-family: inherit;
+    text-align: center;
+    width: 100%;
+    min-width: 50px;
+}
+.map-modal .marker-input::placeholder {
+    color: rgba(255,255,255,0.5);
+}
+.map-modal .marker-controls {
+    position: absolute;
+    top: -35px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 5px;
+    opacity: 0;
+    transition: opacity 0.3s;
+    pointer-events: none;
+}
+.map-modal .marker.editing .marker-controls {
+    opacity: 1;
+    pointer-events: all;
+}
+.map-modal .marker-controls button {
+    padding: 4px 8px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 12px;
+    transition: all 0.2s;
+}
+.map-modal .save-btn { background: #28a745; color: white; }
+.map-modal .save-btn:hover { background: #218838; }
+.map-modal .delete-btn { background: #dc3545; color: white; }
+.map-modal .delete-btn:hover { background: #c82333; }
+.map-modal .link-btn { background: #007bff; color: white; }
+.map-modal .link-btn:hover { background: #0069d9; }
+
+.map-modal .info-panel {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    background: rgba(40, 40, 40, 0.95);
+    padding: 15px;
+    border-radius: 12px;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.3);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255,255,255,0.1);
+    z-index: 1000;
+    font-size: 14px;
+    color: #cccccc;
+}
+.map-modal .zoom-controls {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    z-index: 1000;
+}
+.map-modal .zoom-btn {
+    width: 50px;
+    height: 50px;
+    border: 1px solid rgba(255,255,255,0.2);
+    border-radius: 50%;
+    background: rgba(40, 40, 40, 0.95);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bold;
+    color: #ffffff;
+    transition: all 0.3s;
+}
+.map-modal .zoom-btn:hover {
+    background: rgba(60, 60, 60, 0.95);
+    transform: scale(1.1);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.4);
+}
+/* --- MAP CSS END --- */
+/* --- Draw Confirmation Modal --- */
+.draw-confirm-modal { position: fixed; inset: 0; display: flex; align-items: center; justify-content: center; padding: 24px; background: radial-gradient(circle at center, rgba(41, 128, 185, 0.38), rgba(10, 14, 22, 0.92)); backdrop-filter: blur(10px); z-index: 10000; animation: fadeInModal 0.25s ease; }
+.draw-confirm-modal__content { position: relative; width: min(420px, 90vw); background: rgba(15, 22, 33, 0.92); border: 1px solid rgba(77, 208, 255, 0.35); border-radius: 16px; box-shadow: 0 18px 48px rgba(0, 0, 0, 0.45); padding: 28px 26px 24px; overflow: hidden; text-align: center; }
+.draw-confirm-modal__glow { position: absolute; inset: -45%; background: radial-gradient(circle, rgba(77, 208, 255, 0.35) 0%, transparent 65%); filter: blur(60px); opacity: 0.65; animation: modalGlow 6s ease-in-out infinite; pointer-events: none; }
+.draw-confirm-modal__title { position: relative; z-index: 1; font-size: 20px; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: #e9f5ff; margin: 0 0 12px; }
+.draw-confirm-modal__desc { position: relative; z-index: 1; font-size: 15px; color: rgba(236, 240, 241, 0.88); margin: 0 0 18px; }
+.draw-confirm-modal__points { position: relative; z-index: 1; font-size: 14px; color: rgba(236, 240, 241, 0.6); letter-spacing: 0.05em; margin-bottom: 24px; }
+.draw-confirm-modal__points span { display: inline-block; margin-top: 6px; font-size: 30px; font-weight: 700; color: #4dd0ff; text-shadow: 0 0 18px rgba(77, 208, 255, 0.55); }
+.draw-confirm-modal__actions { position: relative; z-index: 1; display: flex; gap: 12px; justify-content: center; margin-top: 10px; }
+.draw-confirm-modal__button { flex: 1; padding: 12px 16px; border-radius: 999px; border: none; font-size: 15px; font-weight: 600; cursor: pointer; transition: transform 0.18s ease, box-shadow 0.18s ease, background 0.18s ease; }
+.draw-confirm-modal__button:active { transform: scale(0.96); }
+.draw-confirm-modal__confirm { background: linear-gradient(135deg, #26c6da, #7c4dff); color: #fff; box-shadow: 0 12px 34px rgba(124, 77, 255, 0.35); }
+.draw-confirm-modal__confirm:hover:not(.is-disabled) { transform: translateY(-1px); box-shadow: 0 16px 42px rgba(124, 77, 255, 0.48); }
+.draw-confirm-modal__cancel { background: rgba(37, 49, 68, 0.9); color: rgba(236, 240, 241, 0.85); box-shadow: 0 12px 28px rgba(0, 0, 0, 0.35); }
+.draw-confirm-modal__cancel:hover { transform: translateY(-1px); box-shadow: 0 14px 32px rgba(0, 0, 0, 0.4); }
+.draw-confirm-modal__confirm.is-disabled { background: rgba(90, 96, 112, 0.7); color: rgba(236, 240, 241, 0.4); cursor: not-allowed; box-shadow: none; }
+.draw-confirm-modal__confirm.is-loading { color: transparent; position: relative; }
+.draw-confirm-modal__confirm.is-loading::after { content: ''; position: absolute; top: 50%; left: 50%; width: 22px; height: 22px; margin: -11px 0 0 -11px; border: 2px solid rgba(255, 255, 255, 0.32); border-top-color: #ffffff; border-radius: 50%; animation: spin 0.7s linear infinite; }
+.draw-confirm-modal__status { position: relative; z-index: 1; margin-top: 20px; min-height: 18px; font-size: 13px; color: rgba(236, 240, 241, 0.65); letter-spacing: 0.03em; }
+
+/* --- Image Viewer Modal --- */
+.image-viewer-modal { position: fixed; inset: 0; display: flex; align-items: center; justify-content: center; padding: 30px; background: radial-gradient(circle at 20% 20%, rgba(46, 134, 222, 0.35), transparent 55%), rgba(8, 11, 19, 0.92); backdrop-filter: blur(12px); z-index: 9990; animation: fadeInModal 0.25s ease; }
+.image-viewer-modal__content { position: relative; width: min(960px, 94vw); height: min(82vh, 700px); background: linear-gradient(145deg, rgba(17, 24, 39, 0.96), rgba(20, 31, 52, 0.94)); border: 1px solid rgba(77, 208, 255, 0.32); border-radius: 20px; box-shadow: 0 24px 60px rgba(0, 0, 0, 0.5); display: flex; flex-direction: column; overflow: hidden; }
+.image-viewer__header { display: flex; align-items: center; justify-content: space-between; padding: 18px 24px 12px; color: #e9f5ff; }
+.image-viewer__title { font-size: 18px; text-transform: uppercase; letter-spacing: 0.08em; font-weight: 600; }
+.image-viewer__close { background: none; border: none; color: rgba(236, 240, 241, 0.65); font-size: 22px; cursor: pointer; transition: transform 0.2s ease, color 0.2s ease; }
+.image-viewer__close:hover { color: #ffffff; transform: rotate(90deg); }
+.image-viewer__toolbar { display: flex; align-items: center; gap: 12px; padding: 0 24px 16px; flex-wrap: wrap; }
+.image-viewer__url { flex: 1 1 260px; padding: 10px 14px; border-radius: 10px; border: 1px solid rgba(77, 208, 255, 0.35); background: rgba(11, 19, 32, 0.7); color: #e9f5ff; font-size: 14px; }
+.image-viewer__url::placeholder { color: rgba(236, 240, 241, 0.4); }
+.image-viewer__load { padding: 10px 18px; border-radius: 10px; border: none; background: linear-gradient(135deg, rgba(76, 201, 240, 0.85), rgba(126, 214, 223, 0.9)); color: #0f172a; font-weight: 600; cursor: pointer; transition: transform 0.18s ease, box-shadow 0.18s ease; }
+.image-viewer__load:hover { transform: translateY(-1px); box-shadow: 0 14px 28px rgba(126, 214, 223, 0.35); }
+.image-viewer__controls { display: flex; align-items: center; gap: 8px; margin-left: auto; flex-shrink: 0; }
+.image-viewer__hint { flex: 1 1 auto; color: rgba(236, 240, 241, 0.72); font-size: 13px; line-height: 1.5; min-width: 200px; }
+.image-viewer__hint strong { color: rgba(236, 240, 241, 0.9); }
+
+.image-viewer__control-button { width: 38px; height: 38px; border-radius: 50%; border: none; background: rgba(32, 43, 60, 0.85); color: rgba(236, 240, 241, 0.8); font-size: 16px; cursor: pointer; transition: transform 0.18s ease, background 0.18s ease, box-shadow 0.18s ease; }
+.image-viewer__control-button:hover { transform: translateY(-1px); background: rgba(77, 208, 255, 0.2); box-shadow: 0 12px 24px rgba(0, 0, 0, 0.35); }
+.image-viewer__canvas { position: relative; flex: 1; margin: 0 24px 24px; border-radius: 14px; border: 1px solid rgba(77, 208, 255, 0.18); background: radial-gradient(circle at 35% 30%, rgba(77, 208, 255, 0.08), rgba(7, 9, 16, 0.96)); overflow: hidden; touch-action: none; cursor: grab; max-height: calc(100% - 100px); /* 添加最大高度限制 */}
+.image-viewer__canvas.is-grabbing { cursor: grabbing; }
+.image-viewer__image { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%) scale(1); transform-origin: center center; max-width: none; max-height: none; will-change: transform; pointer-events: none; user-select: none; }
+.image-viewer__placeholder { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 70%; max-width: 360px; text-align: center; color: rgba(236, 240, 241, 0.55); font-size: 14px; line-height: 1.6; pointer-events: none; }
+.image-viewer__status { position: absolute; left: 24px; bottom: 18px; font-size: 13px; color: rgba(236, 240, 241, 0.6); letter-spacing: 0.02em; }
+
+/* Temperature perceived fill bar */
+.temp-fill { position: absolute; top: 0; left: 0; height: 100%; border-radius: 8px; background: linear-gradient(90deg, var(--survival-accent), var(--survival-success)); opacity: .55; }
+
+@media (max-width: 720px) {
+  .image-viewer-modal { padding: 18px; }
+  .image-viewer-modal__content { height: 88vh; }
+  .image-viewer__toolbar { flex-direction: column; align-items: stretch; }
+  .image-viewer__hint { margin-bottom: 8px; }
+  .image-viewer__controls { margin-left: 0; }
+  .image-viewer__canvas { margin: 0 18px 18px; }
+}
+
+@media (max-width: 480px) {
+  .draw-confirm-modal__content { padding: 24px 18px 20px; }
+  .draw-confirm-modal__actions { flex-direction: column; }
+  .image-viewer__header { padding: 16px 18px 10px; }
+  .image-viewer-modal__content { border-radius: 16px; }
+}
+
+
+.draw-points-btn.draw-points-disabled { opacity: 0.55; cursor: not-allowed; filter: saturate(0.6); box-shadow: none; transform: none; }
+.draw-points-btn.draw-points-disabled:hover { transform: none; }
+.draw-points-btn.draw-points-ready { box-shadow: 0 0 12px rgba(124, 77, 255, 0.45); }
+/* --- Modern Theme Overrides --- */
+:root {
+  --survival-primary: #111828;
+  --survival-secondary: rgba(32, 45, 68, 0.75);
+  --survival-surface: rgba(20, 34, 54, 0.78);
+  --survival-surface-strong: rgba(24, 36, 58, 0.92);
+  --survival-glass-border: rgba(148, 197, 255, 0.18);
+  --survival-accent: #5ea1ff;
+  --survival-accent-strong: #8fd6ff;
+  --survival-warning: #ffb86c;
+  --survival-success: #58f0a7;
+  --survival-danger: #ff7b9c;
+  --survival-text: #eff6ff;
+  --survival-muted: #ffffff;
+  --survival-border: rgba(148, 197, 255, 0.25);
+  --survival-shadow: 0 24px 60px rgba(6, 12, 25, 0.55);
+  --survival-glow: 0 0 30px rgba(94, 161, 255, 0.35);
+}
+
+body {
+  background: radial-gradient(circle at 20% 20%, rgba(94, 161, 255, 0.12), transparent 55%),
+              radial-gradient(circle at 80% 10%, rgba(255, 120, 180, 0.1), transparent 50%),
+              linear-gradient(160deg, #050a16, #101b2f 55%, #070b18);
+  font-family: "Inter", "Microsoft YaHei", "Segoe UI", Arial, sans-serif;
+  color: var(--survival-text);
+  min-height: 100vh;
+  margin: 0;
+  padding: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-attachment: fixed;
+}
+
+.survival-ui {
+  width: clamp(320px, 92vw, 1180px);
+  margin: 0 auto;
+  padding: 18px clamp(18px, 3vw, 28px) 28px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  border-radius: 28px;
+  background: var(--survival-surface);
+  border: 1px solid var(--survival-glass-border);
+  box-shadow: var(--survival-shadow);
+  backdrop-filter: blur(18px) saturate(160%);
+  position: relative;
+  overflow: hidden;
+}
+
+.survival-ui::before {
+  content: "";
+  position: absolute;
+  inset: -30% -30% -30% -30%; /* 均勻擴展 */
+  background: radial-gradient(circle at 30% 30%, rgba(94, 161, 255, 0.08), transparent 70%);
+  opacity: 0.4;
+  pointer-events: none;
+}
+
+
+.section__title {
+  font-size: 15px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--survival-muted);
+  margin: 0 0 12px;
+}
+
+.top-info {
+  display: grid;
+  grid-template-columns: minmax(0, 2fr) minmax(0, 3fr) minmax(0, 2fr);
+  gap: 18px;
+  padding: 22px clamp(18px, 3vw, 24px);
+  border-radius: 22px;
+  background: var(--survival-surface-strong);
+  border: 1px solid var(--survival-glass-border);
+  box-shadow: var(--survival-glow);
+  align-items: center;
+}
+
+@media (max-width: 960px) {
+  .top-info {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .top-info .location-display {
+    grid-column: 1 / -1;
+  }
+}
+
+@media (max-width: 720px) {
+  .top-info {
+    grid-template-columns: 1fr;
+  }
+}
+
+.top-info .time-display {
+  font-size: clamp(44px, 7vw, 66px);
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: -0.04em;
+  color: var(--survival-accent-strong);
+  text-shadow: 0 0 32px rgba(94, 161, 255, 0.45);
+}
+
+.top-info .info-stack {
+  display: grid;
+  gap: 12px;
+}
+
+.top-info .info-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px 18px;
+  color: var(--survival-muted);
+  font-size: 15px;
+}
+
+.top-info .location-display {
+  justify-self: end;
+  font-size: clamp(20px, 3.2vw, 30px);
+  font-weight: 600;
+  color: var(--survival-text);
+}
+
+.temp-range-wrapper,
+.nutrition-hydration-wrapper,
+.phys-mental-wrapper .phys-col,
+.phys-mental-wrapper .mental-col,
+.attr-skill-wrapper .attr-col,
+.attr-skill-wrapper .skill-col,
+.task-bar,
+.status-effects-container {
+  background: var(--survival-surface-strong);
+  border: 1px solid var(--survival-glass-border);
+  border-radius: 20px;
+  padding: 18px clamp(16px, 3vw, 22px);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.03);
+}
+
+.temp-range-bar,
+.nitrogen-gradient,
+.immune-bar,
+.progress,
+.mini-progress {
+  background: linear-gradient(135deg, rgba(18, 30, 48, 0.65), rgba(11, 20, 31, 0.65));
+  border-radius: 999px;
+  border: 1px solid rgba(148, 197, 255, 0.14);
+  position: relative;
+}
+
+.progress__bar,
+.mini-progress__bar,
+.immune-fill,
+.temp-gradient,
+.nitrogen-gradient::before {
+  border-radius: inherit;
+  background-image: linear-gradient(90deg, rgba(94, 161, 255, 0.9), rgba(96, 225, 183, 0.9));
+  box-shadow: 0 0 18px rgba(94, 161, 255, 0.35);
+}
+
+.hp-progress .progress__bar {
+  background-image: linear-gradient(90deg, #ff8fb1, #58f0a7);
+}
+
+.mp-progress .progress__bar {
+  background-image: linear-gradient(90deg, #8c8bff, #58f0a7);
+}
+
+.hunger-progress .progress__bar,
+.hunger-progress .mini-progress__bar {
+  background-image: linear-gradient(90deg, #ffdc84, #ff9f6c);
+}
+
+.water-progress .progress__bar,
+.water-progress .mini-progress__bar {
+  background-image: linear-gradient(90deg, #7fd8ff, #5ea1ff);
+}
+
+.collapsible {
+  border-radius: 20px;
+  background: var(--survival-surface-strong);
+  border: 1px solid transparent;
+  transition: border 0.3s ease, box-shadow 0.3s ease;
+}
+
+.collapsible.active {
+  border-color: rgba(148, 197, 255, 0.45);
+  box-shadow: 0 0 24px rgba(94, 161, 255, 0.18);
+}
+
+.collapsible__header {
+  padding: 16px clamp(16px, 3vw, 22px);
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  cursor: pointer;
+  color: var(--survival-text);
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.collapsible__body {
+  padding: 0 clamp(16px, 3vw, 22px) clamp(18px, 3vw, 24px);
+  color: var(--survival-muted);
+}
+
+.progress-wrapper > div:first-child,
+.mini-progress__text {
+  font-family: "IBM Plex Mono", Consolas, monospace;
+  font-size: 13px;
+  letter-spacing: 0.06em;
+  color: rgba(239, 246, 255, 0.62);
+}
+
+.button-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  justify-content: flex-end;
+}
+
+.inventory-btn,
+.draw-points-btn {
+  position: relative;
+  padding: 12px 18px;
+  border-radius: 999px;
+  border: 1px solid rgba(148, 197, 255, 0.25);
+  background: linear-gradient(135deg, rgba(17, 31, 49, 0.9), rgba(29, 45, 68, 0.85));
+  color: var(--survival-text);
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  overflow: hidden;
+  transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+}
+
+.inventory-btn::before,
+.draw-points-btn::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(120deg, transparent 25%, rgba(94, 161, 255, 0.2), transparent 75%);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.inventory-btn:hover,
+.draw-points-btn:hover {
+  transform: translateY(-3px);
+  border-color: rgba(148, 197, 255, 0.55);
+  box-shadow: 0 12px 28px rgba(8, 18, 34, 0.35);
+}
+
+.inventory-btn:hover::before,
+.draw-points-btn:hover::before {
+  opacity: 1;
+}
+
+.draw-points-btn.draw-points-disabled {
+  border-color: rgba(148, 197, 255, 0.18);
+  color: rgba(239, 246, 255, 0.45);
+  cursor: not-allowed;
+  transform: none;
+  box-shadow: none;
+}
+
+.draw-points-btn.draw-points-ready {
+  border-color: rgba(94, 161, 255, 0.65);
+  box-shadow: 0 0 28px rgba(94, 161, 255, 0.35);
+}
+
+.task-bar {
+  display: grid;
+  gap: 14px;
+}
+
+.task-list {
+  display: grid;
+  gap: 12px;
+}
+
+.task-item {
+  border-radius: 16px;
+  padding: 16px 18px;
+  background: linear-gradient(135deg, rgba(14, 24, 39, 0.78), rgba(18, 30, 48, 0.88));
+  border: 1px solid rgba(148, 197, 255, 0.18);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.04);
+}
+
+.task-type {
+  min-width: 56px;
+  border-radius: 999px;
+  padding: 6px 12px;
+  font-size: 12px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  background: rgba(148, 197, 255, 0.12);
+  color: var(--survival-accent-strong);
+}
+
+.task-item.side-task .task-type {
+  background: rgba(255, 184, 108, 0.15);
+  color: var(--survival-warning);
+}
+
+.status-effects-container {
+  margin-top: 0;
+}
+
+.status-effect-item {
+  background: rgba(148, 197, 255, 0.08);
+  border-color: rgba(148, 197, 255, 0.28);
+  color: var(--survival-text);
+  letter-spacing: 0.03em;
+}
+
+.status-effect-item:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 14px 24px rgba(8, 18, 34, 0.3);
+}
+
+.inventory-modal__content,
+.map-modal__content,
+.draw-confirm-modal__content,
+.image-viewer-modal__content {
+  border-radius: 26px;
+  border: 1px solid rgba(148, 197, 255, 0.18);
+  background: linear-gradient(155deg, rgba(17, 28, 45, 0.94), rgba(24, 36, 58, 0.94));
+  box-shadow: var(--survival-shadow);
+  backdrop-filter: blur(20px) saturate(160%);
+}
+
+.inventory-modal__close,
+.map-modal__close,
+.image-viewer__close {
+  color: rgba(239, 246, 255, 0.7);
+}
+
+.inventory-modal__close:hover,
+.map-modal__close:hover,
+.image-viewer__close:hover {
+  color: var(--survival-accent-strong);
+}
+
+.map-modal .info-panel,
+.map-modal .zoom-controls button {
+  border-color: rgba(148, 197, 255, 0.2);
+  background: rgba(24, 36, 58, 0.9);
+  box-shadow: 0 12px 28px rgba(6, 12, 25, 0.45);
+}
+
+.map-modal .zoom-btn:hover {
+  background: rgba(94, 161, 255, 0.25);
+  transform: translateY(-3px) scale(1.05);
+}
+
+.image-viewer__canvas {
+  background: radial-gradient(circle at 35% 30%, rgba(94, 161, 255, 0.14), rgba(9, 13, 22, 0.92));
+  border: 1px solid rgba(148, 197, 255, 0.16);
+}
+
+.draw-confirm-modal__confirm,
+.image-viewer__control-button,
+.inventory-btn,
+.draw-points-btn {
+  font-family: "Inter", "Microsoft YaHei", sans-serif;
+}
+
+@media (max-width: 600px) {
+  body {
+    padding: 12px;
+  }
+
+  .survival-ui {
+    padding: 18px;
+    border-radius: 24px;
+    gap: 14px;
+  }
+
+  .button-container {
+    justify-content: stretch;
+  }
+
+  .inventory-btn,
+  .draw-points-btn {
+    flex: 1 1 100%;
+    text-align: center;
+  }
+}
+/* --- Modern Theme Overrides End --- */
+/* --- Inventory Visual Tweaks --- */
+.item-props { display: flex; flex-direction: column; gap: 4px; margin-top: 6px; }
+.item-prop { display: flex; align-items: baseline; gap: 0; font-size: 12px; line-height: 1.35; color: #ffffff; white-space: nowrap; }
+.item-prop .prop-key { font-weight: 600; color: #ffffff; }
+.item-prop .prop-sep { color: rgba(255, 250, 250, 0.7); margin: 0 4px; }
+.item-prop .prop-val { color: #ffffff; }
+.inventory-list-item .item-name { font-size: 16px; }
+.inventory-item { align-items: flex-start; text-align: left; }
+.inventory-item .item-name { font-size: 15px; }
+.inventory-item .item-props { width: 100%; }
+/* --- End Inventory Visual Tweaks --- */
+
+/* --- High-Contrast Text Overrides --- */
+.top-info .info-row,
+.collapsible__body { color: #ffffff; }
+
+.progress-wrapper > div:first-child,
+.mini-progress__text { color: #ffffff; }
+
+.inventory-item .item-weight { color: #ffffff; }
+
+.draw-confirm-modal__desc,
+.draw-confirm-modal__points,
+.draw-confirm-modal__cancel,
+.draw-confirm-modal__confirm.is-disabled,
+.draw-confirm-modal__status { color: #ffffff; }
+
+.image-viewer__close,
+.image-viewer__control-button,
+.image-viewer__hint,
+.image-viewer__hint strong,
+.image-viewer__placeholder,
+.image-viewer__status,
+.image-viewer__url::placeholder { color: #ffffff; }
+
+.map-modal .toolbar label,
+.map-modal .info-panel,
+.map-modal .marker-input::placeholder { color: #ffffff; }
+
+
+.draw-points-btn.draw-points-disabled { color: #ffffff; }
+/* --- Other Section Styles --- */
+.other-group { margin-top: 8px; }
+.other-card { background: var(--survival-bg-light); padding: 8px 10px; border-radius: 6px; border: 1px solid var(--survival-border); margin-bottom: 6px; }
+.other-card__title { font-weight: 700; margin-bottom: 4px; }
+.empty-text { opacity: .75; font-size: 13px; }
+/* --- End High-Contrast Text Overrides --- */
+.skill-desc { font-size: .85em; color: var(--survival-muted); opacity: 0.8; margin-top: 4px; }
+/* --- 同伴狀態條新配色方案 --- */
+.love-progress .progress__bar {
+    background-image: linear-gradient(90deg, #ff7b9c, #ff5279); /* 好感度 - 浪漫的桃粉色 */
+    box-shadow: 0 0 18px rgba(255, 123, 156, 0.45);
+}
+.dev-progress .progress__bar {
+    background-image: linear-gradient(90deg, #ab87ff, #7c4dff); /* 開發 - 神秘的魅惑紫 */
+    box-shadow: 0 0 18px rgba(124, 77, 255, 0.45);
+}
+.health-progress .progress__bar {
+    background-image: linear-gradient(90deg, #2ecc71, #1abc9c); /* 健康 - 生命的翠綠色 */
+    box-shadow: 0 0 18px rgba(46, 204, 113, 0.45);
+}
+.satiety-progress .progress__bar {
+    background-image: linear-gradient(90deg, #f39c12, #d35400); /* 飽腹 - 豐收的南瓜色 */
+    box-shadow: 0 0 18px rgba(243, 156, 18, 0.45);
+}
+.fatigue-progress .progress__bar {
+    background-image: linear-gradient(90deg, #95a5a6, #7f8c8d); /* 疲勞 - 沉靜的石板灰 */
+    box-shadow: 0 0 18px rgba(127, 140, 141, 0.45);
+}
+/* --- 同伴名稱和狀態框樣式 --- */
+.companion-name {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #ff7b9c;
+    margin-bottom: 8px;
+    text-shadow: 
+        0 0 6px rgba(255, 123, 156, 0.5),
+        0 0 12px rgba(255, 123, 156, 0.3);
+    text-align: center;
+    position: relative;
+    animation: subtle-glow 2s ease-in-out infinite alternate;
+}
+/* 多同伴情況下的緊湊樣式 */
+.companion-name-compact {
+    font-size: 1.1em;
+    font-weight: bold;
+    color: #ff7b9c;
+    margin-bottom: 0;
+    text-shadow: 
+        0 0 4px rgba(255, 123, 156, 0.5),
+        0 0 8px rgba(255, 123, 156, 0.3);
+    text-align: center;
+    position: relative;
+    animation: subtle-glow 2s ease-in-out infinite alternate;
+}
+
+@keyframes subtle-glow {
+    from {
+        text-shadow: 
+            0 0 4px rgba(255, 123, 156, 0.4),
+            0 0 8px rgba(255, 123, 156, 0.2);
+    }
+    to {
+        text-shadow: 
+            0 0 8px rgba(255, 123, 156, 0.6),
+            0 0 15px rgba(255, 123, 156, 0.3);
+    }
+}
+
+/* 任務系統樣式 */
+.task-strip {
+  padding: 12px 16px;
+  margin: 8px 0;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-weight: 600;
+  text-align: center;
+  border: 1px solid transparent;
+}
+
+.task-strip:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.task-strip.side-task {
+  background: linear-gradient(135deg, rgba(243, 156, 18, 0.2), rgba(243, 156, 18, 0.1));
+  border-color: rgba(243, 156, 18, 0.3);
+  color: #f39c12;
+}
+
+.task-strip.emergency-task {
+  background: linear-gradient(135deg, rgba(231, 76, 60, 0.2), rgba(231, 76, 60, 0.1));
+  border-color: rgba(231, 76, 60, 0.3);
+  color: #e74c3c;
+  animation: pulse 2s infinite;
+}
+/* 日常任務樣式 */
+.task-strip.daily-task {
+  background: linear-gradient(135deg, rgba(46, 204, 113, 0.2), rgba(46, 204, 113, 0.1));
+  border-color: rgba(46, 204, 113, 0.3);
+  color: #2ecc71;
+}
+
+.task-detail {
+  background: rgba(0, 0, 0, 0.15);
+  border-radius: 8px;
+  padding: 16px;
+  margin: 8px 0;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.task-desc {
+  text-align: left;
+  margin-bottom: 16px;
+  line-height: 1.4;
+  color: var(--survival-text);
+  white-space: pre-line;
+  word-wrap: break-word;
+  /* 這裡可以添加字體大小，例如： */
+  font-size: 15px; /* 添加這一行來設置任務描述字體大小 */
+}
+
+.target-section {
+  margin: 16px 0;
+}
+
+.section-title {
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: var(--survival-accent);
+  /* 這裡可以添加字體大小，例如： */
+  font-size: 15px; /* 設置"任務要求"、"進階目標"等標題的字體大小 */
+}
+
+.target-desc {
+  margin-bottom: 8px;
+  line-height: 1.4;
+  color: var(--survival-text);
+  white-space: pre-line;
+  word-wrap: break-word;
+  /* 這裡可以添加字體大小，例如： */
+  font-size: 15px; /* 添加這一行來設置任務目標描述字體大小 */
+}
+
+.reward-info {
+  color: var(--survival-text);
+  font-weight: 600;
+  margin-top: 13px;
+  /* 這裡可以添加字體大小，例如： */
+  font-size: 15px; /* 設置獎勵信息的字體大小 */
+}
+
+.reward-info .points {
+  color: var(--survival-warning);
+}
+
+.penalty-info {
+  color: var(--survival-danger);
+  font-weight: 600;
+  text-align: center;
+}
+
+.task-divider {
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--survival-border), transparent);
+  margin: 16px 0;
+}
+
+@keyframes pulse {
+  0% { opacity: 1; }
+  50% { opacity: 0.7; }
+  100% { opacity: 1; }
+}
+
+/* 抽卡系統樣式 - 與任務系統完全一致 */
+.draw-main-task {
+  background: linear-gradient(135deg, rgba(52, 152, 219, 0.2), rgba(52, 152, 219, 0.1));
+  border-color: rgba(52, 152, 219, 0.3);
+  color: #3498db;
+}
+
+.draw-side-task {
+  background: linear-gradient(135deg, rgba(243, 156, 18, 0.2), rgba(243, 156, 18, 0.1));
+  border-color: rgba(243, 156, 18, 0.3);
+  color: #f39c12;
+}
+
+.draw-container {
+  margin-bottom: 8px;
+}
+
+/* 抽卡選項的特定樣式 */
+.requirement-item.draw-ready .req-desc {
+  color: var(--survival-success);
+  font-weight: 600;
+}
+
+.requirement-item.draw-disabled .req-desc {
+  color: var(--survival-text);
+  opacity: 0.6;
+}
+
+.requirement-item {
+  cursor: pointer;
+  transition: all 0.2s ease;
+  padding: 8px 12px;
+  border-radius: 4px;
+  margin: 4px 0;
+}
+
+.requirement-item:hover {
+  background: rgba(148, 197, 255, 0.1);
+}
+
+.requirement-item.draw-ready:hover {
+  background: rgba(46, 204, 113, 0.1);
+}
+
+.requirement-item.draw-disabled {
+  cursor: not-allowed;
+}
+
+.requirement-item.draw-disabled:hover {
+  background: transparent;
+}
+
+/* 任務完成樣式 - 整個描述（包括進度數字）都變灰劃掉 */
+.target-desc.completed {
+  color: #999 !important;
+  text-decoration: line-through;
+  opacity: 0.7;
+}
+
+/* 進度數字的黃色樣式（和生存點數一樣的黃色） */
+.progress-number {
+  color: var(--survival-warning) !important;
+  font-weight: bold;
+}
+
+/* 獎勵點數樣式 */
+.reward-info .points {
+  color: var(--survival-warning) !important;
+  font-weight: bold;
+}
+
+/* 緊急任務時間信息樣式 */
+.time-info {
+  font-size: 14px;
+  color: var(--survival-text);
+  margin-top: 8px;
+}
+
+.time-info div {
+  margin-bottom: 4px;
+}
+
+/* 失敗懲罰樣式 */
+.penalty-info {
+  color: var(--survival-danger) !important;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 8px;
+}
+
+/* 物品狀態樣式 */
+.item-state {
+  font-size: .8em;
+  color: var(--survival-success);
+  margin-top: 4px;
+}
+
+/* 修復描述文本換行 */
+.item-props {
+  width: 100%;
+}
+
+.item-prop .prop-val {
+  word-wrap: break-word;
+  white-space: normal;
+  line-height: 1.3;
+  overflow-wrap: break-word;
+}
+
+/* 任務系統樣式 - 簡化狀態指示器 */
+.task-strip {
+  position: relative;
+  padding: 12px 16px;
+  margin: 8px 0;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-weight: 600;
+  text-align: center;
+  border: 1px solid transparent;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 44px;
+}
+
+.task-strip:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.task-strip.main-task {
+  background: linear-gradient(135deg, rgba(52, 152, 219, 0.2), rgba(52, 152, 219, 0.1));
+  border-color: rgba(52, 152, 219, 0.3);
+  color: #3498db;
+}
+
+.task-strip.side-task {
+  background: linear-gradient(135deg, rgba(243, 156, 18, 0.2), rgba(243, 156, 18, 0.1));
+  border-color: rgba(243, 156, 18, 0.3);
+  color: #f39c12;
+}
+
+.task-strip.daily-task {
+  background: linear-gradient(135deg, rgba(46, 204, 113, 0.2), rgba(46, 204, 113, 0.1));
+  border-color: rgba(46, 204, 113, 0.3);
+  color: #2ecc71;
+}
+
+.task-strip.emergency-task {
+  background: linear-gradient(135deg, rgba(231, 76, 60, 0.2), rgba(231, 76, 60, 0.1));
+  border-color: rgba(231, 76, 60, 0.3);
+  color: #e74c3c;
+  animation: pulse 2s infinite;
+}
+
+/* 任務狀態指示器 - 簡化版 */
+.task-status-indicator {
+  position: absolute;
+  right: 13px; /* 從16px減小到12px，讓位置更緊湊 */
+  top: 50%;
+  transform: translateY(-50%) scale(0.9); /* 添加整體縮放90% */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+}
+
+.status-text {
+  font-size: 10px; /* 從12px減小到10px */
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.8px; /* 稍微減小字間距 */
+  transform: rotate(-15deg);
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+  padding: 1px 4px; /* 從2px 6px減小到1px 4px */
+  border-radius: 2px;
+}
+
+/* 不同狀態的顏色 */
+.status-ongoing {
+  color: #3498db;
+  background: rgba(52, 152, 219, 0.15);
+}
+
+.status-pending {
+  color: #f39c12;
+  background: rgba(243, 156, 18, 0.15);
+}
+
+.status-completed {
+  color: #2ecc71;
+  background: rgba(46, 204, 113, 0.15);
+}
+
+.status-failed {
+  color: #e74c3c;
+  background: rgba(231, 76, 60, 0.15);
+}
+
+.status-abandoned {
+  color: #95a5a6;
+  background: rgba(149, 165, 166, 0.15);
+  text-decoration: line-through;
+}
+
+/* 羈絆任務樣式 - 粉色主題 */
+.task-strip.bond-task {
+  background: linear-gradient(135deg, rgba(255, 182, 193, 0.2), rgba(255, 105, 180, 0.1));
+  border-color: rgba(255, 182, 193, 0.3);
+  color: #ffb6c1; /* 淺粉色 */
+}
+
+.bond-task .task-type {
+  background: rgba(255, 182, 193, 0.15);
+  color: #ffb6c1; /* 淺粉色 */
+}
+
+/* 狀態指示器顏色 */
+.status-ongoing.bond-task {
+  color: #ffb6c1; /* 淺粉色 */
+  background: rgba(255, 182, 193, 0.15);
+}
+
+/* 修改 .task-content 為抽卡專用樣式 */
+.task-content {
+  text-align: center;
+  line-height: 1.4;
+  font-family: "Microsoft YaHei","Segoe UI",Arial,sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  color: inherit;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+/* 其他現有樣式保持不變 */
+.task-detail {
+  background: rgba(0, 0, 0, 0.15);
+  border-radius: 8px;
+  padding: 16px;
+  margin: 8px 0;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.task-desc {
+  text-align: left;
+  margin-bottom: 16px;
+  line-height: 1.4;
+  color: var(--survival-text);
+  white-space: pre-line;
+  word-wrap: break-word;
+}
+
+.target-section {
+  margin: 16px 0;
+}
+
+.section-title {
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: var(--survival-accent);
+}
+
+.target-desc {
+  margin-bottom: 8px;
+  line-height: 1.4;
+  color: var(--survival-text);
+  white-space: pre-line;
+  word-wrap: break-word;
+}
+
+.reward-info {
+  color: var(--survival-text);
+  font-weight: 600;
+  margin-top: 12px;
+}
+
+.reward-info .points {
+  color: var(--survival-warning);
+}
+
+.penalty-info {
+  color: var(--survival-danger);
+  font-weight: 600;
+  text-align: center;
+}
+
+.task-divider {
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--survival-border), transparent);
+  margin: 16px 0;
+}
+
+@keyframes pulse {
+  0% { opacity: 1; }
+  50% { opacity: 0.7; }
+  100% { opacity: 1; }
+}
+
+/* 異常數量物品的樣式 */
+.inventory-item.abnormal-quantity {
+    border-color: var(--survival-danger);
+    background: rgba(231, 76, 60, 0.1);
+}
+
+.inventory-item.abnormal-quantity .item-name {
+    color: var(--survival-danger);
+}
+
+.inventory-item.abnormal-quantity:hover {
+    border-color: var(--survival-danger);
+    box-shadow: 0 0 10px rgba(231, 76, 60, 0.3);
+}
+
+/* 營地設施網格樣式 */
+.camp-facility {
+    background: var(--survival-bg-light);
+    border: 1px solid var(--survival-border);
+    border-radius: 6px;
+    padding: 10px;
+    text-align: center;
+    transition: all 0.2s ease-out;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 70px;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.camp-facility:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0,0,0,.3);
+    background: rgba(52,73,94,.9);
+    border-color: var(--survival-accent);
+}
+
+.camp-facility .item-name {
+    font-weight: bold;
+    margin-bottom: 6px;
+    font-size: 14px;
+    color: #fff;
+}
+
+/* 確保營地物品中的異常數量物品也顯示紅色 */
+.camp-facility.abnormal-quantity {
+    border-color: var(--survival-danger);
+    background: rgba(231, 76, 60, 0.1);
+}
+
+.camp-facility.abnormal-quantity .item-name {
+    color: var(--survival-danger);
+}
+
+/* 物品狀態類型顏色 */
+.item-name.state-freshness {
+    color: #7bed9f !important; /* 新鮮度 - 淺綠色 */
+}
+
+.item-name.state-purity {
+    color: #70a1ff !important; /* 純淨度 - 淺藍色 */
+}
+
+.item-name.state-durability {
+    color: #ffa502 !important; /* 耐久度 - 淺橙色 */
+}
+
+.item-name.state-completeness {
+    color: #fdcb6e !important; /* 完整度 - 淺黃色 */
+}
+
+.item-name.state-fuel {
+    color: #ff6b81 !important; /* 燃料 - 淺紅色 */
+}
+
+.item-name.state-facility {
+    color: #00cec9 !important; /* 設施 - 淺青色 */
+}
+
+/* 默認物品名稱顏色保持不變 */
+.item-name:not(.state-freshness):not(.state-purity):not(.state-durability):not(.state-completeness):not(.state-fuel):not(.state-facility) {
+    color: #fff !important;
+}
+
+/* 修改物品欄模態框的布局 - 加深背景顏色並處理滾動 */
+.inventory-modal__content {
+    position: relative;
+    width: 90%;
+    max-width: 900px;
+    max-height: 90vh;
+    background: #0d1520; /* 更深的藍色調背景 */
+    border: 1px solid var(--survival-border);
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,.6);
+    animation: modalFadeIn .3s ease-out;
+    /* 隱藏滾動條但保持滾動功能 */
+    overflow: auto;
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* IE and Edge */
+}
+
+/* 隱藏Webkit瀏覽器的滾動條 */
+.inventory-modal__content::-webkit-scrollbar {
+    display: none;
+}
+
+/* 固定關閉按鈕位置，不隨內容滾動 */
+.inventory-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,.8);
+    -webkit-backdrop-filter: blur(8px);
+    backdrop-filter: blur(8px);
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* 修改右上角關閉按鈕，移動到內容框內部 */
+.inventory-modal__close {
+    position: absolute; /* 改為absolute定位 */
+    top: 15px; /* 距離內容框頂部15px */
+    right: 15px; /* 距離內容框右側15px */
+    font-size: 24px;
+    cursor: pointer;
+    color: var(--survival-text);
+    transition: all .2s ease;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: rgba(0,0,0,.5);
+    z-index: 1001;
+}
+
+.inventory-modal__close:hover {
+    color: var(--survival-danger);
+    background: rgba(231,76,60,.2);
+    transform: scale(1.1);
+}
+
+/* 修改右下角關閉按鈕，移動到內容框內部 */
+.inventory-modal__close-bottom {
+    position: absolute; /* 保持absolute定位 */
+    bottom: 15px; /* 距離內容框底部15px */
+    right: 15px; /* 距離內容框右側15px */
+    font-size: 24px;
+    cursor: pointer;
+    color: var(--survival-text);
+    transition: all .2s ease;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    z-index: 1001;
+}
+
+.inventory-modal__close-bottom:hover {
+    color: var(--survival-danger);
+    background: rgba(231,76,60,.2);
+    transform: scale(1.1);
+}
+
+/* 確保內容框有相對定位，以便關閉按鈕可以相對於它定位 */
+.inventory-modal__content {
+    position: relative; /* 添加相對定位 */
+    width: 90%;
+    max-width: 900px;
+    max-height: 90vh;
+    background: #0d1520;
+    border: 1px solid var(--survival-border);
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,.6);
+    animation: modalFadeIn .3s ease-out;
+    overflow: auto;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+/* 新增橫著顯示的負重條樣式 */
+.inventory-weight-bar {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 20px;
+}
+
+/* 負重標題樣式 - 與裝備和物品標題完全一致 */
+.weight-title {
+    margin-top: 0;
+    margin-bottom: 15px;
+    color: var(--survival-accent);
+    font-size: 18px;
+    border-bottom: 1px solid hsla(0,0%,100%,.1);
+    padding-bottom: 8px;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.weight-title:after {
+    content: "";
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    width: 60px;
+    height: 2px;
+    background: var(--survival-accent);
+}
+
+.weight-text {
+    font-size: 18px;
+    font-weight: bold;
+    color: var(--survival-accent);
+}
+
+.weight-value {
+    font-size: 18px;
+    font-weight: bold;
+    color: var(--survival-warning);
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* 橫著的負重條 */
+.horizontal-weight-bar {
+    width: 100%;
+    height: 12px;
+    background: rgba(0,0,0,.3);
+    border-radius: 7px;
+    overflow: hidden;
+    position: relative;
+}
+
+/* 負重條填充 - 添加顏色漸變效果 */
+.horizontal-weight-fill {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: linear-gradient(90deg, 
+        var(--survival-success) 0%, 
+        var(--survival-warning) 50%, 
+        var(--survival-danger) 100%);
+    box-shadow: 0 0 5px rgba(46,204,113,.5);
+    transition: width 0.3s ease, background 0.3s ease;
+}
+
+/* 根據負重比例調整顏色 */
+.horizontal-weight-fill.low {
+    background: linear-gradient(90deg, var(--survival-success), #27ae60);
+}
+
+.horizontal-weight-fill.medium {
+    background: linear-gradient(90deg, var(--survival-warning), #e67e22);
+}
+
+.horizontal-weight-fill.high {
+    background: linear-gradient(90deg, var(--survival-danger), #c0392b);
+}
+
+/* 調整inventory-content樣式，不再單獨滾動 */
+.inventory-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    overflow: visible; /* 改為可見，讓父容器處理滾動 */
+    gap: 20px;
+}
+
+/* 響應式調整 */
+@media (max-width: 768px) {
+    .inventory-modal__content {
+        width: 95%;
+        padding: 15px;
+        gap: 15px;
+    }
+    
+    .weight-title {
+        flex-direction: row;
+        align-items: center;
+    }
+    
+    .inventory-modal__close {
+        top: 15px;
+        right: 15px;
+        width: 35px;
+        height: 35px;
+        font-size: 20px;
+    }
+}
+
+/* 灰白色調 - 類似物品框背景色 */
+.task-strip.camp-section {
+    background: var(--survival-bg-light) !important; /* rgba(52,73,94,0.75) */
+    border-color: rgba(148, 197, 255, 0.3) !important;
+    color: var(--survival-warning) !important;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2) !important;
+}
+
+.task-strip.camp-section:hover {
+    background: rgba(52, 73, 94, 0.9) !important; /* 稍微加深一點 */
+    border-color: rgba(148, 197, 255, 0.5) !important;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3) !important;
+}
+
+
+.camp-section .task-content {
+    color: var(--survival-warning) !important; /* 確保內容也是黃色 */
+}
+</style></head><body><div id="survival-ui" class="survival-ui" tabindex="0"></div><script>
+
+
+function normalizeValue(value) {
+  if (Array.isArray(value)) {
+    const flattened = [];
+    value.forEach((item) => {
+      if (Array.isArray(item)) {
+        const inner = normalizeValue(item);
+        if (Array.isArray(inner)) {
+          flattened.push(...inner);
+        } else if (inner !== '' && inner !== undefined && inner !== null) {
+          flattened.push(inner);
+        }
+      } else if (item !== undefined && item !== null && item !== '') {
+        flattened.push(item);
+      }
+    });
+    if (flattened.length === 0) {
+      return '';
+    }
+    if (flattened.length === 1) {
+      return normalizeValue(flattened[0]);
+    }
+    return flattened;
+  }
+  return value;
+}
+
+// --- 通用物品渲染函數 ---
+function renderItems(container, itemsData, options = {}) {
+    const {
+        checkQuantity = false, // 改為false，顯示所有物品包括數量為0或負數的
+        showQuantity = true,
+        showWeight = true, 
+        showState = true,
+        showDescription = true,
+        layout = 'grid',
+        emptyText = '空'
+    } = options;
+
+    try {
+        const entries = toEntries(itemsData);
+        
+        // 按狀態類型優先級排序
+        const sortedEntries = entries.sort((a, b) => {
+            const getPriority = (item) => {
+                const stateType = textify(item[1]?.['狀態類型'] ?? '', '');
+                if (stateType === '新鮮度') return 1;
+                if (stateType === '純淨度') return 2;
+                if (stateType === '耐久度') return 3;
+                return 4; // 其他類型排在最後
+            };
+            
+            return getPriority(a) - getPriority(b);
+        });
+        
+        if (!sortedEntries || sortedEntries.length === 0) {
+            const emptyElement = layout === 'grid' 
+                ? $('<div>').addClass('inventory-item').text(emptyText)
+                : $('<div>').addClass('inventory-list-item').text(emptyText);
+            container.append(emptyElement);
+            return;
+        }
+
+        let hasItem = false;
+        const itemsContainer = layout === 'grid' 
+            ? $('<div>').addClass('inventory-grid')
+            : $('<div>').addClass('inventory-list');
+
+        sortedEntries.forEach(([key, value]) => {
+            if (value && typeof value === 'object' && !Array.isArray(value)) {
+                const quantity = Number(e(value['數量'] ?? 1));
+                
+                hasItem = true;
+                
+                const itemElement = createItemElement(key, value, {
+                    showQuantity,
+                    showWeight,
+                    showState,
+                    showDescription,
+                    layout
+                });
+                
+                // 如果數量異常，添加警告樣式
+                if (quantity <= 0) {
+                    itemElement.addClass('abnormal-quantity');
+                    // 添加提示信息
+                    itemElement.attr('title', `警告：物品數量異常 (${quantity})`);
+                }
+                
+                itemsContainer.append(itemElement);
+            }
+        });
+
+        if (!hasItem) {
+            const emptyElement = layout === 'grid' 
+                ? $('<div>').addClass('inventory-item').text(emptyText)
+                : $('<div>').addClass('inventory-list-item').text(emptyText);
+            itemsContainer.append(emptyElement);
+        }
+
+        container.append(itemsContainer);
+    } catch (error) {
+        console.error('渲染物品時出錯:', error);
+        container.append($('<div>').text('物品數據解析錯誤'));
+    }
+}
+
+
+// --- 創建單個物品元素 ---
+function createItemElement(itemName, itemDetails, options = {}) {
+    const {
+        showQuantity = true,
+        showWeight = true,
+        showState = true,
+        showDescription = true,
+        layout = 'grid'
+    } = options;
+
+    const isGrid = layout === 'grid';
+    const itemClass = isGrid ? 'inventory-item' : 'inventory-list-item';
+    const cell = $('<div>').addClass(itemClass);
+    
+    // 創建物品名稱，根據狀態類型添加顏色類
+    const nameElement = $('<div>').addClass('item-name').text(itemName);
+    
+    // 獲取狀態類型並添加相應的顏色類
+    const stateType = textify(itemDetails['狀態類型'] ?? '', '').toLowerCase();
+    if (stateType.includes('新鮮度')) {
+        nameElement.addClass('state-freshness');
+    } else if (stateType.includes('純淨度')) {
+        nameElement.addClass('state-purity');
+    } else if (stateType.includes('耐久度')) {
+        nameElement.addClass('state-durability');
+    } else if (stateType.includes('完整度')) {
+        nameElement.addClass('state-completeness');
+    } else if (stateType.includes('燃料')) {
+        nameElement.addClass('state-fuel');
+    }
+    // 其他狀態類型保持默認顏色
+    
+    nameElement.appendTo(cell);
+
+    // 創建屬性容器
+    const props = $('<div>').addClass('item-props');
+    
+    // 數量 - 總是顯示，包括0和負數
+    if (showQuantity) {
+        const quantity = Number(e(itemDetails['數量'] ?? 1));
+        const quantityLine = $('<div>').addClass('item-prop');
+        $('<span>').addClass('prop-key').text('數量').appendTo(quantityLine);
+        $('<span>').addClass('prop-sep').text(': ').appendTo(quantityLine);
+        $('<span>').addClass('prop-val').text(quantity).appendTo(quantityLine);
+        props.append(quantityLine);
+    }
+    
+    // 狀態類型和狀態值 - 修復顯示格式
+    if (showState) {
+        const stateType = textify(itemDetails['狀態類型'] ?? '', '');
+        const stateValue = itemDetails['狀態'];
+        
+        // 只有當狀態類型和狀態值都存在時才顯示
+        if (stateType && stateValue !== undefined && stateValue !== null && stateValue !== '') {
+            const stateLine = $('<div>').addClass('item-prop');
+            // 直接顯示狀態類型作為屬性名，狀態值作為值
+            $('<span>').addClass('prop-key').text(stateType).appendTo(stateLine);
+            $('<span>').addClass('prop-sep').text(': ').appendTo(stateLine);
+            $('<span>').addClass('prop-val').text(textify(stateValue, '')).appendTo(stateLine);
+            props.append(stateLine);
+        }
+    }
+    
+    // 重量
+    if (showWeight) {
+        const weight = Number(e(itemDetails['重量'] ?? 0));
+        if (weight > 0) {
+            const weightLine = $('<div>').addClass('item-prop');
+            $('<span>').addClass('prop-key').text('重量').appendTo(weightLine);
+            $('<span>').addClass('prop-sep').text(': ').appendTo(weightLine);
+            $('<span>').addClass('prop-val').text(`${weight}kg`).appendTo(weightLine);
+            props.append(weightLine);
+        }
+    }
+    
+    // 描述
+    if (showDescription) {
+        const description = textify(itemDetails['描述'] ?? '', '');
+        if (description) {
+            const descLine = $('<div>').addClass('item-prop');
+            $('<span>').addClass('prop-key').text('描述').appendTo(descLine);
+            $('<span>').addClass('prop-sep').text(': ').appendTo(descLine);
+            $('<span>').addClass('prop-val').text(description).appendTo(descLine);
+            props.append(descLine);
+        }
+    }
+    
+    // 其他屬性
+    Object.entries(itemDetails).forEach(([k, v]) => {
+        if (['數量', '重量', '狀態', '狀態類型', '描述', '名稱', 'name', '$meta'].includes(k)) return;
+        if (v !== undefined && v !== null && v !== '') {
+            const line = $('<div>').addClass('item-prop');
+            $('<span>').addClass('prop-key').text(String(k)).appendTo(line);
+            $('<span>').addClass('prop-sep').text(': ').appendTo(line);
+            $('<span>').addClass('prop-val').text(textify(v, '')).appendTo(line);
+            props.append(line);
+        }
+    });
+    
+    if (props.children().length > 0) {
+        cell.append(props);
+    }
+    
+    return cell;
+}
+
+function e(value, parse = true) {
+  if (value == null) {
+    return '';
+  }
+  const normalized = normalizeValue(value);
+  if (Array.isArray(normalized)) {
+    const processed = normalized
+      .map((item) => e(item, parse))
+      .filter((item) => item !== '' && item !== undefined && item !== null);
+    if (processed.length === 0) {
+      return parse ? '' : [];
+    }
+    return parse ? processed.join(' / ') : processed;
+  }
+  if (typeof normalized === 'string' && normalized.includes('->')) {
+    const match = normalized.match(/(.+)->(.+)\((.+)\)/);
+    if (match) {
+      const label = match[2].trim();
+      return parse ? a(label) : label;
+    }
+  }
+  return parse ? a(normalized) : normalized;
+}
+
+function a(value) {
+  if (typeof value === 'number') {
+    return value;
+  }
+  if (typeof value === 'string') {
+    const cleaned = value.replace(/,/g, '');
+    const parsed = parseFloat(cleaned);
+    if (!Number.isNaN(parsed)) {
+      return parsed;
+    }
+  }
+  return value;
+}
+
+function isMetaOnlyObject(value) {
+  return (
+    value &&
+    typeof value === 'object' &&
+    !Array.isArray(value) &&
+    '$meta' in value &&
+    Object.keys(value).length === 1
+  );
+}
+
+function textify(value, fallback = '') {
+  const raw = e(value, false);
+  if (Array.isArray(raw)) {
+    const list = raw.map((item) => textify(item, '')).filter(Boolean);
+    return list.length > 0 ? list.join(' / ') : fallback;
+  }
+  if (raw == null) {
+    return fallback;
+  }
+  const str = String(raw).trim();
+  return str || fallback;
+}
+
+function toEntries(source) {
+  if (source == null) {
+    return [];
+  }
+  const raw = e(source, false);
+  if (Array.isArray(raw)) {
+    const result = [];
+    raw.forEach((item, index) => {
+      if (item == null) {
+        return;
+      }
+      if (Array.isArray(item)) {
+        item.forEach((nested, nestedIndex) => {
+          if (nested == null || isMetaOnlyObject(nested)) {
+            return;
+          }
+          result.push([`${index}-${nestedIndex}`, nested]);
+        });
+        return;
+      }
+      if (isMetaOnlyObject(item)) {
+        return;
+      }
+      result.push([String(index), item]);
+    });
+    return result;
+  }
+  if (typeof raw === 'object') {
+    return Object.entries(raw).filter(([key, value]) => {
+      if (key === '$meta') {
+        return false;
+      }
+      if (isMetaOnlyObject(value)) {
+        return false;
+      }
+      return value != null;
+    });
+  }
+  return [['0', raw]];
+}
+
+function firstMeaningfulObject(source) {
+  if (source && typeof source === 'object' && !Array.isArray(source)) {
+    const clone = { ...source };
+    delete clone.$meta;
+    if (Object.keys(clone).length > 0) {
+      return clone;
+    }
+  }
+  const entries = toEntries(source);
+  for (const [, value] of entries) {
+    if (value && typeof value === 'object' && !Array.isArray(value)) {
+      const clone = { ...value };
+      delete clone.$meta;
+      return clone;
+    }
+  }
+  return {};
+}
+
+function ensureValueArray(value) {
+  return toEntries(value).map(([, item]) => item);
+}
+const s = {
+  碳水: 2000,
+  脂肪: 100000,
+  氮平衡: 200,
+  蛋白質: 2400,
+  維生素: 100,
+  水分: 100,
+  飽腹感: 100,
+  體溫: 42,
+  免疫負荷: 100,
+  壓力: 100,
+  無聊: 100,
+  孤獨: 100,
+  睡眠: 100,
+  疲勞: 100,
+
+};
+
+function t(label, current, max, className) {
+  const percent = Math.max(0, Math.min(100, max === 0 ? 0 : (current / max) * 100));
+  const wrapper = $('<div>').addClass('progress-wrapper');
+  // 如果label包含了'/'，說明是我們自定義的完整格式，直接使用
+  // 否則，保持原來的格式
+  const displayText = label.includes('/') ? label : (label ? `${label}: ${current}/${max}` : `${current}/${max}`);
+  $('<div>').text(displayText).appendTo(wrapper);
+  const bar = $('<div>').addClass('progress');
+  if (className) {
+    bar.addClass(className);
+  }
+  $('<div>').addClass('progress__bar').css('width', `${percent}%`).appendTo(bar);
+  wrapper.append(bar);
+  return wrapper;
+}
+
+function d(title, expanded = false) {
+  const section = $('<section>').addClass('collapsible');
+  if (expanded) {
+    section.addClass('active');
+  }
+  const header = $('<div>').addClass('collapsible__header').text(title);
+  const body = $('<div>').addClass('collapsible__body');
+  if (expanded) {
+    body.css('display', 'block');
+  }
+  header.on('click', () => {
+    section.toggleClass('active');
+    body.slideToggle(200);
+  });
+  section.append(header, body);
+  return { $section: section, $body: body };
+}
+
+function n(title, items, expanded = false) {
+  const section = $('<section>').addClass('collapsible');
+  if (expanded) {
+    section.addClass('active');
+  }
+  const header = $('<div>').addClass('collapsible__header collapsible__header--with-progress');
+  $('<span>').addClass('collapsible__title').text(title).appendTo(header);
+  const bars = $('<div>').addClass('collapsible__bars-container');
+  items.forEach((item) => {
+    const row = $('<div>').addClass('progress-item');
+    $('<span>').addClass('progress-label').text(`${item.label}:`).appendTo(row);
+    const percent = Math.max(0, Math.min(100, item.max === 0 ? 0 : (item.current / item.max) * 100));
+    const miniWrapper = $('<div>').addClass('mini-progress-wrapper');
+    const miniBar = $('<div>').addClass('mini-progress');
+    if (item.className) {
+      miniBar.addClass(item.className);
+    }
+    $('<div>').addClass('mini-progress__bar').css('width', `${percent}%`).appendTo(miniBar);
+    $('<div>').addClass('mini-progress__text').text(`${item.current}/${item.max}`).appendTo(miniWrapper);
+    miniWrapper.append(miniBar);
+    row.append(miniWrapper);
+    bars.append(row);
+  });
+  header.append(bars);
+  $('<span>').addClass('collapsible__indicator').appendTo(header);
+  const body = $('<div>').addClass('collapsible__body');
+  if (expanded) {
+    body.css('display', 'block');
+  }
+  header.on('click', () => {
+    section.toggleClass('active');
+    body.slideToggle(200);
+  });
+  section.append(header, body);
+  return { $section: section, $body: body };
+}
+function r(container, data) {
+  const environment = data['環境'] ?? {};
+  const system = data['系統'] ?? {};
+  const top = $('<div>').addClass('top-info');
+
+  const timeText = textify(system['當前時間'], '--:--');
+  $('<div>').addClass('time-display').text(timeText).appendTo(top);
+
+  const infoStack = $('<div>').addClass('info-stack');
+  const row1 = $('<div>').addClass('info-row');
+  row1.append($('<div>').addClass('row-item').text(`Day ${e(system['經過天數'] ?? 0)}`));
+  row1.append($('<div>').addClass('row-item').text(textify(environment['季節'], '')));
+  const row2 = $('<div>').addClass('info-row');
+  row2.append($('<div>').addClass('row-item').text(textify(environment['天氣'], '')));
+  row2.append($('<div>').addClass('row-item').text(`風速 ${textify(environment['風速'], '--')}`));
+  row2.append($('<div>').addClass('row-item').text(`舒適度 ${textify(environment['舒適度'], '--')}`));
+  infoStack.append(row1, row2);
+  top.append(infoStack);
+
+  const locationText = `位置：${textify(environment['當前位置'], '未知')}`;
+  $('<div>').addClass('location-display').text(locationText).appendTo(top);
+
+  container.append(top);
+
+  const temperature = Number(e(environment['體感溫度'] ?? 20));
+  const minComfort = Number(e(environment['最低舒適溫度'] ?? 15));
+  const maxComfort = Number(e(environment['最高舒適溫度'] ?? 25));
+
+  const tempWrapper = $('<div>').addClass('temp-range-wrapper');
+  $('<div>').text(`體感溫度: ${temperature}°C  舒適區間: ${minComfort}°C ~ ${maxComfort}°C`).appendTo(tempWrapper);
+  const tempBar = $('<div>').addClass('temp-range-bar');
+  const span = 50;
+  const currentPercent = Math.max(0, Math.min(100, ((temperature - 0) / span) * 100));
+  // 填充條反映體感溫度佔比
+  $('<div>').addClass('temp-fill').css('width', `${currentPercent}%`).appendTo(tempBar);
+  const comfortStart = Math.max(0, ((minComfort - 0) / span) * 100);
+  const comfortEnd = Math.min(100, ((maxComfort - 0) / span) * 100);
+  $('<div>').addClass('comfort-zone').css({ left: `${comfortStart}%`, width: `${comfortEnd - comfortStart}%` }).appendTo(tempBar);
+  $('<div>').addClass('current-temp').css('left', `${currentPercent}%`).appendTo(tempBar);
+  tempWrapper.append(tempBar);
+  container.append(tempWrapper);
+
+  const core = data['核心狀態'] ?? {};
+  const hpCurrent = Number(e(core['當前生命值'] ?? 0));
+  const hpMax = Number(e(core['生命值上限'] ?? 0));
+  const mpCurrent = Number(e(core['當前精神值'] ?? 0));
+  const mpMax = Number(e(core['精神值上限'] ?? 0));
+  const coreWrapper = $('<div>').addClass('core-stats-wrapper');
+  $('<div>').addClass('core-stat-item').append(t('生命值', hpCurrent, hpMax, 'hp-progress')).appendTo(coreWrapper);
+  $('<div>').addClass('core-stat-item').append(t('精神值', mpCurrent, mpMax, 'mp-progress')).appendTo(coreWrapper);
+  container.append(coreWrapper);
+}
+
+function i(equipmentSource, itemsSource, currentWeight, weightLimit) {
+    const modal = $('<div>').addClass('inventory-modal');
+    const content = $('<div>').addClass('inventory-modal__content');
+    
+    // 右上角關閉按鈕 - 現在添加到content內部
+    const closeTop = $('<span>').addClass('inventory-modal__close').html('×');
+    closeTop.on('click', () => modal.remove());
+    
+    // 右下角關閉按鈕 - 現在添加到content內部
+    const closeBottom = $('<span>').addClass('inventory-modal__close-bottom').html('×');
+    closeBottom.on('click', () => modal.remove());
+
+    const body = $('<div>').addClass('inventory-content');
+    
+    // 裝備部分 - 現在放在最前面
+    body.append($('<h3>').text('裝備'));
+    const equipmentList = $('<div>').addClass('inventory-list');
+    try {
+        const entries = toEntries(equipmentSource);
+        if (entries.length === 0) {
+            equipmentList.append($('<div>').addClass('inventory-list-item').text('空'));
+        } else {
+            entries.forEach(([key, entry]) => {
+                const row = $('<div>').addClass('inventory-list-item');
+                $('<div>').addClass('item-name').text(String(key)).appendTo(row);
+                if (entry && typeof entry === 'object') {
+                    const props = $('<div>').addClass('item-props');
+                    Object.entries(entry).forEach(([k, v]) => {
+                        if (k === '$meta') return;
+                        const line = $('<div>').addClass('item-prop');
+                        $('<span>').addClass('prop-key').text(String(k)).appendTo(line);
+                        $('<span>').addClass('prop-sep').text(': ').appendTo(line);
+                        $('<span>').addClass('prop-val').text(textify(v, '')).appendTo(line);
+                        props.append(line);
+                    });
+                    if (props.children().length > 0) {
+                        row.append(props);
+                    }
+                }
+                equipmentList.append(row);
+            });
+        }
+    } catch (error) {
+        equipmentList.append($('<div>').addClass('inventory-list-item').text('空'));
+    }
+    body.append(equipmentList);
+
+    // 創建橫著顯示的負重條 - 現在放在裝備後面
+    const weightBarContainer = $('<div>').addClass('inventory-weight-bar');
+    
+    // 負重標題 - 與裝備和物品標題完全一致
+    const weightTitle = $('<div>').addClass('weight-title');
+    const weightText = $('<span>').addClass('weight-text').text('負重');
+    const weightValue = $('<span>').addClass('weight-value').text(`${currentWeight}/${weightLimit} kg`);
+    weightTitle.append(weightText, weightValue);
+    weightBarContainer.append(weightTitle);
+    
+    // 橫著的負重條
+    const percent = Math.max(0, Math.min(100, weightLimit === 0 ? 0 : (currentWeight / weightLimit) * 100));
+    const horizontalWeightBar = $('<div>').addClass('horizontal-weight-bar');
+    const weightFill = $('<div>').addClass('horizontal-weight-fill').css('width', `${percent}%`);
+    
+    // 根據負重比例設置顏色類別
+    if (percent <= 50) {
+        weightFill.addClass('low');
+    } else if (percent <= 80) {
+        weightFill.addClass('medium');
+    } else {
+        weightFill.addClass('high');
+    }
+    
+    horizontalWeightBar.append(weightFill);
+    weightBarContainer.append(horizontalWeightBar);
+    
+    body.append(weightBarContainer);
+
+    // 物品部分 - 使用通用函數
+    body.append($('<h3>').text('物品'));
+    const itemsContainer = $('<div>');
+    renderItems(itemsContainer, itemsSource, {
+        layout: 'grid',
+        checkQuantity: true,
+        emptyText: '空'
+    });
+    body.append(itemsContainer);
+
+    content.append(body);
+    modal.append(content);
+    content.append(closeTop); // 右上角按鈕添加到content內部
+    content.append(closeBottom); // 右下角按鈕添加到content內部
+    $('body').append(modal);
+}
+
+
+function o(container, data) {
+  const system = data['任務'] ?? {};
+  const mainTask = textify(system['主線'], '暫無主線任務');
+  const sideTask = textify(system['支線'], '暫無支線任務');
+  const taskBar = $('<div>').addClass('task-bar');
+  $('<div>').addClass('section__title').text('任務').appendTo(taskBar);
+  const list = $('<div>').addClass('task-list');
+  const mainItem = $('<div>').addClass('task-item main-task');
+  $('<div>').addClass('task-type').text('主線').appendTo(mainItem);
+  $('<div>').addClass('task-content').text(mainTask).appendTo(mainItem);
+  list.append(mainItem);
+  const sideItem = $('<div>').addClass('task-item side-task');
+  $('<div>').addClass('task-type').text('支線').appendTo(sideItem);
+  $('<div>').addClass('task-content').text(sideTask).appendTo(sideItem);
+  list.append(sideItem);
+  taskBar.append(list);
+  container.append(taskBar);
+}
+function createStatusEffects(container, data) {
+  const source = data?.['狀態']?.['當前狀態'];
+  if (source == null) {
+    return;
+  }
+
+  const collected = [];
+  const collect = (value) => {
+    if (value == null) {
+      return;
+    }
+    if (Array.isArray(value)) {
+      value.forEach(collect);
+      return;
+    }
+    if (typeof value === 'object') {
+      Object.values(value).forEach(collect);
+      return;
+    }
+    const text = String(value);
+    text.split(/[,，、\s]+/)
+      .map((item) => item.trim())
+      .filter(Boolean)
+      .forEach((item) => collected.push(item));
+  };
+
+  collect(e(source, false));
+
+  const unique = [...new Set(collected.filter(Boolean))];
+  if (unique.length === 0) {
+    return;
+  }
+
+  const wrapper = $('<div>').addClass('status-effects-container');
+  $('<div>').addClass('section__title').text('當前狀態').appendTo(wrapper);
+  const list = $('<div>').addClass('status-effects-list');
+  unique.forEach((effect) => {
+    $('<span>').addClass('status-effect-item').text(effect).appendTo(list);
+  });
+  wrapper.append(list);
+  container.append(wrapper);
+}
+// --- IMAGE VIEWER MODAL START ---
+const IMAGE_VIEWER_STORAGE_KEY = 'survivalImageViewerState';
+const IMAGE_VIEWER_FALLBACK_URL = '/img/zsm9xz.png'; // Update this to hardcode a default map image when no variables provide one. IMAGE
+
+function loadSavedImageViewerState() {
+  try {
+    const raw = localStorage.getItem(IMAGE_VIEWER_STORAGE_KEY);
+    if (!raw) {
+      return null;
+    }
+    const parsed = JSON.parse(raw);
+    if (parsed && typeof parsed === 'object') {
+      return parsed;
+    }
+    return null;
+  } catch (error) {
+    console.error('讀取地圖查看器狀態失敗:', error);
+    return null;
+  }
+}
+
+function persistImageViewerState(state) {
+  try {
+    if (!state) {
+      localStorage.removeItem(IMAGE_VIEWER_STORAGE_KEY);
+      return;
+    }
+    localStorage.setItem(IMAGE_VIEWER_STORAGE_KEY, JSON.stringify(state));
+  } catch (error) {
+    console.error('保存地圖查看器狀態失敗:', error);
+  }
+}
+
+let savedImageViewerState = loadSavedImageViewerState();
+
+function resolveMapImageUrl(statData, displayData) {
+  const candidates = [
+    statData?.['地圖']?.['圖片鏈接'],
+    statData?.['地圖']?.['鏈接'],
+    statData?.['地圖鏈接'],
+    statData?.['系統']?.['地圖鏈接'],
+    statData?.['系統']?.['地圖']?.['鏈接'],
+    displayData?.['地圖']?.['圖片鏈接'],
+    displayData?.['地圖']?.['鏈接'],
+    displayData?.['地圖鏈接'],
+  ];
+  for (const candidate of candidates) {
+    const url = textify(candidate, '').trim();
+    if (url) {
+      return url;
+    }
+  }
+  return IMAGE_VIEWER_FALLBACK_URL || '';
+}
+
+class ImageViewer {
+  constructor(root, initialState) {
+    this.root = root;
+    this.canvas = root.find('.image-viewer__canvas');
+    this.image = root.find('.image-viewer__image');
+    this.placeholder = root.find('.image-viewer__placeholder');
+    this.status = root.find('.image-viewer__status');
+    this.controlButtons = root.find('.image-viewer__control-button');
+    this.scale = initialState?.scale ?? 1;
+    this.translateX = initialState?.translateX ?? 0;
+    this.translateY = initialState?.translateY ?? 0;
+    this.imageUrl = initialState?.url ?? '';
+    this.imageLoaded = false;
+    this.activePointers = new Map();
+    this.initialPinchDistance = 0;
+    this.minScale = 0.4;
+    this.maxScale = 4;
+
+    this.bindEvents();
+    if (this.imageUrl) {
+      this.loadImage(this.imageUrl, false);
+    } else {
+      this.updatePlaceholder(true);
+    }
+  }
+
+  bindEvents() {
+    this.controlButtons.each((_, button) => {
+      const $button = $(button);
+      const action = $button.data('action');
+      if (action === 'zoom-in') {
+        $button.on('click.imageViewer', () => this.zoomTo(this.scale * 1.2));
+      } else if (action === 'zoom-out') {
+        $button.on('click.imageViewer', () => this.zoomTo(this.scale * 0.8));
+      } else if (action === 'reset') {
+        $button.on('click.imageViewer', () => this.resetTransform());
+      }
+    });
+
+    const canvasElement = this.canvas[0];
+    if (canvasElement) {
+      canvasElement.addEventListener('wheel', (event) => this.handleWheel(event), { passive: false });
+    }
+
+    this.canvas
+      .on('pointerdown.imageViewer', (event) => this.handlePointerDown(event))
+      .on('pointermove.imageViewer', (event) => this.handlePointerMove(event))
+      .on('pointerup.imageViewer pointercancel.imageViewer pointerleave.imageViewer', (event) => this.handlePointerUp(event));
+  }
+
+  loadImage(url, resetTransform = true) {
+    this.setStatus('正在加載圖片...');
+    this.placeholder.hide();
+    this.imageLoaded = false;
+    this.image.off('.imageViewer');
+    this.image
+      .on('load.imageViewer', () => {
+        this.imageLoaded = true;
+        this.imageUrl = url;
+        this.setStatus('加載完成');
+        if (resetTransform) {
+          this.resetTransform();
+        } else {
+          this.applyTransform();
+        }
+        this.canvas.addClass('has-image');
+        this.placeholder.hide();
+        setTimeout(() => this.setStatus(url), 800);
+      })
+      .on('error.imageViewer', () => {
+        this.imageLoaded = false;
+        this.setStatus('圖片加載失敗，請檢查鏈接是否有效。');
+        this.updatePlaceholder(false, '圖片加載失敗，請檢查鏈接是否有效。');
+      });
+    this.image.attr('src', url);
+  }
+
+  resetTransform() {
+    this.scale = 1;
+    this.translateX = 0;
+    this.translateY = 0;
+    this.applyTransform();
+  }
+
+  applyTransform() {
+    const transform = 'translate(-50%, -50%) translate(' + this.translateX + 'px, ' + this.translateY + 'px) scale(' + this.scale + ')';
+    this.image.css('transform', transform);
+  }
+
+  zoomTo(newScale, center = null) {
+    if (!this.imageLoaded) {
+      return;
+    }
+    const previousScale = this.scale;
+    this.scale = Math.min(this.maxScale, Math.max(this.minScale, newScale));
+    if (center) {
+      const rect = this.canvas[0]?.getBoundingClientRect();
+      if (rect) {
+        const offsetX = center.x - rect.left;
+        const offsetY = center.y - rect.top;
+        const scaleRatio = this.scale / previousScale;
+        this.translateX = (this.translateX + offsetX) - offsetX * scaleRatio;
+        this.translateY = (this.translateY + offsetY) - offsetY * scaleRatio;
+      }
+    }
+    this.applyTransform();
+  }
+
+  handleWheel(event) {
+    if (!this.imageLoaded) {
+      return;
+    }
+    event.preventDefault();
+    const delta = event.deltaY > 0 ? 0.9 : 1.1;
+    this.zoomTo(this.scale * delta, { x: event.clientX, y: event.clientY });
+  }
+
+  handlePointerDown(event) {
+    if (!this.imageLoaded) {
+      return;
+    }
+    this.canvas.addClass('is-grabbing');
+    this.canvas[0]?.setPointerCapture?.(event.pointerId);
+    this.activePointers.set(event.pointerId, { x: event.clientX, y: event.clientY });
+    if (this.activePointers.size === 2) {
+      this.initialPinchDistance = this.computePinchDistance();
+    }
+    event.preventDefault();
+  }
+
+  handlePointerMove(event) {
+    if (!this.activePointers.has(event.pointerId)) {
+      return;
+    }
+    const previous = this.activePointers.get(event.pointerId);
+    const current = { x: event.clientX, y: event.clientY };
+    this.activePointers.set(event.pointerId, current);
+
+    if (this.activePointers.size === 1) {
+      const deltaX = current.x - previous.x;
+      const deltaY = current.y - previous.y;
+      this.translateX += deltaX;
+      this.translateY += deltaY;
+      this.applyTransform();
+      return;
+    }
+
+    if (this.activePointers.size >= 2) {
+      const newDistance = this.computePinchDistance();
+      if (this.initialPinchDistance === 0) {
+        this.initialPinchDistance = newDistance;
+        return;
+      }
+      const factor = newDistance / this.initialPinchDistance;
+      this.zoomTo(this.scale * factor, this.computePinchCenter());
+      this.initialPinchDistance = newDistance;
+    }
+  }
+
+  handlePointerUp(event) {
+    this.activePointers.delete(event.pointerId);
+    if (this.activePointers.size <= 1) {
+      this.initialPinchDistance = 0;
+    }
+    if (this.activePointers.size === 0) {
+      this.canvas.removeClass('is-grabbing');
+    }
+  }
+
+  computePinchDistance() {
+    const pointers = Array.from(this.activePointers.values());
+    if (pointers.length < 2) {
+      return 0;
+    }
+    const [a, b] = pointers;
+    return Math.hypot(a.x - b.x, a.y - b.y) || 0.0001;
+  }
+
+  computePinchCenter() {
+    const pointers = Array.from(this.activePointers.values());
+    if (pointers.length < 2) {
+      return null;
+    }
+    const [a, b] = pointers;
+    return { x: (a.x + b.x) / 2, y: (a.y + b.y) / 2 };
+  }
+
+  updatePlaceholder(show, message = '') {
+    if (show) {
+      this.placeholder.show().text(message || '地圖圖片將自動讀取，支持鼠標滾輪與觸控縮放。');
+    } else if (message) {
+      this.placeholder.show().text(message);
+    } else {
+      this.placeholder.hide();
+    }
+  }
+
+  setStatus(message) {
+    this.status.text(message || '');
+  }
+
+  getState() {
+    if (!this.imageUrl) {
+      return null;
+    }
+    return {
+      url: this.imageUrl,
+      scale: this.scale,
+      translateX: this.translateX,
+      translateY: this.translateY,
+    };
+  }
+
+  destroy() {
+    this.canvas.off('.imageViewer');
+    this.image.off('.imageViewer');
+    this.controlButtons.off('.imageViewer');
+    this.activePointers.clear();
+  }
+}
+
+function openImageViewerModal(statData, displayData) {
+  $('.image-viewer-modal').remove();
+  const modal = $('<div>').addClass('image-viewer-modal');
+  const content = $('<div>').addClass('image-viewer-modal__content');
+  const header = $('<div>').addClass('image-viewer__header');
+  $('<div>').addClass('image-viewer__title').text('地圖查看器').appendTo(header);
+  const closeBtn = $('<button>').addClass('image-viewer__close').attr('type', 'button').html('&times;');
+  header.append(closeBtn);
+
+  const toolbar = $('<div>').addClass('image-viewer__toolbar');
+  $('<div>').addClass('image-viewer__hint').text('地圖圖片鏈接將自動讀取。如需固定鏈接，請在代碼中修改 IMAGE_VIEWER_FALLBACK_URL。').appendTo(toolbar);
+  const controls = $('<div>').addClass('image-viewer__controls');
+  const zoomOut = $('<button>').addClass('image-viewer__control-button').attr('type', 'button').data('action', 'zoom-out').text('-');
+  const reset = $('<button>').addClass('image-viewer__control-button').attr('type', 'button').data('action', 'reset').text('⟳');
+  const zoomIn = $('<button>').addClass('image-viewer__control-button').attr('type', 'button').data('action', 'zoom-in').text('+');
+  controls.append(zoomOut, reset, zoomIn);
+  toolbar.append(controls);
+
+  const canvas = $('<div>').addClass('image-viewer__canvas');
+  const image = $('<img>').addClass('image-viewer__image').attr({ draggable: 'false', alt: '地圖預覽' });
+  const placeholder = $('<div>').addClass('image-viewer__placeholder');
+  const status = $('<div>').addClass('image-viewer__status');
+  canvas.append(image, placeholder, status);
+
+  content.append(header, toolbar, canvas);
+  modal.append(content);
+  $('body').append(modal);
+
+  const initialState = {
+    ...(savedImageViewerState ?? {}),
+  };
+  const autoUrl = resolveMapImageUrl(statData, displayData);
+  if (autoUrl) {
+    initialState.url = autoUrl;
+  } else if (!initialState.url && IMAGE_VIEWER_FALLBACK_URL) {
+    initialState.url = IMAGE_VIEWER_FALLBACK_URL;
+  }
+  const viewer = new ImageViewer(content, initialState);
+
+  const closeModal = () => {
+    viewer.destroy();
+    savedImageViewerState = viewer.getState();
+    persistImageViewerState(savedImageViewerState);
+    modal.remove();
+    $(document).off('keydown.imageViewer');
+  };
+
+  closeBtn.on('click', closeModal);
+  modal.on('click', (event) => {
+    if (event.target === modal[0]) {
+      closeModal();
+    }
+  });
+  $(document).on('keydown.imageViewer', (event) => {
+    if (event.key === 'Escape') {
+      closeModal();
+    }
+  });
+}
+// --- IMAGE VIEWER MODAL END ---
+
+const DRAW_CONFIRM_MESSAGE = "{{user}}按下了抽卡按鈕";
+
+// 修改 showDrawConfirmModal 函數
+function showDrawConfirmModal(drawType, survivalPoints, miraclePoints) {
+  const existing = $('.draw-confirm-modal');
+  if (existing.length > 0) {
+    existing.remove();
+  }
+  
+  const isSurvival = drawType === 'survival';
+  const currentPoints = isSurvival ? survivalPoints : miraclePoints;
+  const pointType = isSurvival ? '生存' : '奇蹟';
+  const pointName = isSurvival ? '生存點數' : '奇蹟點數';
+  
+  const safePoints = Number.isFinite(currentPoints) ? currentPoints : 0;
+  
+  const modal = $('<div>').addClass('draw-confirm-modal');
+  const content = $('<div>').addClass('draw-confirm-modal__content');
+  const glow = $('<div>').addClass('draw-confirm-modal__glow');
+  const title = $('<div>').addClass('draw-confirm-modal__title').text(`${pointType}抽卡確認`);
+  const desc = $('<div>').addClass('draw-confirm-modal__desc').text(`是否消耗 100 ${pointName}進行${pointType}抽卡？`);
+  const pointsDisplay = $('<div>').addClass('draw-confirm-modal__points').html(`當前${pointName} <span>${safePoints}</span>`);
+  const actions = $('<div>').addClass('draw-confirm-modal__actions');
+  const confirmBtn = $('<button>').addClass('draw-confirm-modal__button draw-confirm-modal__confirm').text(`確認${pointType}抽卡`);
+  const cancelBtn = $('<button>').addClass('draw-confirm-modal__button draw-confirm-modal__cancel').text('再想想');
+  const status = $('<div>').addClass('draw-confirm-modal__status');
+  
+  actions.append(confirmBtn, cancelBtn);
+  content.append(glow, title, desc, pointsDisplay, actions, status);
+  modal.append(content);
+  $('body').append(modal);
+  
+  const closeModal = () => {
+    modal.remove();
+    $(document).off('keydown.drawConfirm');
+  };
+  
+  cancelBtn.on('click', closeModal);
+  modal.on('click', (event) => {
+    if (event.target === modal[0]) {
+      closeModal();
+    }
+  });
+  
+  $(document).on('keydown.drawConfirm', (event) => {
+    if (event.key === 'Escape') {
+      closeModal();
+    }
+  });
+  
+  if (safePoints < 100) {
+    confirmBtn.addClass('is-disabled').prop('disabled', true);
+    status.text(`${pointName}不足，至少需要 100 點才能抽卡。`);
+    return;
+  }
+  
+  confirmBtn.on('click', async () => {
+    if (confirmBtn.hasClass('is-loading')) {
+      return;
+    }
+    confirmBtn.addClass('is-loading').prop('disabled', true);
+    status.text(`正在通知 LLM 進行${pointType}抽卡...`);
+    
+    try {
+      const drawMessage = isSurvival 
+        ? "{{user}}按下了生存抽卡按鈕，消耗100生存點數"
+        : "{{user}}按下了奇蹟抽卡按鈕，消耗100奇蹟點數";
+      
+      await triggerSlash(`/send ${drawMessage}`);
+      status.text(`${pointType}抽卡請求已發送給 LLM！`);
+      confirmBtn.addClass('is-disabled');
+      setTimeout(() => {
+        closeModal();
+      }, 900);
+    } catch (error) {
+      console.error(`發送${pointType}抽卡請求失敗:`, error);
+      status.text('發送失敗，請稍後重試。');
+      confirmBtn.removeClass('is-loading').prop('disabled', false);
+    }
+  });
+}
+
+
+function renderNutritionDetails(target, statData) {
+  const wrapper = $('<div>').addClass('nutrition-hydration-wrapper');
+
+  // 直接從完整的 statData 中安全取值
+  const phys = statData['生理'] ?? {};
+  const carb = Number(e(phys['碳水'] ?? 0));
+  const fat = Number(e(phys['脂肪'] ?? 0));
+  const protein = Number(e(phys['蛋白質'] ?? 0));
+  const vitamin = Number(e(phys['維生素'] ?? 0));
+  const nitrogen = Number(e(phys['氮平衡'] ?? 0));
+
+  wrapper.append(t('碳水', carb, s['碳水'], 'carbs-progress'));
+  wrapper.append(t('脂肪', fat, s['脂肪'], 'fat-progress'));
+
+  const nitrogenValue = Math.max(-100, Math.min(100, nitrogen));
+  const nitrogenWrapper = $('<div>').addClass('progress-wrapper');
+  $('<div>').text(`氮平衡: ${nitrogen}`).appendTo(nitrogenWrapper);
+  const gradient = $('<div>').addClass('nitrogen-gradient');
+  $('<div>').addClass('nitrogen-marker').css('left', `${((nitrogenValue + 100) / 200) * 100}%`).appendTo(gradient);
+  nitrogenWrapper.append(gradient);
+  wrapper.append(nitrogenWrapper);
+
+  wrapper.append(t('蛋白質', protein, s['蛋白質'], 'protein-progress'));
+  wrapper.append(t('維生素', vitamin, s['維生素'], 'vitamin-progress'));
+
+  target.append(wrapper);
+}
+
+function renderPhysMental(target, physData, mentalData, fullData) {
+  const wrapper = $('<div>').addClass('phys-mental-wrapper');
+  const physCol = $('<div>').addClass('phys-col');
+  const mentalCol = $('<div>').addClass('mental-col');
+
+  $('<div>').addClass('section__title').text('生理').appendTo(physCol);
+  const temperature = Number(e(physData['體溫'] ?? 37));
+  const tempWrapper = $('<div>').addClass('progress-wrapper');
+  $('<div>').text(`體溫: ${temperature}°C (正常: 36.5~37.5°C)`).appendTo(tempWrapper);
+  const tempGradient = $('<div>').addClass('temp-gradient');
+  const marker = $('<div>').addClass('temp-marker');
+  const percent = Math.min(Math.max(((temperature - 35) / 5) * 100, 0), 100);
+  marker.css('left', `${percent}%`);
+  $('<div>').addClass('temp-normal-zone').css({ left: '30%', width: '20%' }).appendTo(tempGradient);
+  tempGradient.append(marker);
+  tempWrapper.append(tempGradient);
+  physCol.append(tempWrapper);
+
+  const fatigue = Number(e(fullData['狀態']?.['疲勞'] ?? 0));
+  const endurance = Number(e(fullData['屬性']?.['耐力']?.['等級'] ?? 25));
+  physCol.append(t('疲勞', fatigue, endurance * 4, 'fatigue-progress'));
+
+  const immuneLoad = Number(e(physData['免疫負荷'] ?? 0));
+  const immunePower = Number(e(fullData['次生屬性']?.['免疫力'] ?? 0));
+  const immuneWrapper = $('<div>').addClass('progress-wrapper');
+  $('<div>').text(`免疫負荷: ${immuneLoad} 免疫力: ${immunePower}`).appendTo(immuneWrapper);
+  const immuneBar = $('<div>').addClass('immune-bar');
+  $('<div>').addClass('immune-fill').css('width', `${Math.min((immuneLoad / (s['免疫負荷'] ?? 100)) * 100, 100)}%`).appendTo(immuneBar);
+  $('<div>').addClass('immune-marker').css('left', `${Math.min((immunePower / (s['免疫負荷'] ?? 100)) * 100, 100)}%`).appendTo(immuneBar);
+  immuneWrapper.append(immuneBar);
+  physCol.append(immuneWrapper);
+
+  const merged = { ...physData };
+  if (fullData['狀態']?.['表皮濕度'] !== undefined) {
+    merged['表皮濕度'] = fullData['狀態']['表皮濕度'];
+  }
+
+  const skip = new Set(['碳水', '脂肪', '氮平衡', '蛋白質', '維生素', '水分', '飽腹感', '免疫負荷', '免疫力', '免疫上限', '體溫', '疲勞']);
+  Object.entries(merged).forEach(([key, value]) => {
+    if (skip.has(key)) {
+      return;
+    }
+    const numeric = Number(e(value));
+    const max = Math.max(s[key] ?? 100, numeric);
+    physCol.append(t(key, numeric, max));
+  });
+
+  $('<div>').addClass('section__title').text('精神').appendTo(mentalCol);
+  Object.entries(mentalData).forEach(([key, value]) => {
+    const numeric = Number(e(value));
+    const max = Math.max(s[key] ?? 100, numeric);
+    mentalCol.append(t(key, numeric, max));
+  });
+
+  wrapper.append(physCol, mentalCol);
+  target.append(wrapper);
+}
+
+function renderAttributesAndSkills(target, attributesSource, skillsSource, talentsSource) {
+  // 1. 創建主容器，保持不變
+  const wrapper = $('<div>').addClass('attr-skill-wrapper');
+
+  // 2. 創建左邊欄的容器
+  const leftCol = $('<div>').addClass('attr-col');
+
+  // 3. 渲染【屬性】並放入左欄
+  $('<div>').addClass('section__title').text('屬性').appendTo(leftCol);
+  const attributes = firstMeaningfulObject(attributesSource);
+  Object.entries(attributes).forEach(([name, detail]) => {
+    if (detail && typeof detail === 'object') {
+      const level = Number(e(detail['等級'] ?? 0));
+      const exp = Number(e(detail['當前經驗'] ?? 0));
+      const required = Number(e(detail['升級所需經驗'] ?? 0)) || 1;
+      leftCol.append($('<div>').text(`${name} Lv.${level}`));
+      leftCol.append(t('', exp, required));
+    }
+  });
+
+  // 4. 渲染【天賦】並繼續放入左欄
+  const talents = firstMeaningfulObject(talentsSource);
+  const talentEntries = Object.entries(talents).filter(([key]) => key !== '$meta');
+  if (talentEntries.length > 0) {
+    // 在屬性下方加一個標題
+    const talentsHeader = $('<div>').addClass('section__title').css('margin-top', '20px').text('天賦');
+    leftCol.append(talentsHeader);
+
+    talentEntries.forEach(([name, value]) => {
+      const item = $('<div>').addClass('skill-item'); // 沿用 skill-item 的樣式，比較好看
+      $('<div>').addClass('skill-name').text(name).appendTo(item);
+      const desc = typeof value === 'string' ? value : textify(value?.['描述'] ?? value?.desc ?? '', '');
+      if (desc) {
+          $('<div>').addClass('skill-desc').text(desc).appendTo(item);
+      }
+      leftCol.append(item);
+    });
+  }
+
+  // 5. 將填滿內容的左欄添加到主容器
+  wrapper.append(leftCol);
+
+
+  // 6. 創建右邊欄的容器，並渲染【技能】
+  const rightCol = $('<div>').addClass('skill-col'); // skill-col class 名稱可以保留
+  $('<div>').addClass('section__title').text('技能').appendTo(rightCol);
+  const skills = firstMeaningfulObject(skillsSource);
+  const entries = Object.entries(skills).filter(([key]) => key !== '$meta');
+  if (entries.length === 0) {
+    rightCol.append($('<p>').text('暫無技能'));
+  } else {
+    entries.forEach(([name, value]) => {
+      if (value && typeof value === 'object') {
+        const level = Number(e(value['等級'] ?? value.level ?? 0));
+        const exp = Number(e(value['當前經驗'] ?? value.exp ?? 0));
+        const required = Number(e(value['升級所需經驗'] ?? value.reqExp ?? 100)) || 1;
+        const item = $('<div>').addClass('skill-item');
+        $('<div>').addClass('skill-name').text(`${name} Lv.${level}`).appendTo(item);
+        const progress = $('<div>').addClass('progress');
+        $('<div>').addClass('progress__bar').css('width', `${Math.min((exp / required) * 100, 100)}%`).appendTo(progress);
+        item.append(progress);
+        rightCol.append(item);
+      }
+    });
+  }
+
+  // 7. 將右欄也添加到主容器
+  wrapper.append(rightCol);
+
+  // 8. 將主容器添加到頁面中
+  target.append(wrapper);
+}
+
+function renderKeyValueTree(target, data) {
+  const entries = toEntries(data);
+  if (!entries || entries.length === 0) {
+    return;
+  }
+  const list = $('<ul>').addClass('section__list');
+  entries.forEach(([key, value]) => {
+    const li = $('<li>');
+    if (value && typeof value === 'object') {
+      const row = $('<div>').addClass('item');
+      $('<span>').addClass('item__key').text(String(key)).appendTo(row);
+      li.append(row);
+      renderKeyValueTree(li, value);
+    } else {
+      const row = $('<div>').addClass('item');
+      $('<span>').addClass('item__key').text(String(key)).appendTo(row);
+      $('<span>').addClass('item__value').text(textify(value, '')).appendTo(row);
+      li.append(row);
+    }
+    list.append(li);
+  });
+  target.append(list);
+}
+
+function renderCollapsibleSection(container, title, source, expanded = false) {
+    // 檢查數據是否為空
+    if (source == null) {
+        return;
+    }
+    
+    const entries = toEntries(source);
+    
+    // 如果數據為空或沒有有效條目，則不渲染
+    if (!entries || entries.length === 0) {
+        return;
+    }
+
+    const { $section, $body } = d(title, expanded);
+
+    if (!entries || entries.length === 0) {
+        $body.append($('<div>').addClass('empty-text').text(`暫無${title}信息`));
+    } else {
+        const isObjectOfObjects = entries.some(([, v]) => v && typeof v === 'object' && !Array.isArray(v));
+        if (isObjectOfObjects) {
+            entries.forEach(([name, detail]) => {
+                const card = $('<div>').addClass('other-card');
+                $('<div>').addClass('other-card__title').text(String(name)).appendTo(card);
+                
+                // 使用與攜帶物品相同的渲染邏輯
+                if (detail && typeof detail === 'object') {
+                    const props = $('<div>').addClass('item-props');
+                    
+                    // 處理所有屬性
+                    Object.entries(detail).forEach(([key, value]) => {
+                        if (key === '$meta') return;
+                        
+                        // 特殊處理 items 字段（嵌套對象）
+                        if (key === '物品' && value && typeof value === 'object') {
+                            const itemsTitle = $('<div>').css({
+                                'margin-top': '10px', 
+                                'font-weight': 'bold',
+                                'color': 'var(--survival-accent)'
+                            }).text('物品');
+                            props.append(itemsTitle);
+                            
+                            // 遞歸處理嵌套的物品對象
+                            Object.entries(value).forEach(([itemName, itemDetail]) => {
+                                const itemCard = $('<div>').addClass('inventory-item').css({
+                                    'margin': '8px 0',
+                                    'padding': '10px',
+                                    'background': 'var(--survival-bg-light)',
+                                    'border': '1px solid var(--survival-border)',
+                                    'border-radius': '6px'
+                                });
+                                
+                                $('<div>').addClass('item-name').text(itemName).appendTo(itemCard);
+                                
+                                if (itemDetail && typeof itemDetail === 'object') {
+                                    const itemProps = $('<div>').addClass('item-props');
+                                    
+                                    // 先處理狀態類型和狀態值的特殊邏輯
+                                    const stateType = textify(itemDetail['狀態類型'] ?? '', '');
+                                    const stateValue = itemDetail['狀態'];
+                                    
+                                    // 按照指定順序處理屬性
+                                    const orderedKeys = ['數量', '重量', '描述'];
+                                    const processedKeys = new Set();
+                                    
+                                    // 1. 先顯示數量
+                                    if (itemDetail['數量'] !== undefined && itemDetail['數量'] !== null) {
+                                        const line = $('<div>').addClass('item-prop');
+                                        $('<span>').addClass('prop-key').text('數量').appendTo(line);
+                                        $('<span>').addClass('prop-sep').text(': ').appendTo(line);
+                                        $('<span>').addClass('prop-val').text(textify(itemDetail['數量'], '')).appendTo(line);
+                                        itemProps.append(line);
+                                        processedKeys.add('數量');
+                                    }
+                                    
+                                    // 2. 顯示燃料（狀態類型 + 狀態）
+                                    if (stateType && stateValue !== undefined && stateValue !== null) {
+                                        const stateLine = $('<div>').addClass('item-prop');
+                                        $('<span>').addClass('prop-key').text(stateType).appendTo(stateLine);
+                                        $('<span>').addClass('prop-sep').text(': ').appendTo(stateLine);
+                                        $('<span>').addClass('prop-val').text(textify(stateValue, '')).appendTo(stateLine);
+                                        itemProps.append(stateLine);
+                                    }
+                                    
+                                    // 3. 顯示重量（添加 kg 單位）
+                                    if (itemDetail['重量'] !== undefined && itemDetail['重量'] !== null) {
+                                        const line = $('<div>').addClass('item-prop');
+                                        $('<span>').addClass('prop-key').text('重量').appendTo(line);
+                                        $('<span>').addClass('prop-sep').text(': ').appendTo(line);
+                                        const weightValue = Number(e(itemDetail['重量'])) || 0;
+                                        $('<span>').addClass('prop-val').text(`${weightValue}kg`).appendTo(line);
+                                        itemProps.append(line);
+                                        processedKeys.add('重量');
+                                    }
+                                    
+                                    // 4. 顯示描述
+                                    if (itemDetail['描述'] !== undefined && itemDetail['描述'] !== null && itemDetail['描述'] !== '') {
+                                        const line = $('<div>').addClass('item-prop');
+                                        $('<span>').addClass('prop-key').text('描述').appendTo(line);
+                                        $('<span>').addClass('prop-sep').text(': ').appendTo(line);
+                                        $('<span>').addClass('prop-val').text(textify(itemDetail['描述'], '')).appendTo(line);
+                                        itemProps.append(line);
+                                        processedKeys.add('描述');
+                                    }
+                                    
+                                    // 5. 顯示其他未處理的屬性（按字母順序）
+                                    Object.entries(itemDetail).forEach(([itemKey, itemValue]) => {
+                                        if (itemKey === '$meta' || itemKey === '狀態類型' || itemKey === '狀態' || processedKeys.has(itemKey)) return;
+                                        if (itemValue !== undefined && itemValue !== null && itemValue !== '') {
+                                            const line = $('<div>').addClass('item-prop');
+                                            $('<span>').addClass('prop-key').text(String(itemKey)).appendTo(line);
+                                            $('<span>').addClass('prop-sep').text(': ').appendTo(line);
+                                            $('<span>').addClass('prop-val').text(textify(itemValue, '')).appendTo(line);
+                                            itemProps.append(line);
+                                        }
+                                    });
+                                    
+                                    if (itemProps.children().length > 0) {
+                                        itemCard.append(itemProps);
+                                    }
+                                }
+                                
+                                props.append(itemCard);
+                            });
+                        } else {
+                            // 處理普通屬性
+                            if (value !== undefined && value !== null && value !== '') {
+                                const line = $('<div>').addClass('item-prop');
+                                $('<span>').addClass('prop-key').text(String(key)).appendTo(line);
+                                $('<span>').addClass('prop-sep').text(': ').appendTo(line);
+                                $('<span>').addClass('prop-val').text(textify(value, '')).appendTo(line);
+                                props.append(line);
+                            }
+                        }
+                    });
+                    
+                    if (props.children().length > 0) {
+                        card.append(props);
+                    }
+                } else {
+                    // 如果不是對象，保持原來的顯示方式
+                    renderKeyValueTree(card, detail);
+                }
+                
+                $body.append(card);
+            });
+        } else {
+            renderKeyValueTree($body, source);
+        }
+    }
+    container.append($section);
+}
+
+
+function renderCompanions(container, companionsSource) {
+    if (companionsSource == null) return;
+    
+    const companions = firstMeaningfulObject(companionsSource);
+    const companionEntries = Object.entries(companions).filter(([key]) => key !== '$meta');
+    
+    if (companionEntries.length === 0) {
+        return;
+    }
+
+    // 只有一個同伴時，保持原來的顯示方式
+    if (companionEntries.length === 1) {
+        const [name, details] = companionEntries[0];
+        const { $section, $body } = d('同伴', false);
+        
+        if (details && typeof details === 'object') {
+            renderSingleCompanion($body, name, details);
+        }
+        
+        container.append($section);
+        return;
+    }
+
+    // 多個同伴時，使用任務系統的折疊列表方式
+    const { $section, $body } = d('同伴', false);
+    
+    companionEntries.forEach(([name, details], index) => {
+        if (details && typeof details === 'object') {
+            // 創建同伴條目（類似任務條）
+            const companionStrip = $('<div>').addClass('task-strip main-task').css({
+                'padding': '7px 16px',
+                'min-height': '31px'
+            });
+            
+            // 同伴名稱（居中顯示，調整樣式）
+            const companionName = $('<div>').addClass('companion-name-compact').text(name);	
+            const taskContent = $('<div>').addClass('task-content');
+            taskContent.append(companionName);
+            companionStrip.append(taskContent);
+            
+            // 創建同伴詳情區域
+            const companionDetail = $('<div>').addClass('task-detail').hide();
+            renderSingleCompanion(companionDetail, name, details);
+            
+            // 點擊展開/收起詳情
+            companionStrip.on('click', () => {
+                const $currentDetails = $body.find('.task-detail').not(companionDetail);
+                $currentDetails.slideUp();
+                companionDetail.slideToggle();
+            });
+            
+            $body.append(companionStrip);
+            $body.append(companionDetail);
+        }
+    });
+    
+    container.append($section);
+}
+
+// 提取原來的單個同伴渲染邏輯為獨立函數
+function renderSingleCompanion(container, name, details) {
+    const item = $('<div>').addClass('skill-item');
+    
+    // 只有一個同伴時，在詳情內部也顯示同伴名稱
+    if (container.hasClass('collapsible__body')) {
+        $('<div>').addClass('companion-name').text(name).appendTo(item);
+    }
+    
+    // 狀態顯示
+    const healthStatus = textify(details['狀態'], '狀態未知');
+    const healthValue = Number(e(details['健康度'] ?? 100));
+
+    let statusColor = '#2ecc71';
+    if (healthValue <= 0) {
+        statusColor = '#7f8c8d';
+    } else if (healthValue < 10) {
+        statusColor = '#8e44ad';
+    } else if (healthValue < 30) {
+        statusColor = '#e74c3c';
+    } else if (healthValue < 50) {
+        statusColor = '#e67e22';
+    } else if (healthValue < 70) {
+        statusColor = '#f39c12';
+    }
+
+    const statusRow = $('<div>').css({
+        'font-size': '16px', 
+        'font-weight': 'bold', 
+        'color': 'var(--survival-warning)',
+        'margin-top': '14px', 
+        'margin-bottom': '10px', 
+        'text-align': 'left'
+    });
+
+    $('<span>').text('狀態: ').appendTo(statusRow);
+    $('<span>').css('color', statusColor).text(healthStatus).appendTo(statusRow);
+    item.append(statusRow);
+
+    // 關系顯示
+    const identity = textify(details['關系'], '');
+    if (identity) {
+        const identityRow = $('<div>').css({
+            'font-size': '16px', 'font-weight': 'bold', 'color': 'var(--survival-warning)',
+            'margin-top': '14px', 'margin-bottom': '10px', 'text-align': 'left'
+        });
+        
+        $('<span>').text('關系: ').appendTo(identityRow);
+        $('<span>').css('color', '#3498db').text(identity).appendTo(identityRow);
+        
+        item.append(identityRow);
+    }
+
+    // 屬性進度條
+    const loveMax = 100;
+    const devMax = 100;
+    const healthMax = 100;
+    const hydrationMax = 100;
+    const satietyMax = 100;
+
+    const love = Math.min(Number(e(details['好感度'] ?? 0)), loveMax);
+    const dev = Math.min(Number(e(details['開發度'] ?? 0)), devMax);
+    const health = Math.min(Number(e(details['健康度'] ?? 0)), healthMax);
+    const hydration = Math.min(Number(e(details['水分值'] ?? 0)), hydrationMax);
+    const satiety = Math.min(Number(e(details['飽腹感'] ?? 0)), satietyMax);
+
+    const companionEndurance = Number(e(details['屬性']?.['耐力']?.['等級'] ?? 25));
+    const fatigueMax = companionEndurance * 4;
+    const fatigue = Math.min(Number(e(details['疲勞度'] ?? 0)), fatigueMax);
+
+    item.append(t(`好感度: ${love}/${loveMax}`, love, loveMax, 'love-progress'));
+    item.append(t('開發度', dev, devMax, 'dev-progress'));
+    item.append(t('健康度', health, healthMax, 'health-progress'));
+    item.append(t('水分值', hydration, hydrationMax, 'water-progress'));
+    item.append(t('飽腹感', satiety, satietyMax, 'satiety-progress'));
+    item.append(t(`疲勞度: ${fatigue}/${fatigueMax}`, fatigue, fatigueMax, 'fatigue-progress'));
+    
+    // 同伴屬性
+    if(details['屬性'] && typeof details['屬性'] === 'object') {
+        const companionAttrs = firstMeaningfulObject(details['屬性']);
+        const attrEntries = Object.entries(companionAttrs).filter(([key]) => key !== '$meta');
+        
+        if(attrEntries.length > 0) {
+            const attrsTitle = $('<div>').addClass('section__title').text('屬性');
+            item.append(attrsTitle);
+            
+            const attrsContainer = $('<div>');
+            attrEntries.forEach(([attrName, attrDetail]) => {
+                if (attrDetail && typeof attrDetail === 'object') {
+                    const level = Number(e(attrDetail['等級'] ?? 0));
+                    const exp = Number(e(attrDetail['當前經驗'] ?? 0));
+                    const required = Number(e(attrDetail['升級所需經驗'] ?? 100)) || 1;
+                    
+                    const attrNameRow = $('<div>').text(`${attrName} Lv.${level}`);
+                    attrsContainer.append(attrNameRow);
+                    
+                    const progressWrapper = $('<div>').addClass('progress-wrapper');
+                    $('<div>').text(`${exp}/${required}`).appendTo(progressWrapper);
+                    
+                    const progressBar = $('<div>').addClass('progress');
+                    const percent = Math.min((exp / required) * 100, 100);
+                    $('<div>').addClass('progress__bar').css('width', `${percent}%`).appendTo(progressBar);
+                    
+                    progressWrapper.append(progressBar);
+                    attrsContainer.append(progressWrapper);
+                }
+            });
+            
+            item.append(attrsContainer);
+        }
+    }
+
+    // 同伴天賦
+    if(details['天賦/特性'] && typeof details['天賦/特性'] === 'object') {
+        const companionTalents = firstMeaningfulObject(details['天賦/特性']);
+        const talentEntries = Object.entries(companionTalents).filter(([key]) => key !== '$meta');
+        if(talentEntries.length > 0) {
+            const talentsHeader = $('<div>').addClass('section__title').text('天賦');
+            item.append(talentsHeader);
+
+            talentEntries.forEach(([talentName, talentValue]) => {
+                const talentItem = $('<div>').addClass('skill-item').css('margin-bottom', '8px');
+                $('<div>').addClass('skill-name').text(talentName).appendTo(talentItem);
+                const desc = typeof talentValue === 'string' ? talentValue : textify(talentValue?.['描述'] ?? talentValue?.desc ?? '', '');
+                if (desc) {
+                    $('<div>').addClass('skill-desc').text(desc).appendTo(talentItem);
+                }
+                item.append(talentItem);
+            });
+        }
+    }
+
+    // 同伴技能
+    if(details['技能'] && typeof details['技能'] === 'object') {
+        const companionSkills = firstMeaningfulObject(details['技能']);
+        const skillEntries = Object.entries(companionSkills).filter(([key]) => key !== '$meta');
+        if(skillEntries.length > 0) {
+            const skillsTitle = $('<div>').addClass('section__title').text('技能');
+            item.append(skillsTitle);
+
+            const skillsContainer = $('<div>');
+            skillEntries.forEach(([skillName, skillValue]) => {
+                 if (skillValue && typeof skillValue === 'object') {
+                    const level = Number(e(skillValue['等級'] ?? 0));
+                    const exp = Number(e(skillValue['當前經驗'] ?? 0));
+                    const required = Number(e(skillValue['升級所需經驗'] ?? 100)) || 1;
+
+                    const skillItem = $('<div>').addClass('skill-item').css('margin-bottom', '5px');
+                    $('<div>').addClass('skill-name').text(`${skillName} Lv.${level} (${exp}/${required})`).appendTo(skillItem);
+                    
+                    const progress = $('<div>').addClass('progress');
+                    const percent = Math.min((exp / required) * 100, 100);
+                    $('<div>').addClass('progress__bar').css('width', `${percent}%`).appendTo(progress);
+                    
+                    skillItem.append(progress);
+                    skillsContainer.append(skillItem);
+                }
+            });
+            item.append(skillsContainer);
+        }
+    }
+
+    // 攜帶物品
+    if(details['攜帶物品'] && typeof details['攜帶物品'] === 'object') {
+        const companionItems = firstMeaningfulObject(details['攜帶物品']);
+        const itemsTitle = $('<div>').css({'margin-top': '10px', 'font-weight': 'bold'}).text('攜帶物品:');
+        item.append(itemsTitle);
+    
+        const itemsContainer = $('<div>');
+        renderItems(itemsContainer, companionItems, {
+            layout: 'grid',
+            checkQuantity: false,
+            emptyText: '無攜帶物品'
+        });
+        item.append(itemsContainer);
+    }
+    container.append(item);
+}  // 添加這個閉合大括號
+
+// 在 renderCompanions 函數後面添加 renderCamps 函數
+function renderCamps(container, campsSource) {
+    if (campsSource == null) return;
+    
+    const camps = firstMeaningfulObject(campsSource);
+    const campEntries = Object.entries(camps).filter(([key]) => key !== '$meta');
+    
+    if (campEntries.length === 0) {
+        return;
+    }
+
+    // 使用任務系統的折疊列表方式顯示營地
+    const { $section, $body } = d('營地', false);
+    
+    campEntries.forEach(([name, details]) => {
+        if (details && typeof details === 'object') {
+            // 創建營地條目（類似任務條）
+            const campStrip = $('<div>').addClass('task-strip main-task').css({
+                'padding': '7px 16px',
+                'min-height': '31px'
+            });
+            
+            // 營地名稱（居中顯示，白色）
+            const campName = $('<div>').css({
+                'font-size': '16px',
+                'font-weight': 'bold',
+                'color': '#3498db',
+                'text-align': 'center',
+                'width': '100%'
+            }).text(name);
+            
+            const taskContent = $('<div>').addClass('task-content');
+            taskContent.append(campName);
+            campStrip.append(taskContent);
+            
+            // 創建營地詳情區域
+            const campDetail = $('<div>').addClass('task-detail').hide();
+            renderSingleCamp(campDetail, name, details);
+            
+            // 點擊展開/收起詳情
+            campStrip.on('click', () => {
+                const $currentDetails = $body.find('.task-detail').not(campDetail);
+                $currentDetails.slideUp();
+                campDetail.slideToggle();
+            });
+            
+            $body.append(campStrip);
+            $body.append(campDetail);
+        }
+    });
+    
+    container.append($section);
+}
+
+// 單個營地的渲染邏輯
+function renderSingleCamp(container, name, details) {
+    const item = $('<div>').addClass('skill-item');
+    
+    // 顯示位置
+    if (details['位置']) {
+        const locationRow = $('<div>').css({
+            'font-size': '15px',
+            'font-weight': 'bold',
+            'color': 'var(--survival-warning)',
+            'margin-top': '0px',
+            'margin-bottom': '5px',
+            'text-align': 'left'
+        });
+        
+        $('<span>').text('位置: ').appendTo(locationRow);
+        $('<span>').css('color', '#ffffff').text(textify(details['位置'], '')).appendTo(locationRow);
+        
+        item.append(locationRow);
+    }
+    
+    // 顯示樣式
+    if (details['樣式']) {
+        const styleRow = $('<div>').css({
+            'font-size': '15px',
+            'font-weight': 'bold',
+            'color': 'var(--survival-warning)',
+            'margin-top': '0px',
+            'margin-bottom': '10px',
+            'text-align': 'left'
+        });
+        
+        $('<span>').text('樣式: ').appendTo(styleRow);
+        $('<span>').css('color', '#ffffff').text(textify(details['樣式'], '')).appendTo(styleRow);
+        
+        item.append(styleRow);
+    }
+    
+    // 按照指定順序顯示各個部分，空狀態自動隱藏
+    const sections = [
+        { key: '物品', display: '營地物品' },
+        { key: '食材', display: '營地食材' },
+        { key: '材料', display: '營地材料' },
+        { key: '牲畜', display: '營地牲畜' },
+        { key: '醫藥', display: '營地醫藥' },
+        { key: '奇物', display: '營地奇物' },
+        { key: '設施', display: '營地設施' },
+        { key: '武器/陷阱', display: '營地武器/陷阱' }
+    ];
+    
+    let hasVisibleSections = false;
+    
+    sections.forEach(section => {
+        if (details[section.key] && typeof details[section.key] === 'object') {
+            const entries = toEntries(details[section.key]);
+            // 檢查是否有有效內容，沒有則跳過
+            if (!entries || entries.length === 0) {
+                return; // 跳過空的部分
+            }
+            
+            hasVisibleSections = true;
+            
+            const sectionStrip = $('<div>').addClass('task-strip camp-section').css({
+                'padding': '6px 12px', // 高度減少1/3 (從9px 16px 減少到6px 12px)
+                'min-height': '22px',  // 高度減少1/3 (從33px 減少到22px)
+                'margin-top': '8px'
+            });
+            
+            const sectionName = $('<div>').css({
+                'font-size': '15px',
+                'font-weight': 'bold',
+                'color': 'var(--survival-warning)', // 黃色字體
+                'text-align': 'center',
+                'width': '100%'
+            }).text(section.display);
+            
+            const taskContent = $('<div>').addClass('task-content');
+            taskContent.append(sectionName);
+            sectionStrip.append(taskContent);
+            
+            const sectionDetail = $('<div>').addClass('task-detail').hide();
+            
+            // 判斷是否是物品類型的數據
+            const isItemsSection = ['物品', '食材', '材料', '醫藥', '奇物', '設施', '武器/陷阱'].includes(section.key);
+            renderFacilitiesOrItems(sectionDetail, details[section.key], isItemsSection);
+            
+            sectionStrip.on('click', () => {
+                sectionDetail.slideToggle();
+            });
+            
+            item.append(sectionStrip);
+            item.append(sectionDetail);
+        }
+    });
+    
+    // 如果沒有任何可見的部分，添加提示
+    if (!hasVisibleSections) {
+        const emptyHint = $('<div>').css({
+            'font-size': '14px',
+            'color': 'var(--survival-warning)',
+            'text-align': 'center',
+            'margin-top': '10px',
+            'font-style': 'italic'
+        }).text('該營地暫無存儲內容');
+        item.append(emptyHint);
+    }
+    
+    container.append(item);
+}
+
+// 修改後的 renderFacilitiesOrItems 函數，支持更多類型的物品渲染
+function renderFacilitiesOrItems(container, data, isItems = false) {
+    const entries = toEntries(data);
+    
+    if (!entries || entries.length === 0) {
+        container.append($('<div>').addClass('empty-text').text('暫無內容'));
+        return;
+    }
+    
+    // 如果是物品類型，使用通用渲染函數
+    if (isItems) {
+        renderItems(container, data, {
+            layout: 'grid',
+            checkQuantity: true, // 啟用數量檢查，異常數量顯示紅色
+            emptyText: '暫無內容'
+        });
+    } else {
+        // 設施和牲畜等使用特殊渲染
+        const specialContainer = $('<div>').addClass('inventory-grid');
+        
+        entries.forEach(([key, value]) => {
+            // 創建特殊項目元素
+            const specialElement = $('<div>').addClass('inventory-item camp-facility');
+            
+            // 名稱使用特殊顏色
+            const nameElement = $('<div>').addClass('item-name state-facility').text(String(key));
+            specialElement.append(nameElement);
+            
+            if (value && typeof value === 'object') {
+                const props = $('<div>').addClass('item-props');
+                
+                Object.entries(value).forEach(([k, v]) => {
+                    if (k === '$meta') return;
+                    if (v !== undefined && v !== null && v !== '') {
+                        const line = $('<div>').addClass('item-prop');
+                        $('<span>').addClass('prop-key').text(String(k)).appendTo(line);
+                        $('<span>').addClass('prop-sep').text(': ').appendTo(line);
+                        $('<span>').addClass('prop-val').text(textify(v, '')).appendTo(line);
+                        props.append(line);
+                    }
+                });
+                
+                if (props.children().length > 0) {
+                    specialElement.append(props);
+                }
+            } else {
+                const valueLine = $('<div>').addClass('item-prop');
+                $('<span>').addClass('prop-val').text(textify(value, '')).appendTo(valueLine);
+                specialElement.append(valueLine);
+            }
+            
+            specialContainer.append(specialElement);
+        });
+        
+        container.append(specialContainer);
+    }
+}
+
+// 渲染設施或物品的通用函數
+function renderFacilitiesOrItems(container, data, isItems = false) {
+    const entries = toEntries(data);
+    
+    if (!entries || entries.length === 0) {
+        container.append($('<div>').addClass('empty-text').text('暫無內容'));
+        return;
+    }
+    
+    // 如果是物品，使用通用渲染函數
+    if (isItems) {
+        renderItems(container, data, {
+            layout: 'grid',
+            checkQuantity: true, // 啟用數量檢查，異常數量顯示紅色
+            emptyText: '暫無物品'
+        });
+    } else {
+        // 設施渲染 - 改為網格顯示，先顯示設施後顯示物品
+        const facilitiesContainer = $('<div>').addClass('inventory-grid');
+        
+        // 分離設施和物品
+        const facilities = [];
+        const items = [];
+        
+        entries.forEach(([key, value]) => {
+            if (isItemObject(value)) {
+                items.push([key, value]);
+            } else {
+                facilities.push([key, value]);
+            }
+        });
+        
+        // 先渲染設施
+        facilities.forEach(([key, value]) => {
+            // 普通設施使用網格項目樣式
+            const facilityElement = $('<div>').addClass('inventory-item camp-facility');
+            // 設施名稱使用設施專用顏色
+            const nameElement = $('<div>').addClass('item-name state-facility').text(String(key));
+            facilityElement.append(nameElement);
+            
+            if (value && typeof value === 'object') {
+                const props = $('<div>').addClass('item-props');
+                
+                Object.entries(value).forEach(([k, v]) => {
+                    if (k === '$meta') return;
+                    if (v !== undefined && v !== null && v !== '') {
+                        const line = $('<div>').addClass('item-prop');
+                        $('<span>').addClass('prop-key').text(String(k)).appendTo(line);
+                        $('<span>').addClass('prop-sep').text(': ').appendTo(line);
+                        $('<span>').addClass('prop-val').text(textify(v, '')).appendTo(line);
+                        props.append(line);
+                    }
+                });
+                
+                if (props.children().length > 0) {
+                    facilityElement.append(props);
+                }
+            } else {
+                const valueLine = $('<div>').addClass('item-prop');
+                $('<span>').addClass('prop-val').text(textify(value, '')).appendTo(valueLine);
+                facilityElement.append(valueLine);
+            }
+            
+            facilitiesContainer.append(facilityElement);
+        });
+        
+        // 再渲染物品
+        items.forEach(([key, value]) => {
+            // 如果是物品，使用物品格式顯示
+            const itemElement = createItemElement(key, value, {
+                layout: 'grid',
+                showQuantity: true,
+                showWeight: true,
+                showState: true,
+                showDescription: true
+            });
+            facilitiesContainer.append(itemElement);
+        });
+        
+        // 如果沒有內容，顯示空狀態
+        if (facilities.length === 0 && items.length === 0) {
+            facilitiesContainer.append($('<div>').addClass('inventory-item').text('暫無設施'));
+        }
+        
+        container.append(facilitiesContainer);
+    }
+}
+
+
+// 輔助函數：判斷一個對象是否是物品
+function isItemObject(obj) {
+    if (!obj || typeof obj !== 'object' || Array.isArray(obj)) {
+        return false;
+    }
+    
+    // 檢查是否包含典型的物品屬性
+    const itemIndicators = ['數量', '重量', '狀態類型', '描述'];
+    let indicatorCount = 0;
+    
+    itemIndicators.forEach(indicator => {
+        if (obj.hasOwnProperty(indicator)) {
+            indicatorCount++;
+        }
+    });
+    
+    // 如果有至少2個物品屬性，就認為是物品
+    return indicatorCount >= 2;
+}
+
+function renderTaskSystem(container, data) {
+  const system = data['任務'] ?? {};
+  
+  const { $section, $body } = d('任務', false);
+
+  // 輔助函數：獲取狀態對應的CSS類名
+  const getStatusClass = (status) => {
+    const statusMap = {
+      '進行中': 'status-ongoing',
+      '待結算': 'status-pending', 
+      '已完成': 'status-completed',
+      '已失敗': 'status-failed',
+      '已放棄': 'status-abandoned'
+    };
+    return statusMap[status] || 'status-ongoing';
+  };
+
+  // 輔助函數：獲取狀態顯示文本
+  const getStatusText = (status) => {
+    const textMap = {
+      '進行中': '進行中',
+      '待結算': '待結算',
+      '已完成': '已完成', 
+      '已失敗': '已失敗',
+      '已放棄': '已放棄'
+    };
+    return textMap[status] || '進行中';
+  };
+
+  // 輔助函數：生成任務詳情
+  const createTaskDetail = (task, type) => {
+    const detail = $('<div>').addClass('task-detail').hide();
+    
+    // 任務名稱（居中顯示，使用任務類型的顏色）
+    if (task['標題']) {
+      const taskName = $('<div>').css({
+        'font-size': '18px',
+        'font-weight': 'bold',
+        'text-align': 'center',
+        'margin-bottom': '8px',
+        'padding': '4px 0'
+      });
+      
+      // 根據任務類型設置顏色
+      const colorMap = {
+        '主線': '#3498db',      // 藍色
+        '支線': '#f39c12',      // 橙色  
+        '日常': '#2ecc71',      // 綠色
+        '羈絆': '#ffb6c1',      // 粉色
+        '緊急': '#e74c3c'       // 紅色
+      };
+      
+      taskName.css('color', colorMap[type] || '#ffffff');
+      taskName.text(task['標題']);
+      detail.append(taskName);
+    }
+
+    // 分隔線
+    $('<div>').addClass('task-divider').appendTo(detail);
+    
+    // 任務描述
+    if (task['描述']) {
+      $('<div>').addClass('task-desc').text(task['描述'] || '').appendTo(detail);
+    }
+
+    // 區域限制
+    if (task['區域限制'] && task['區域限制'] !== '') {
+      const areaRestriction = $('<div>').addClass('target-desc').html(`區域限制: <span style="color: var(--survival-warning); font-weight: bold;">${task['區域限制']}</span>`);
+      detail.append(areaRestriction);
+    }
+
+    // 分隔線
+    $('<div>').addClass('task-divider').appendTo(detail);
+    
+    // 任務要求 - 使用新的數據結構
+    if (task['任務要求'] && typeof task['任務要求'] === 'object') {
+      const taskRequirement = $('<div>').addClass('target-section base-target');
+      $('<div>').addClass('section-title').text('任務要求').appendTo(taskRequirement);
+      
+      Object.entries(task['任務要求']).forEach(([key, requirement]) => {
+        if (requirement && typeof requirement === 'object') {
+          const reqDesc = $('<div>').addClass('target-desc');
+          
+          // 獲取任務類型和進度信息
+          const current = Number(requirement['進度']) || 0;
+          const target = Number(requirement['目標']) || 1;
+          const type = requirement['類型'] || '數值'; // 默認為數值類型
+          const isCompleted = current >= target;
+          
+          // 創建描述文本
+          const descText = $('<span>').text(requirement['描述'] || '');
+          reqDesc.append(descText);
+          
+          // 根據類型決定是否顯示進度
+          if (type === '數值') {
+            // 數值型任務：顯示進度 (當前/目標)
+            const progressText = $('<span>').addClass('progress-number').text(` (${current}/${target})`);
+            reqDesc.append(progressText);
+          }
+          // 布爾型任務：不顯示進度數字
+          
+          // 如果完成，整個描述添加完成樣式
+          if (isCompleted) {
+            reqDesc.addClass('completed');
+          }
+          
+          taskRequirement.append(reqDesc);
+        }
+      });
+      
+      // 基礎獎勵
+      if (task['基礎獎勵']) {
+        $('<div>').addClass('reward-info').html(`獎勵: <span class="points">${task['基礎獎勵']}</span>`).appendTo(taskRequirement);
+      }
+      
+      detail.append(taskRequirement);
+      
+      // 日常任務不顯示進階目標
+      if (type !== '日常任務') {
+        $('<div>').addClass('task-divider').appendTo(detail);
+      }
+    }
+
+    
+    // 進階目標（日常任務不顯示）
+    if (type !== '日常任務' && task['進階目標'] && typeof task['進階目標'] === 'object' && Object.keys(task['進階目標']).length > 0) {
+      const bonusTarget = $('<div>').addClass('target-section bonus-target');
+      $('<div>').addClass('section-title').text('進階目標').appendTo(bonusTarget);
+      
+      Object.entries(task['進階目標']).forEach(([key, goal]) => {
+        if (goal && typeof goal === 'object') {
+          const goalDesc = $('<div>').addClass('target-desc');
+          
+          // 獲取進階目標類型和進度信息
+          const current = Number(goal['進度']) || 0;
+          const target = Number(goal['目標']) || 1;
+          const type = goal['類型'] || '數值'; // 默認為數值類型
+          const isCompleted = current >= target;
+          
+          // 創建描述文本
+          const descText = $('<span>').text(goal['描述'] || '');
+          goalDesc.append(descText);
+          
+          // 根據類型決定是否顯示進度
+          if (type === '數值') {
+            // 數值型目標：顯示進度 (當前/目標)
+            const progressText = $('<span>').addClass('progress-number').text(` (${current}/${target})`);
+            goalDesc.append(progressText);
+          }
+          // 布爾型目標：不顯示進度數字
+          
+          // 如果完成，整個描述添加完成樣式
+          if (isCompleted) {
+            goalDesc.addClass('completed');
+          }
+          
+          bonusTarget.append(goalDesc);
+        }
+      });
+      
+      // 進階獎勵
+      if (task['進階獎勵']) {
+        $('<div>').addClass('reward-info').html(`獎勵: <span class="points">${task['進階獎勵']}</span>`).appendTo(bonusTarget);
+      }
+      
+      detail.append(bonusTarget);
+    }
+
+    
+    // 緊急任務：失敗懲罰
+    if (type === '緊急任務' && task['失敗懲罰']) {
+      $('<div>').addClass('task-divider').appendTo(detail);
+      $('<div>').addClass('penalty-info').text(`失敗懲罰: ${task['失敗懲罰']}`).appendTo(detail);
+    }
+    
+    // 緊急任務：時間信息
+    if (type === '緊急任務') {
+      if (task['開始時間'] || task['結束時間'] || task['時限']) {
+        $('<div>').addClass('task-divider').appendTo(detail);
+        const timeInfo = $('<div>').addClass('time-info');
+        if (task['開始時間']) {
+          $('<div>').text(`開始時間: ${task['開始時間']}`).appendTo(timeInfo);
+        }
+        if (task['結束時間']) {
+          $('<div>').text(`結束時間: ${task['結束時間']}`).appendTo(timeInfo);
+        }
+        if (task['時限']) {
+          $('<div>').text(`時限: ${task['時限']}`).appendTo(timeInfo);
+        }
+        detail.append(timeInfo);
+      }
+    }
+    
+    return detail;
+  };
+
+  // 渲染各類型任務
+  const taskTypes = [
+    { key: '主線', display: '主線任務', className: 'main-task' },
+    { key: '支線', display: '支線任務', className: 'side-task' },
+    { key: '日常', display: '日常任務', className: 'daily-task' },
+    { key: '緊急', display: '緊急任務', className: 'emergency-task' }
+  ];
+
+  let hasTasks = false;
+  
+  taskTypes.forEach(({ key, display, className }) => {
+    const task = system[key];
+    
+    // 只有當任務存在時才顯示該任務類型
+    if (task && typeof task === 'object' && task['標題']) {
+      hasTasks = true;
+      
+      const taskStatus = task['狀態'] || '進行中';
+      
+      // 創建任務條 - 顯示任務類型名稱，減少高度
+      const taskStrip = $('<div>').addClass('task-strip').addClass(className).css({
+        'padding': '7px 16px', // 從12px減少到9px（減少1/4）
+        'min-height': '31px'   // 從44px減少到33px（減少1/4）
+      });
+      
+      // 任務內容 - 顯示任務類型（主線任務/支線任務等）
+      const taskContent = $('<div>').addClass('task-content').text(display);
+      taskStrip.append(taskContent);
+      
+      // 狀態指示器 - 調整位置以適應新的高度
+      const statusIndicator = $('<div>').addClass('task-status-indicator');
+      const statusText = $('<div>').addClass('status-text')
+        .addClass(getStatusClass(taskStatus))
+        .text(getStatusText(taskStatus));
+      statusIndicator.append(statusText);
+      taskStrip.append(statusIndicator);
+      
+      // 創建任務詳情
+      const taskDetail = createTaskDetail(task, key);
+      
+      // 點擊展開/收起詳情
+      taskStrip.on('click', () => {
+        const $currentDetail = $body.find('.task-detail').not(taskDetail);
+        $currentDetail.slideUp();
+        taskDetail.slideToggle();
+      });
+      
+      $body.append(taskStrip);
+      $body.append(taskDetail);
+    }
+  });
+
+  // 單獨處理羈絆任務（多個同伴）
+  const bondTasks = system['羈絆'];
+  if (bondTasks && typeof bondTasks === 'object') {
+    Object.entries(bondTasks).forEach(([companionName, task]) => {
+      if (task && typeof task === 'object' && task['標題']) {
+        hasTasks = true;
+        
+        const taskStatus = task['狀態'] || '進行中';
+        
+        // 創建任務條 - 使用你建議的格式
+        const taskStrip = $('<div>').addClass('task-strip').addClass('bond-task').css({
+          'padding': '7px 16px',
+          'min-height': '31px'
+        });
+        
+        // 任務內容 - 顯示"羈絆·同伴名"
+        const taskContent = $('<div>').addClass('task-content').html(
+          `<span style="color: #ffb6c1;">羈絆·${companionName}</span>`
+        );
+        taskStrip.append(taskContent);
+        
+        // 狀態指示器
+        const statusIndicator = $('<div>').addClass('task-status-indicator');
+        const statusText = $('<div>').addClass('status-text')
+          .addClass(getStatusClass(taskStatus))
+          .text(getStatusText(taskStatus));
+        statusIndicator.append(statusText);
+        taskStrip.append(statusIndicator);
+        
+        // 創建任務詳情
+        const taskDetail = createTaskDetail(task, '羈絆');
+        
+        // 點擊展開/收起詳情
+        taskStrip.on('click', () => {
+          const $currentDetail = $body.find('.task-detail').not(taskDetail);
+          $currentDetail.slideUp();
+          taskDetail.slideToggle();
+        });
+        
+        $body.append(taskStrip);
+        $body.append(taskDetail);
+      }
+    });
+  }
+  
+  // 如果沒有任務，顯示提示
+  if (!hasTasks) {
+    $body.append($('<div>').addClass('empty-text').text('暫無任務'));
+  }
+  
+  container.append($section);
+}
+
+
+async function p() {
+  try {
+    let messageId;
+    try {
+      if (typeof getCurrentMessageId === 'function') {
+        messageId = getCurrentMessageId();
+      } else {
+        const messages = getChatMessages('last');
+        if (!messages || messages.length === 0) {
+          throw new Error('無法獲取當前消息ID');
+        }
+        messageId = messages[0].message_id;
+      }
+    } catch (error) {
+      console.error('獲取當前消息ID失敗:', error);
+      try {
+        const messages = getChatMessages('last');
+        if (!messages || messages.length === 0) {
+          throw new Error('無法獲取消息數據');
+        }
+        messageId = messages[0].message_id;
+      } catch (fallbackError) {
+        console.error('備用方法獲取消息失敗:', fallbackError);
+        return;
+      }
+    }
+
+    const message = getChatMessages(messageId)[0];
+    if (!message) {
+      console.error('無法獲取當前消息數據');
+      return;
+    }
+
+    const data = message?.data ?? {};
+    const statData = data.stat_data ?? {};
+    const displayData = data.display_data ?? {};
+
+    if (Object.keys(statData).length === 0 && Object.keys(displayData).length === 0) {
+      console.error('未找到生存游戲數據');
+      return;
+    }
+
+    const $root = $('#survival-ui');
+    $root.empty();
+
+    r($root, statData);
+    createStatusEffects($root, statData);
+
+    const hungerSource = statData['次生屬性']?.['飽腹感'] ?? statData['生理']?.['飽腹感'] ?? 0;
+    const hydrationSource = statData['生理']?.['水分'] ?? statData['次生屬性']?.['水分'] ?? 0;
+    const hunger = Number(e(hungerSource)) || 0;
+    const hydration = Number(e(hydrationSource)) || 0;
+
+    const { $section: nutritionSection, $body: nutritionBody } = n('營養與水分', [
+      { label: '飽腹感', current: hunger, max: 100, className: 'hunger-progress' },
+      { label: '水分', current: hydration, max: 100, className: 'water-progress' },
+    ], false);
+
+    renderNutritionDetails(nutritionBody, statData);
+    $root.append(nutritionSection);
+
+    const { $section: statusSection, $body: statusBody } = d('角色狀態', false);
+    renderPhysMental(statusBody, statData['生理'] ?? {}, statData['精神'] ?? {}, statData);
+    $root.append(statusSection);
+
+    const { $section: skillSection, $body: skillBody } = d('屬性 & 技能', false);
+    renderAttributesAndSkills(
+      skillBody,
+      statData['屬性'] ?? displayData['屬性'] ?? {},
+      statData['技能'] ?? displayData['技能'] ?? {},
+      statData['天賦/特性'] ?? displayData['天賦/特性'] ?? {}
+    );
+    $root.append(skillSection);
+
+    const get = (key) => (statData?.[key] ?? displayData?.[key]);
+    // 修改後的代碼：
+    renderCompanions($root, get('同伴'));
+    // 只有當對應的數據存在且不為空時才渲染
+    if (get('營地') != null) {
+        renderCamps($root, get('營地'));
+    }
+    if (get('作物') != null) {
+        renderCollapsibleSection($root, '作物', get('作物'));
+    }
+    if (get('捷徑/裝置') != null) {
+        renderCollapsibleSection($root, '捷徑/裝置', get('捷徑/裝置'));
+    }
+
+    // 抽卡部分
+    const survivalPoints = Number(e(statData['系統']?.['生存點數'])) || 0;
+    const miraclePoints = Number(e(statData['系統']?.['奇蹟點數'])) || 0;
+    
+    const { $section: drawSection, $body: drawBody } = d('抽卡', false);
+    
+    // 生存抽卡 - 主線任務樣式
+    const survivalItem = $('<div>').addClass('task-strip main-task').css({
+      'padding': '7px 16px',
+      'min-height': '31px'
+    });
+    $('<div>').addClass('task-content').text(`生存抽卡(${survivalPoints})`).appendTo(survivalItem);
+    drawBody.append(survivalItem);
+    
+    // 奇蹟抽卡 - 支線任務樣式  
+    const miracleItem = $('<div>').addClass('task-strip side-task').css({
+      'padding': '7px 16px',
+      'min-height': '31px'
+    });
+    $('<div>').addClass('task-content').text(`奇蹟抽卡(${miraclePoints})`).appendTo(miracleItem);
+    drawBody.append(miracleItem);
+    
+    // 點擊事件
+    survivalItem.on('click', () => {
+      showDrawConfirmModal('survival', survivalPoints, miraclePoints);
+    });
+    
+    miracleItem.on('click', () => {
+      showDrawConfirmModal('miracle', survivalPoints, miraclePoints);
+    });
+    
+    $root.append(drawSection);
+
+    renderTaskSystem($root, statData); //任務
+
+    // 創建按鈕容器
+    const buttonBar = $('<div>').addClass('button-container');
+
+    buttonBar.append(
+      $('<button>')
+        .addClass('inventory-btn')
+        .text('查看地圖')
+        .on('click', () => openImageViewerModal(statData, displayData))
+    );
+
+    const currentWeight = Number(e(statData['狀態']?.['當前負重'] ?? 0)) || 0;
+    const weightLimit = Number(e(statData['次生屬性']?.['負重上限'] ?? 50)) || 50;
+    buttonBar.append(
+      $('<button>')
+        .addClass('inventory-btn')
+        .text('打開物品欄')
+        .on('click', () => i(statData['裝備'], statData['攜帶物品'], currentWeight, weightLimit))
+    );
+
+    $root.append(buttonBar);
+  } catch (error) {
+    console.error('渲染生存游戲 UI 時發生錯誤:', error);
+  }
+}
+
+$(() => {
+  try {
+    p().catch((error) => {
+      console.error('初始渲染失敗:', error);
+    });
+    const rerender = () => {
+      p().catch((error) => {
+        console.error('變量更新後渲染失敗:', error);
+      });
+    };
+    try {
+      if (typeof eventOn === 'function') {
+        eventOn('mag_variable_update_ended', rerender);
+      }
+    } catch (error) {
+      console.error('注冊事件監聽器失敗:', error);
+    }
+    $(window).on('unload', () => {
+      try {
+        if (typeof eventRemoveListener === 'function') {
+          eventRemoveListener('mag_variable_update_ended', rerender);
+        }
+      } catch (error) {
+        console.error('移除事件監聽器失敗:', error);
+      }
+    });
+  } catch (error) {
+    console.error('初始化生存游戲UI時發生錯誤:', error);
+  }
+});
+</script></body></html>
+```

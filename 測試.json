@@ -1,0 +1,107 @@
+Event emitted: character_message_rendered
+index.js:21 [QR2] calling {args: Array(1), functionToCall: ƒ}
+handler.ts:327 [Prompt Template] chat message #298.undefined is generating
+eventemitter.js:135 Event emitted: mag_variable_update_started
+VM22602 about:srcdoc:208 [事件] 變數更新開始
+VM22602 about:srcdoc:218 [事件] 記錄先前狀態: {previousTime: '21:30', previousDay: 21}
+eventemitter.js:135 Event emitted: mag_command_parsed
+function.ts:1181 ADDED number '系統.經過天數' from '21' to '22' by delta '1' 
+eventemitter.js:135 Event emitted: mag_variable_updated
+function.ts:672 Set '系統.當前時間' to '"07:30"' 
+eventemitter.js:135 Event emitted: mag_variable_updated
+function.ts:672 Set '系統.日常任務' to '{"標題":"每日的飲水保障","描述":"確保營地有足夠的乾淨飲用水是生存的基礎。去打滿儲水的陶甕吧。","狀態":"進行中","完成情況":{"基礎要求完成":false,"進階目標完成":false},"結算狀態":{"基礎獎勵已發放":false,"進階獎勵已發放":false},"區域限制":"","任務要求":{"基礎要求1":{"描述":"為營地儲備40單位潔淨的飲用水。","進度":10,"目標":40,"類型":"數值","已完成":false}},"基礎獎勵":{"生存點數":5},"進階獎勵":{},"可放棄":true,"進階目標":{}}' 
+eventemitter.js:135 Event emitted: mag_variable_updated
+eventemitter.js:135 Event emitted: mag_variable_update_ended
+VM22602 about:srcdoc:228 [事件] 變數更新結束
+VM22602 about:srcdoc:240 [事件] 檢查跨日
+VM22602 about:srcdoc:151 [跨日檢查] 開始
+VM22602 about:srcdoc:163 [跨日檢查] 時間: 21:30 -> 07:30
+VM22602 about:srcdoc:172 [跨日檢查] 檢測到跨日
+function.ts:514 Set '系統.經過天數' to '23' (腳本修改)
+function.ts:514 Set '系統.跨日已處理' to 'true' (腳本修改)
+VM22602 about:srcdoc:181 [跨日檢查] 天數更新: 22 -> 23
+VM22602 about:srcdoc:244 [事件] 新的一天，處理事件
+VM22602 about:srcdoc:112 [新日事件] 開始處理
+VM22602 about:srcdoc:117 [新日事件] 處理作物收穫
+VM22602 about:srcdoc:27 [作物系統] 開始檢查作物收穫
+VM22602 about:srcdoc:34 [作物系統] 當前作物: {辣椒: {…}}
+VM22602 about:srcdoc:35 [作物系統] 經過天數: 23
+VM22602 about:srcdoc:48 [作物系統] 檢查作物: 辣椒 {位置: '楓葉潭營地.菜園', 種植日期: 16, 成長週期: 5, 收成量: 64}
+VM22602 about:srcdoc:56 [作物系統] 辣椒: 種植日16 + 週期5 = 收穫日21, 當前23
+VM22602 about:srcdoc:59 [作物系統] 辣椒 已成熟，準備收穫
+VM22602 about:srcdoc:80 [作物系統] 添加收穫物: 辣椒收穫
+function.ts:514 Set '作物.辣椒' to 'null' (腳本修改)
+VM22602 about:srcdoc:89 [作物系統] 移除已收穫作物: 辣椒
+VM22602 about:srcdoc:97 [作物系統] 收穫完成: 1 個作物
+VM22602 about:srcdoc:121 [新日事件] 有作物收穫
+VM22602 about:srcdoc:132 [新日事件] 發放經驗: 6
+VM22602 about:srcdoc:140 [新日事件] 處理完成
+VM22602 about:srcdoc:251 [事件] 觸發數據刷新
+VM22602 about:srcdoc:265 [事件] 處理完成
+schema.ts:241 Reconciling schema with current data state...
+schema.ts:45 Type mismatch: expected array schema but got string at path
+b @ schema.ts:45
+b @ schema.ts:155
+b @ schema.ts:155
+b @ schema.ts:155
+x @ schema.ts:248
+H @ function.ts:1225
+await in H
+Y @ function.ts:1260
+await in Y
+Ze @ main.ts:114
+g @ lib.js:2
+(匿名) @ lib.js:2
+S @ lib.js:2
+EventEmitter.emit @ eventemitter.js:146
+await in EventEmitter.emit
+saveReply @ script.js:5850
+await in saveReply
+onSuccess @ script.js:4684
+Promise.then
+Generate @ script.js:4604瞭解這個錯誤
+2schema.ts:45 Type mismatch: expected array schema but got string at path
+b @ schema.ts:45
+b @ schema.ts:90
+b @ schema.ts:155
+b @ schema.ts:155
+b @ schema.ts:155
+x @ schema.ts:248
+H @ function.ts:1225
+await in H
+Y @ function.ts:1260
+await in Y
+Ze @ main.ts:114
+g @ lib.js:2
+(匿名) @ lib.js:2
+S @ lib.js:2
+EventEmitter.emit @ eventemitter.js:146
+await in EventEmitter.emit
+saveReply @ script.js:5850
+await in saveReply
+onSuccess @ script.js:4684
+Promise.then
+Generate @ script.js:4604瞭解這個錯誤
+schema.ts:45 Type mismatch: expected array schema but got string at path
+b @ schema.ts:45
+b @ schema.ts:155
+b @ schema.ts:155
+b @ schema.ts:155
+x @ schema.ts:248
+H @ function.ts:1225
+await in H
+Y @ function.ts:1260
+await in Y
+Ze @ main.ts:114
+g @ lib.js:2
+(匿名) @ lib.js:2
+S @ lib.js:2
+EventEmitter.emit @ eventemitter.js:146
+await in EventEmitter.emit
+saveReply @ script.js:5850
+await in saveReply
+onSuccess @ script.js:4684
+Promise.then
+Generate @ script.js:4604瞭解這個錯誤
+schema.ts:280 Schema reconciliation complete.
+eventemitter.js:135 Event emitted: mag_before_message_update

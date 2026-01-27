@@ -1,0 +1,11 @@
+
+{
+"urls":[
+        {"url":"https://gitlab.com/tenrecha/recha/-/raw/main/recha-movie.json","name":"老王_追劇專區"},
+        {"url":"https://gitlab.com/tenrecha/recha/-/raw/main/recha-live.json","name":"老王_直播專區"},
+        {"url":"https://gitlab.com/tenrecha/recha/-/raw/main/recha-short.json","name":"老王_短劇專區"},
+        {"url":"https://gitlab.com/tenrecha/recha/-/raw/main/recha-sex.json","name":"老王_私密專區"},
+        {"url":"https://gitlab.com/tenrecha/recha/-/raw/main/可用源.json","name":"淘汰源"},
+        {"url":"https://gitlab.com/tenrecha/recha/-/raw/main/失效源.json","name":"失效源"}  
+       ]
+}
