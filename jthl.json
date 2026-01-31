@@ -63,62 +63,43 @@
       "api": "csp_XMVideo",
       "searchable": 1,
       "filterable": 1,"jar": "https://gh.xxooo.cf/https://raw.githubusercontent.com/guot55/yg/main/jar/182.jar"
-    }, {
-      "key": "3影網",
+    }, 
+	{"key": "3影網",
       "name": "🔞3AV┃影视",
       "type": 3,
       "api": "csp_XBPQ",
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 1,
-      "ext":" https://codeberg.org/yjl/TVBOX/raw/branch/main/xBPQ/3AV.json"
-      },
-        {
-      "key": "11影網",
-      "name": "🔞112vv┃影视",
-      "type": 3,
-      "api": "csp_XBPQ",
-
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 1,
-      "ext": {
-        "主页url": "https://www.112vv.me/vodtype/26.html",
+      "ext":" https://codeberg.org/yjl/TVBOX/raw/branch/main/xBPQ/3AV.json"},
+    {"key": "11影網","name": "🔞112vv┃影视","type": 3,"api": "csp_XBPQ","searchable": 1,"quickSearch": 1,"filterable": 1,"ext":
+		{"主页url": "https://www.112vv.me/vodtype/26.html",
         "播放数组":"mod play-list&&</ul",
         "跳转播放链接": "var player_aaaa*url\":\"&&\"",
         "链接": "href=\"&&\"",
        "标题": "alt=\"&&\"",
        "直接播放":"1",
        "分类url": "https://www.112vv.me/vodtype/{cateId}-{catePg}.html;;z",
-        "分类": "国产视频$6#欧美高清$24#日韩视频$23#熟女人妻$32#国产传媒$12#亚洲专区$22#中文字幕$25#三级电影$26#高清名优$38#日本素人$37#少女萝莉$31#强奸乱伦$29#制服丝袜$30#童颜巨乳$28"
-      }
+        "分类": "国产视频$6#欧美高清$24#日韩视频$23#熟女人妻$32#国产传媒$12#亚洲专区$22#中文字幕$25#三级电影$26#高清名优$38#日本素人$37#少女萝莉$31#强奸乱伦$29#制服丝袜$30#童颜巨乳$28"}
     },
-            {
-      "key": "影網",
-      "name": "🔞huang┃影视",
-      "type": 3,
-      "api": "csp_XBPQ",
-
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 1,
-      "ext": {
-        "主页url": "http://8954ck.cc/",
+     {"key": "影網","name": "🔞huang┃影视","type": 3,"api": "csp_XBPQ","searchable": 1,"quickSearch": 1,"filterable": 1,"ext": 
+		{"主页url": "http://8954ck.cc/",
         "播放数组":"mod play-list&&</ul",
         "跳转播放链接": "var player_aaaa*url\":\"&&\"",
         "链接": "href=\"&&\"",
-       "标题": "alt=\"&&\"",
-       "直接播放":"1",
-      "分类":"日韩AV$1#国产系列$2#欧美$3#成人动漫$4",
-"分类url":"http://6803ck.cc/vodtype/{cateId}-{catePg}.html"
-      }
+        "标题": "alt=\"&&\"",
+        "直接播放":"1",
+        "分类":"日韩AV$1#国产系列$2#欧美$3#成人动漫$4",
+        "分类url":"http://6803ck.cc/vodtype/{cateId}-{catePg}.html"
+		}
     },
-        {"key":"柚子资源","name":"🍊柚子资源","type":0,
+    {"key":"柚子资源","name":"🍊柚子资源","type":0,
          "api": "https://api.yzzy-api.com/inc/api.php",
         "searchable":1,"quickSearch":1,
-        "categories":["动作片","喜剧片","爱情片","科幻片","恐怖片","剧情片","战争片","国产剧","台湾剧","韩国剧","欧美剧","香港剧","泰国剧","日本剧","福利","记录片","动画片","海外剧","倫理片","大陆综艺","港台综艺","日韩综艺","欧美综艺","国产动漫","日韩动漫","欧美动漫","港台动漫","海外动漫","搞笑","音乐","影视","汽车","短剧大全","预告片","预告片","体育"]},
+        "categories":["动作片","喜剧片","爱情片","科幻片","恐怖片","剧情片","战争片","国产剧","台湾剧","韩国剧","欧美剧","香港剧","泰国剧","日本剧","福利","记录片","动画片","海外剧","倫理片","大陆综艺","港台综艺","日韩综艺","欧美综艺","国产动漫","日韩动漫","欧美动漫","港台动漫","海外动漫","搞笑","音乐","影视","汽车","短剧大全","预告片","预告片","体育"]
+	},
         //采集
-        {//非凡资源备用网址:ffzy1.tv ffzy2.tv ffzy3.tv ffzy4.tv ffzy5.tv
+    {//非凡资源备用网址:ffzy1.tv ffzy2.tv ffzy3.tv ffzy4.tv ffzy5.tv
             "key": "csp_xml_非凡资源",
             "name": "🥗非凡资源(SP)",
             "type": 1,
@@ -126,8 +107,9 @@
             "api": "http://cj.ffzyapi.com/api.php/provide/vod/",
             "searchable": 1,
             "quickSearch": 1,
-            "categories": ["动作片","喜剧片","科幻片","恐怖片","爱情片","剧情片","战争片","伦理片","国产剧","欧美剧","香港剧","韩国剧","台湾剧","日本剧","海外剧","泰国剧","国产动漫","日韩动漫","欧美动漫","港台动漫","海外动漫","大陆综艺","港台综艺","日韩综艺","欧美综艺"]},
-            {//量子资源（备用网址): Lzizy1.com 至 Lzizy8.com
+            "categories": ["动作片","喜剧片","科幻片","恐怖片","爱情片","剧情片","战争片","伦理片","国产剧","欧美剧","香港剧","韩国剧","台湾剧","日本剧","海外剧","泰国剧","国产动漫","日韩动漫","欧美动漫","港台动漫","海外动漫","大陆综艺","港台综艺","日韩综艺","欧美综艺"]
+	},
+    {//量子资源（备用网址): Lzizy1.com 至 Lzizy8.com
             "key": "量子资源",
       "name": "🥑量子资源(SP)",
       "type": 1,
@@ -138,47 +120,54 @@
     },
     {"key":"csp_XYQHiker_异世界动漫","name":"🌺异世界动漫","type":3,"api":"csp_XYQHiker","searchable":1,"quickSearch":1,"filterable":1,
     "ext": "https://codeberg.org/yjl/TVBOX/raw/branch/main/XB/%e7%95%b0%e4%b8%96%e7%95%8c%e5%8b%95%e6%bc%ab.json",
-    "jar": "https://codeberg.org/yjl/TVBOX/src/commit/674bf93df90dfca08df5f4264646cd8d4e362c60/jar/custom_spider.jar"},
+    "jar": "https://codeberg.org/yjl/TVBOX/src/commit/674bf93df90dfca08df5f4264646cd8d4e362c60/jar/custom_spider.jar"
+	},
     {"key":"怡萱动漫","name":"🌺怡萱动漫","type":3,
     "api":"https://notabug.org/qizhen15800/My9394/raw/master/js/lib/drpy.min.js",
-    "ext":"https://codeberg.org/yjl/TVBOX/raw/branch/main/js/%e6%80%a1%e8%90%b1%e5%8a%a8%e6%bc%ab.js"},
+    "ext":"https://codeberg.org/yjl/TVBOX/raw/branch/main/js/%e6%80%a1%e8%90%b1%e5%8a%a8%e6%bc%ab.js"
+	},
     {"key":"drpy_js_NT动漫","name":"🌺‍NT动漫","type":3,
     "api":"https://cdn.jsdelivr.net/gh/yxcqr/DZDRPY@main/libs/drpy.min.js",
-    "ext":"https://cdn.jsdelivr.net/gh/yxcqr/DZDRPY@main/js/NT动漫.js"},
-{"key":"csp_xBPQ_低端影院","name":"️🌺低端影院","type":3,"api":"csp_xBPQ","searchable": 1,"quickSearch": 1,"filterable": 0,
-"ext":"https://codeberg.org/yjl/TVBOX/raw/branch/main/xBPQ/%e4%bd%8e%e7%ab%af%e5%bd%b1%e8%a7%86.json"},
-{"key": "csp_XYQHiker_子子影视","name":"⛔子子影视","type":3,"api":"csp_XYQHiker","searchable":1,"quickSearch":1,"filterable":1,
-"ext":"https://codeberg.org/yjl/TVBOX/raw/branch/main/XB/%e5%ad%90%e5%ad%90%e5%bd%b1%e8%a7%86.json"},
-{"key":"csp_xbb_sobods","name":"  🌹真不卡sobods","type":3,"api":"csp_XBiubiu","searchable":1,"quickSearch":1,"filterable":0,
-"ext":"https://codeberg.org/yjl/TVBOX/raw/branch/main/XB/%e7%9c%9f%e4%b8%8d%e5%8d%a1sobods.json"},
-{"key": "csp_xpath_lenxitv","name": "⛔冷曦影视(XPF)","type": 3,"api": "csp_XPathFilter",
-"searchable": 1,"quickSearch": 1,"filterable": 1,
-"ext": "https://codeberg.org/yjl/TVBOX/raw/branch/main/XB/lenxi.json"},   
-{"key":"1","name":"🔞🈲未成年人禁止访问，请止步！！","type":0,"api":""},
-{"key":"18","name":"🔞🈲分割线——————","type":0,"api":""},
-{"key":"12","name":"🔞分割线——————","type":0,"api":""},
-		{
-            "key" : "drpy_js_喵了个咪",
+    "ext":"https://cdn.jsdelivr.net/gh/yxcqr/DZDRPY@main/js/NT动漫.js"
+	},
+    {"key":"csp_xBPQ_低端影院","name":"️🌺低端影院","type":3,"api":"csp_xBPQ","searchable": 1,"quickSearch": 1,"filterable": 0,
+    "ext":"https://codeberg.org/yjl/TVBOX/raw/branch/main/xBPQ/%e4%bd%8e%e7%ab%af%e5%bd%b1%e8%a7%86.json"
+	},
+    {"key": "csp_XYQHiker_子子影视","name":"⛔子子影视","type":3,"api":"csp_XYQHiker","searchable":1,"quickSearch":1,"filterable":1,
+    "ext":"https://codeberg.org/yjl/TVBOX/raw/branch/main/XB/%e5%ad%90%e5%ad%90%e5%bd%b1%e8%a7%86.json"
+	},
+    {"key":"csp_xbb_sobods","name":"  🌹真不卡sobods","type":3,"api":"csp_XBiubiu","searchable":1,"quickSearch":1,"filterable":0,
+    "ext":"https://codeberg.org/yjl/TVBOX/raw/branch/main/XB/%e7%9c%9f%e4%b8%8d%e5%8d%a1sobods.json"
+	},
+    {"key": "csp_xpath_lenxitv","name": "⛔冷曦影视(XPF)","type": 3,"api": "csp_XPathFilter",
+    "searchable": 1,"quickSearch": 1,"filterable": 1,
+    "ext": "https://codeberg.org/yjl/TVBOX/raw/branch/main/XB/lenxi.json"
+	},   
+    {"key":"1","name":"🔞🈲未成年人禁止访问，请止步！！","type":0,"api":""},
+    {"key":"18","name":"🔞🈲分割线——————","type":0,"api":""},
+    {"key":"12","name":"🔞分割线——————","type":0,"api":""},
+	{"key" : "drpy_js_喵了个咪",
             "name" : "👠喵了个咪[请更换解析]",
             "type" : 3,
             "api" : "https://agit.ai/guot54/TVBOXZY/raw/branch/main/JS/lib/drpy.min.js",
             "ext" : "https://agit.ai/guot54/ygbh/raw/branch/master/JS/%e7%8c%ab%e4%ba%86%e4%b8%aa%e5%92%aa.js"
-        },
-{"key":"csp_xBPQ_香蕉超清xbpq","name":"🏆天天综合","type":3,"api":"csp_xBPQ",
-"searchable":1,"quickSearch":1,"filterable":1,
-"jar":"https://gitee.com/youngxiayang/YJL/raw/master/JAR/1215.jar",
-"ext":"https://codeberg.org/yjl/TVBOX/raw/branch/main/xBPQ/%e5%a4%a9%e5%a4%a9%e7%bb%bc%e5%90%88.json"},   
-{"key":"幸资源","name":"🥇幸资源","type":1,"api":"https://xzybb1.com/api.php/provide/vod/","searchable":1,"quickSearch":1,"filterable":1},
-{"key":"91md","name":"🥇91麻豆","type":1,"api":"https://91md.me/api.php/provide/vod/from/mdm3u8/","searchable":1,"quickSearch":1,"filterable":0},
-{"key": "滴滴资源","name": "🥇滴滴资源","type": 0,"api": "https://api.ddapi.cc/api.php/provide/vod/at/xml", "searchable": 1,"quickSearch": 1, "filterable": 0 },
-{"key": "番外",
-"name": "🥇番外采集",
-"type": 1,
-"api": "http://fhapi9.com/api.php/provide/vod/",
-"playUrl": "", "searchable": 1,
-"quickSearch": 1,
-"filterable": 1,
- "categories": [
+     },
+    {"key":"csp_xBPQ_香蕉超清xbpq","name":"🏆天天综合","type":3,"api":"csp_xBPQ",
+    "searchable":1,"quickSearch":1,"filterable":1,
+    "jar":"https://gitee.com/youngxiayang/YJL/raw/master/JAR/1215.jar",
+    "ext":"https://codeberg.org/yjl/TVBOX/raw/branch/main/xBPQ/%e5%a4%a9%e5%a4%a9%e7%bb%bc%e5%90%88.json"
+    },   
+    {"key":"幸资源","name":"🥇幸资源","type":1,"api":"https://xzybb1.com/api.php/provide/vod/","searchable":1,"quickSearch":1,"filterable":1},
+    {"key":"91md","name":"🥇91麻豆","type":1,"api":"https://91md.me/api.php/provide/vod/from/mdm3u8/","searchable":1,"quickSearch":1,"filterable":0},
+    {"key": "滴滴资源","name": "🥇滴滴资源","type": 0,"api": "https://api.ddapi.cc/api.php/provide/vod/at/xml", "searchable": 1,"quickSearch": 1, "filterable": 0 },
+    {"key": "番外",
+    "name": "🥇番外采集",
+    "type": 1,
+    "api": "http://fhapi9.com/api.php/provide/vod/",
+    "playUrl": "", "searchable": 1,
+    "quickSearch": 1,
+    "filterable": 1,
+    "categories": [
                 "群交淫乱",
                 "偷拍自拍",
                 "制服丝袜",
@@ -196,8 +185,8 @@
                 "人妖系列",
                 "虚拟VR"
             ]
-        },
-        {//http://lebozy.com/-http://lebozy10.com/
+ },
+ {//http://lebozy.com/-http://lebozy10.com/
             "key": "乐播",
             "name": "️🥇乐播采集",
             "type": 1,
@@ -224,21 +213,8 @@
                 "重口色情",
                 "人兽性交"
             ]
-        },
-
-
-
-
-        {
-            "key": "乐播",
-            "name": "️🥇乐播采集",
-            "type": 1,
-            "api": "https://lbapi9.com/api.php/provide/vod/",
-            "playUrl": "",
-            "searchable": 1,
-            "quickSearch": 1,
-            "filterable": 1,
-            "categories": [
+},
+{"key": "乐播","name": "️🥇乐播采集","type": 1,"api": "https://lbapi9.com/api.php/provide/vod/","playUrl": "","searchable": 1,"quickSearch": 1,"filterable": 1,"categories": [
                 "亚洲情色",
                 "国产主播",
                 "国产自拍",
@@ -256,37 +232,20 @@
                 "重口色情",
                 "人兽性交"
             ]
-        },
+},
 {//http://155zy1.com/-http://155zy10.com/
-  "key":"*115资源","name":"🥈155资源","type":0,"api":"https://155api.com/api.php/provide/vod/at/xml","searchable":1,"quickSearch":1,"filterable":0},
-		
+  "key":"*115资源","name":"🥈155资源","type":0,"api":"https://155api.com/api.php/provide/vod/at/xml","searchable":1,"quickSearch":1,"filterable":0
+},		
 {"key": "*AIvin","name": "*🔞AIvin","type": 0,"api": "http://lbapiby.com/api.php/provide/vod/at/xml"},
 {"key":"*美少女资源","name":"*🔞美少女资源","type":0,"api":"https://www.msnii.com/api/xml.php","searchable":0,"quickSearch":0},
 {"key":"*淫水机资源","name":"*🔞淫水机资源","type":0,"api":"https://www.xrbsp.com/api/xml.php","searchable":0,"quickSearch":0},
-{
-            "key": "奶香m",
-            "name": "🔞采集.奶香香",
-            "type": 1,
-            "api": "https://naixxzy.com/api.php/provide/vod/?ac=list",
-            "searchable": 1
-        }, 
+{"key": "奶香m","name": "🔞采集.奶香香","type": 1,"api": "https://naixxzy.com/api.php/provide/vod/?ac=list","searchable": 1}, 
 {"key":"*香奶儿资源","name":"*🔞香奶儿资源","type":0,"api":"https://www.gdlsp.com/api/xml.php","searchable":0,"quickSearch":0},
 {"key":"*白嫖资源","name":"*🔞白嫖资源","type":0,"api":"https://www.kxgav.com/api/xml.php","searchable":0,"quickSearch":0},
 {"key":"*大地资源","name":"*🔞大地资源","type":0,"api":"https://dadiapi.com/api.php","searchable":0,"quickSearch":0},
-{
-      "key": "老鸭2",
-      "name": "*🔞老鸭2",
-      "type": 1,
-      "api": "https://lbapi9.com/api.php/provide/vod/",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 0
-    },
-        { "key": "KpgxdyE", "name": "🔞黄AV资源(新版影视仓不能用)", "type": 0,"api": "https://www.pgxdy.com/api/xml.php", "searchable": 1, "quickSearch": 1, "filterable": 1 },
+{"key": "老鸭2","name": "*🔞老鸭2","type": 1,"api": "https://lbapi9.com/api.php/provide/vod/","searchable": 1,"quickSearch": 1,"filterable": 0},
+{"key": "KpgxdyE", "name": "🔞黄AV资源(新版影视仓不能用)", "type": 0,"api": "https://www.pgxdy.com/api/xml.php", "searchable": 1, "quickSearch": 1, "filterable": 1 },
 {"key":"*玖玖资源","name":"*🔞玖玖资源","type":0,"api":"http://99zywcj.com/inc/sapi.php?ac=videolist","searchable":0,"quickSearch":0},
 {"key":"*鲨鱼资源","name":"*🔞鲨鱼资源","type":1,"api":"https://shayuapi.com/api.php/provide/vod/","searchable":0,"quickSearch":0},
-    {"key": "番号","name": "🥇番号","type": 0,"api": "http://fhapi9.com/api.php/provide/vod/at/xml","searchable": 1,"quickSearch": 1,"filterable": 0},
-    {"key": "富二代","name": "🥇富二代","type": 0,"api": "http://f2dcj6.com/sapi?ac=videolist","quickSearch": 1,"searchable": 1,"filterable": 1},
-   
- 
-
+{"key": "番号","name": "🥇番号","type": 0,"api": "http://fhapi9.com/api.php/provide/vod/at/xml","searchable": 1,"quickSearch": 1,"filterable": 0},
+ {"key": "富二代","name": "🥇富二代","type": 0,"api": "http://f2dcj6.com/sapi?ac=videolist","quickSearch": 1,"searchable": 1,"filterable": 1},
