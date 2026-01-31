@@ -167,19 +167,7 @@
 {"key":"csp_xBPQ_香蕉超清xbpq","name":"🏆天天综合","type":3,"api":"csp_xBPQ",
 "searchable":1,"quickSearch":1,"filterable":1,
 "jar":"https://gitee.com/youngxiayang/YJL/raw/master/JAR/1215.jar",
-"ext":"https://codeberg.org/yjl/TVBOX/raw/branch/main/xBPQ/%e5%a4%a9%e5%a4%a9%e7%bb%bc%e5%90%88.json"},
-
-
-
-
-
-  
-   
-  
-   
-    
-    
-   
+"ext":"https://codeberg.org/yjl/TVBOX/raw/branch/main/xBPQ/%e5%a4%a9%e5%a4%a9%e7%bb%bc%e5%90%88.json"},   
 {"key":"幸资源","name":"🥇幸资源","type":1,"api":"https://xzybb1.com/api.php/provide/vod/","searchable":1,"quickSearch":1,"filterable":1},
 {"key":"91md","name":"🥇91麻豆","type":1,"api":"https://91md.me/api.php/provide/vod/from/mdm3u8/","searchable":1,"quickSearch":1,"filterable":0},
 {"key": "滴滴资源","name": "🥇滴滴资源","type": 0,"api": "https://api.ddapi.cc/api.php/provide/vod/at/xml", "searchable": 1,"quickSearch": 1, "filterable": 0 },
