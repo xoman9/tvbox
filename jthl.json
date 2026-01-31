@@ -1,13 +1,7 @@
-{
-//{"type": "0表达xml，1表达json，3表达jar内置json","name":"资源名称","type":0,"api":"csp_〔jar内文件名称〕","searchable":1,"quickSearch":1,"filterable":0,"jar":"〔jar文件地址〕","ext":"〔txt json文件地址〕","playUrl":"〔播放解析地址〕","categories":["〔自定义资源列表〕","〔自定义资源列表〕"] },
 "spider":"https://gitee.com/lwlxh/tvhome/raw/master/o.jar",
-//"spider":"https://fs-im-kefu.7moor-fs2.com/im/2768a390-5474-11ea-afc9-7b323e3e16c0/YT6QM5eC.png;md5;b3249d225e1e720653fc6dbf6fde21e6",
 "sites":[
-     {"key":"drpy_js_ebay直播","name":"ebay直播[js]","type":3,"api":"https://gh-proxy.com/raw.githubusercontent.com/wanganni/yinshiyuan/main/tv/js/lib/drpy2.min.js",
-     "ext":"https://gh-proxy.com/raw.githubusercontent.com/wanganni/yinshiyuan/main/tv/js/e直播.js","style": {"type": "rect","ratio": 1.8}},
-{"key": "火车太顺","name": "火车太顺","type": 3,
-"jar": "https://gh-proxy.com/raw.githubusercontent.com/wanganni/yinshiyuan/main/jar/xyq202503缝合.jar",
-"api": "https://gh-proxy.com/raw.githubusercontent.com/wanganni/yinshiyuan/main/tv/XYQHiker/ys/火车太顺APP.py","searchable": 1,"quickSearch": 1,"filterable": 1,"style": {"type": "rect","ratio": 1.6}},
+{"key":"drpy_js_ebay直播","name":"ebay直播[js]","type":3,"api":"https://gh-proxy.com/raw.githubusercontent.com/wanganni/yinshiyuan/main/tv/js/lib/drpy2.min.js",
+ "ext":"https://gh-proxy.com/raw.githubusercontent.com/wanganni/yinshiyuan/main/tv/js/e直播.js","style": {"type": "rect","ratio": 1.8}},
    {"key":"csp_XYQHiker_黄色仓库","name": "🔞黄色仓库✈️🔗(XYQHiker)","type": 3,"api": "csp_XYQHiker","searchable": 1,"quickSearch": 0,"filterable": 0,
    "jar":"raw.githubusercontent.com/wanganni/yinshiyuan/main/jar/xyq202503缝合.jar",
    "ext": "https://codeberg.org/yjl/TVBOX/raw/branch/main/XYQHiker/hsck.json","style": {"type": "rect","ratio": 1.6}},
